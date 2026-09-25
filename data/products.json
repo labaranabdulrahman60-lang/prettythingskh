@@ -1,9 +1,9 @@
 {
   "products": [
     { "id": 1, "name": "Rhode Lip Tint", "price": 2500, "oldPrice": 3000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400" },
-    { "id": 2, "name": "Rhode Lip Tint Peptides", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400" },
-    { "id": 3, "name": "Rhode Pbj Lip Tint", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400" },
-    { "id": 4, "name": "Rhode Ribbon Lip Tint", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400" },
+    { "id": 2, "name": "Rhode Lip Tint Peptides", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "wholesale": true, "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each", "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400" },
+    { "id": 3, "name": "Rhode Pbj Lip Tint", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "wholesale": true, "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each", "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400" },
+    { "id": 4, "name": "Rhode Ribbon Lip Tint", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "wholesale": true, "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each", "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400" },
     { "id": 5, "name": "Gissou Lip Oil", "price": 5000, "oldPrice": 8000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1599733589046-833caccbb1e0?w=400" },
     { "id": 6, "name": "Lipstick", "price": 2650, "oldPrice": 3000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400" },
     { "id": 7, "name": "Black Lip Liner", "price": 1500, "oldPrice": 2000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400" },
@@ -33,13 +33,13 @@
     { "id": 51, "name": "LV Glass", "price": 5500, "oldPrice": 6000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" },
     { "id": 52, "name": "Prada Glass", "price": 5600, "oldPrice": 10000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400" },
     { "id": 53, "name": "Y2K Glass", "price": 5600, "oldPrice": 10000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400" },
-    { "id": 54, "name": "Large Cat Eye", "price": 3500, "oldPrice": 6000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" },
-    { "id": 55, "name": "Small Cat Eye", "price": 2000, "oldPrice": 2500, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
+    { "id": 54, "name": "Large Cat Eye", "price": 3500, "oldPrice": 6000, "cat": "eyewear", "stock": true, "img": "https://images.uns":plash.com/photo-1583394838336-acd977736 f90?w=400" },
+    { "id": 55, "name": "Small Cat Eye", "price": 2000, "oldPrice60": 2500, "cat": "eyewear", "stock,": true, "img": "https://images. "unsplash.com/photo-151149976715name0-a48a237f0083?w=400" },
     { "id": 56, "name": "Thick Influencer Glass", "price": 4500, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" },
     { "id": 57, "name": "Clear Fashion Glass", "price": 4500, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400" },
     { "id": 58, "name": "Fashion Glass (Assorted)", "price": 2500, "oldPrice": 3000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400" },
     { "id": 59, "name": "Black Fashion Glass", "price": 2500, "oldPrice": 3000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" },
-    { "id": 60, "name": "Clear White Anti Blue Light Glass", "price": 3500, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
+    { "id": "Clear White Anti Blue Light Glass", "price": 3500, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
     { "id": 61, "name": "Blue Light Myopia Glass", "price": 4000, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" },
     { "id": 62, "name": "Visor Cap Sun Protection", "price": 3000, "oldPrice": 4000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400" },
 
@@ -62,7 +62,12 @@
     { "id": 86, "name": "Face Trimmer (3pcs)", "price": 900, "oldPrice": 1000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400" },
     { "id": 87, "name": "Thank You Cards (50pcs)", "price": 3000, "oldPrice": 3500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=400" },
 
-    { "id": 90, "name": "Rhode Lip Tints (Wholesale 10pcs+)", "price": 2500, "oldPrice": 8000, "cat": "bundles", "stock": true, "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400" },
-    { "id": 91, "name": "Tattoo Stickers (Wholesale 50pcs)", "price": 15000, "oldPrice": 0, "cat": "bundles", "stock": true, "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400" }
+    { "id": 90, "name": "Rhode Lip Tints (Wholesale)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "Minimum 10pcs per order", "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400" },
+    { "id": 91, "name": "Tattoo Stickers Wholesale (50pcs)", "price": 15000, "oldPrice": 0, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "50pcs pack — wholesale only", "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400" },
+    { "id": 92, "name": "Rhode Lip Tints Peptides (Wholesale)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "Minimum 10pcs per order", "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400" },
+    { "id": 93, "name": "Clip On Braces Wholesale (10pcs)", "price": 6500, "oldPrice": 8000, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum — save ₦1,500 per piece", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400" },
+    { "id": 94, "name": "Press On Nails Wholesale (10pcs)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum — mix and match styles", "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400" },
+    { "id": 95, "name": "Fashion Glass Wholesale (10pcs)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum — mixed styles allowed", "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
+    { "id": 96, "name": "Phone Cases Wholesale (10pcs)", "price": 1500, "oldPrice": 2000, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum — specify iPhone models", "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400" }
   ]
 }
