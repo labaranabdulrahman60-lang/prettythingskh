@@ -1,68 +1,600 @@
 {
   "products": [
-    { "id": 1, "name": "Rhode Lip Tint", "price": 2500, "oldPrice": 3000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400" },
-    { "id": 2, "name": "Rhode Lip Tint Peptides", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "wholesale": true, "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each", "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400" },
-    { "id": 3, "name": "Rhode Pbj Lip Tint", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "wholesale": true, "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each", "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400" },
-    { "id": 4, "name": "Rhode Ribbon Lip Tint", "price": 2500, "oldPrice": 8000, "cat": "beauty", "stock": true, "wholesale": true, "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each", "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400" },
-    { "id": 5, "name": "Gissou Lip Oil", "price": 5000, "oldPrice": 8000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1599733589046-833caccbb1e0?w=400" },
-    { "id": 6, "name": "Lipstick", "price": 2650, "oldPrice": 3000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400" },
-    { "id": 7, "name": "Black Lip Liner", "price": 1500, "oldPrice": 2000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400" },
-    { "id": 8, "name": "Peel Off Lip Liner", "price": 3000, "oldPrice": 9000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400" },
-    { "id": 9, "name": "Lip Liners (Assorted)", "price": 1500, "oldPrice": 3000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400" },
-    { "id": 10, "name": "Whitening Strips", "price": 8500, "oldPrice": 10000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400" },
-    { "id": 11, "name": "Cluster DIY Lashes", "price": 8500, "oldPrice": 14000, "cat": "beauty", "stock": true, "img": "https://images.unsplash.com/photo-1583241800698-9c2e0e1e4e1e?w=400" },
-    { "id": 20, "name": "Press On Nails (White Tip)", "price": 2500, "oldPrice": 3000, "cat": "nails", "stock": true, "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400" },
-    { "id": 21, "name": "Press On Nails (Pink Bow)", "price": 3000, "oldPrice": 3500, "cat": "nails", "stock": true, "img": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=400" },
-    { "id": 22, "name": "Black Press On Nails", "price": 2500, "oldPrice": 3000, "cat": "nails", "stock": true, "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400" },
-    { "id": 23, "name": "Press On Nails (Glitter)", "price": 3000, "oldPrice": 3500, "cat": "nails", "stock": true, "img": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=400" },
-    { "id": 24, "name": "Press On Nails (Classic Pink)", "price": 2800, "oldPrice": 3000, "cat": "nails", "stock": true, "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400" },
-    { "id": 30, "name": "MagSafe Case", "price": 2000, "oldPrice": 5000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400" },
-    { "id": 31, "name": "Silicone Cases (iPhone)", "price": 2000, "oldPrice": 3500, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400" },
-    { "id": 32, "name": "Fire Flame Case", "price": 5000, "oldPrice": 10000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400" },
-    { "id": 33, "name": "Hollow Fire Flame Case", "price": 5000, "oldPrice": 10000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400" },
-    { "id": 34, "name": "MagSafe Lip Case", "price": 10000, "oldPrice": 17000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400" },
-    { "id": 35, "name": "Dollar Case", "price": 3000, "oldPrice": 5000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400" },
-    { "id": 36, "name": "Phone Suctions", "price": 800, "oldPrice": 1000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400" },
-    { "id": 37, "name": "Rhode Case Regular Box", "price": 8500, "oldPrice": 10000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400" },
-    { "id": 38, "name": "Rhode Case (Full Set)", "price": 8500, "oldPrice": 32000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400" },
-    { "id": 39, "name": "Rhode Fully Packaged Case", "price": 16500, "oldPrice": 60000, "cat": "cases", "stock": true, "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400" },
-    { "id": 50, "name": "Gucci Glass", "price": 2500, "oldPrice": 3500, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
-    { "id": 51, "name": "LV Glass", "price": 5500, "oldPrice": 6000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" },
-    { "id": 52, "name": "Prada Glass", "price": 5600, "oldPrice": 10000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400" },
-    { "id": 53, "name": "Y2K Glass", "price": 5600, "oldPrice": 10000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400" },
-    { "id": 54, "name": "Large Cat Eye", "price": 3500, "oldPrice": 6000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" },
-    { "id": 55, "name": "Small Cat Eye", "price": 2000, "oldPrice": 2500, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
-    { "id": 56, "name": "Thick Influencer Glass", "price": 4500, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" },
-    { "id": 57, "name": "Clear Fashion Glass", "price": 4500, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400" },
-    { "id": 58, "name": "Fashion Glass (Assorted)", "price": 2500, "oldPrice": 3000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400" },
-    { "id": 59, "name": "Black Fashion Glass", "price": 2500, "oldPrice": 3000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400" },
-    { "id": 60, "name": "Clear White Anti Blue Light Glass", "price": 3500, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
-    { "id": 61, "name": "Blue Light Myopia Glass", "price": 4000, "oldPrice": 5000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400" },
-    { "id": 62, "name": "Visor Cap Sun Protection", "price": 3000, "oldPrice": 4000, "cat": "eyewear", "stock": true, "img": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400" },
-    { "id": 70, "name": "Bag Charm (Cherry)", "price": 2000, "oldPrice": 2500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=400" },
-    { "id": 71, "name": "Chic Bah", "price": 5000, "oldPrice": 5500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400" },
-    { "id": 72, "name": "Van Cleef Necklace Set", "price": 8500, "oldPrice": 10000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400" },
-    { "id": 73, "name": "Clip On Fashion Braces", "price": 8000, "oldPrice": 15000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400" },
-    { "id": 74, "name": "Power Chain Clip On Braces", "price": 8000, "oldPrice": 15000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400" },
-    { "id": 75, "name": "Van Cleef Braces", "price": 3000, "oldPrice": 3500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400" },
-    { "id": 76, "name": "Normal Clip On Braces", "price": 8000, "oldPrice": 10000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400" },
-    { "id": 77, "name": "Fixing Braces Semi Permanent", "price": 16000, "oldPrice": 25000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400" },
-    { "id": 78, "name": "Tattoo Sticker (50pcs)", "price": 500, "oldPrice": 1500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400" },
-    { "id": 79, "name": "Halal Tattoo Stickers (30pcs)", "price": 1500, "oldPrice": 2000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400" },
-    { "id": 80, "name": "Rhode Sticker", "price": 1000, "oldPrice": 1500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400" },
-    { "id": 81, "name": "Rhode Purse", "price": 10000, "oldPrice": 11000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400" },
-    { "id": 82, "name": "Pause Bag", "price": 18000, "oldPrice": 25000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400" },
-    { "id": 83, "name": "Mirror", "price": 2000, "oldPrice": 2500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1616627561950-9f746e330187?w=400" },
-    { "id": 84, "name": "LED Light", "price": 5000, "oldPrice": 7500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1565636192335-2d3e0f4f4f4f?w=400" },
-    { "id": 85, "name": "Tripod", "price": 4500, "oldPrice": 5000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1606986628253-2b5c0c0c0c0c?w=400" },
-    { "id": 86, "name": "Face Trimmer (3pcs)", "price": 900, "oldPrice": 1000, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400" },
-    { "id": 87, "name": "Thank You Cards (50pcs)", "price": 3000, "oldPrice": 3500, "cat": "accessories", "stock": true, "img": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=400" },
-    { "id": 90, "name": "Rhode Lip Tints (Wholesale)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "Minimum 10pcs per order", "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400" },
-    { "id": 91, "name": "Tattoo Stickers Wholesale (50pcs)", "price": 15000, "oldPrice": 0, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "50pcs pack — wholesale only", "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400" },
-    { "id": 92, "name": "Rhode Lip Tints Peptides (Wholesale)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "Minimum 10pcs per order", "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400" },
-    { "id": 93, "name": "Clip On Braces Wholesale (10pcs)", "price": 6500, "oldPrice": 8000, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum", "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400" },
-    { "id": 94, "name": "Press On Nails Wholesale (10pcs)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum", "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400" },
-    { "id": 95, "name": "Fashion Glass Wholesale (10pcs)", "price": 2000, "oldPrice": 2500, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum", "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400" },
-    { "id": 96, "name": "Phone Cases Wholesale (10pcs)", "price": 1500, "oldPrice": 2000, "cat": "bundles", "stock": true, "wholesale": true, "wholesaleNote": "10pcs minimum", "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400" }
+    {
+      "id": 1,
+      "name": "Rhode Lip Tint",
+      "price": 2500,
+      "oldPrice": 3000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400"
+    },
+    {
+      "oldPrice": 8000,
+      "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
+      "price": 2500,
+      "name": "Rhode Lip Tint Peptides",
+      "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each",
+      "stock": true,
+      "cat": "beauty",
+      "id": 2,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 8000,
+      "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
+      "price": 2500,
+      "name": "Rhode Pbj Lip Tint",
+      "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each",
+      "stock": true,
+      "cat": "beauty",
+      "id": 3,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 8000,
+      "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400",
+      "price": 2500,
+      "name": "Rhode Ribbon Lip Tint",
+      "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each",
+      "stock": true,
+      "cat": "beauty",
+      "id": 4,
+      "wholesale": true
+    },
+    {
+      "id": 5,
+      "name": "Gissou Lip Oil",
+      "price": 5000,
+      "oldPrice": 8000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1599733589046-833caccbb1e0?w=400"
+    },
+    {
+      "id": 6,
+      "name": "Lipstick",
+      "price": 4000,
+      "oldPrice": 3000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "/images/products/img_2386.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Black Lip Liner",
+      "price": 1500,
+      "oldPrice": 2000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400"
+    },
+    {
+      "id": 8,
+      "name": "Peel Off Lip Liner",
+      "price": 3000,
+      "oldPrice": 9000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400"
+    },
+    {
+      "id": 9,
+      "name": "Lip Liners (Assorted)",
+      "price": 1500,
+      "oldPrice": 3000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400"
+    },
+    {
+      "id": 10,
+      "name": "Whitening Strips",
+      "price": 8500,
+      "oldPrice": 10000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400"
+    },
+    {
+      "id": 11,
+      "name": "Cluster DIY Lashes",
+      "price": 8500,
+      "oldPrice": 14000,
+      "cat": "beauty",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1583241800698-9c2e0e1e4e1e?w=400"
+    },
+    {
+      "id": 20,
+      "name": "Press On Nails (White Tip)",
+      "price": 2500,
+      "oldPrice": 3000,
+      "cat": "nails",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400"
+    },
+    {
+      "id": 21,
+      "name": "Press On Nails (Pink Bow)",
+      "price": 3000,
+      "oldPrice": 3500,
+      "cat": "nails",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=400"
+    },
+    {
+      "id": 22,
+      "name": "Black Press On Nails",
+      "price": 2500,
+      "oldPrice": 3000,
+      "cat": "nails",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400"
+    },
+    {
+      "id": 23,
+      "name": "Press On Nails (Glitter)",
+      "price": 3000,
+      "oldPrice": 3500,
+      "cat": "nails",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=400"
+    },
+    {
+      "id": 24,
+      "name": "Press On Nails (Classic Pink)",
+      "price": 2800,
+      "oldPrice": 3000,
+      "cat": "nails",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400"
+    },
+    {
+      "id": 30,
+      "name": "MagSafe Case",
+      "price": 2000,
+      "oldPrice": 5000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400"
+    },
+    {
+      "id": 31,
+      "name": "Silicone Cases (iPhone)",
+      "price": 2000,
+      "oldPrice": 3500,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400"
+    },
+    {
+      "id": 32,
+      "name": "Fire Flame Case",
+      "price": 5000,
+      "oldPrice": 10000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400"
+    },
+    {
+      "id": 33,
+      "name": "Hollow Fire Flame Case",
+      "price": 5000,
+      "oldPrice": 10000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400"
+    },
+    {
+      "id": 34,
+      "name": "MagSafe Lip Case",
+      "price": 10000,
+      "oldPrice": 17000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400"
+    },
+    {
+      "id": 35,
+      "name": "Dollar Case",
+      "price": 3000,
+      "oldPrice": 5000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400"
+    },
+    {
+      "id": 36,
+      "name": "Phone Suctions",
+      "price": 800,
+      "oldPrice": 1000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400"
+    },
+    {
+      "id": 37,
+      "name": "Rhode Case Regular Box",
+      "price": 8500,
+      "oldPrice": 10000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400"
+    },
+    {
+      "id": 38,
+      "name": "Rhode Case (Full Set)",
+      "price": 8500,
+      "oldPrice": 32000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400"
+    },
+    {
+      "id": 39,
+      "name": "Rhode Fully Packaged Case",
+      "price": 16500,
+      "oldPrice": 60000,
+      "cat": "cases",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400"
+    },
+    {
+      "id": 50,
+      "name": "Gucci Glass",
+      "price": 2500,
+      "oldPrice": 3500,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400"
+    },
+    {
+      "id": 51,
+      "name": "LV Glass",
+      "price": 5500,
+      "oldPrice": 6000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400"
+    },
+    {
+      "id": 52,
+      "name": "Prada Glass",
+      "price": 5600,
+      "oldPrice": 10000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400"
+    },
+    {
+      "id": 53,
+      "name": "Y2K Glass",
+      "price": 5600,
+      "oldPrice": 10000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400"
+    },
+    {
+      "id": 54,
+      "name": "Large Cat Eye",
+      "price": 3500,
+      "oldPrice": 6000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400"
+    },
+    {
+      "id": 55,
+      "name": "Small Cat Eye",
+      "price": 2000,
+      "oldPrice": 2500,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400"
+    },
+    {
+      "id": 56,
+      "name": "Thick Influencer Glass",
+      "price": 4500,
+      "oldPrice": 5000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400"
+    },
+    {
+      "id": 57,
+      "name": "Clear Fashion Glass",
+      "price": 4500,
+      "oldPrice": 5000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400"
+    },
+    {
+      "id": 58,
+      "name": "Fashion Glass (Assorted)",
+      "price": 2500,
+      "oldPrice": 3000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400"
+    },
+    {
+      "id": 59,
+      "name": "Black Fashion Glass",
+      "price": 2500,
+      "oldPrice": 3000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400"
+    },
+    {
+      "id": 60,
+      "name": "Clear White Anti Blue Light Glass",
+      "price": 3500,
+      "oldPrice": 5000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400"
+    },
+    {
+      "id": 61,
+      "name": "Blue Light Myopia Glass",
+      "price": 4000,
+      "oldPrice": 5000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400"
+    },
+    {
+      "id": 62,
+      "name": "Visor Cap Sun Protection",
+      "price": 3000,
+      "oldPrice": 4000,
+      "cat": "eyewear",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400"
+    },
+    {
+      "id": 70,
+      "name": "Bag Charm (Cherry)",
+      "price": 2000,
+      "oldPrice": 2500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=400"
+    },
+    {
+      "id": 71,
+      "name": "Chic Bah",
+      "price": 5000,
+      "oldPrice": 5500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+    },
+    {
+      "id": 72,
+      "name": "Van Cleef Necklace Set",
+      "price": 8500,
+      "oldPrice": 10000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400"
+    },
+    {
+      "id": 73,
+      "name": "Clip On Fashion Braces",
+      "price": 8000,
+      "oldPrice": 15000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400"
+    },
+    {
+      "id": 74,
+      "name": "Power Chain Clip On Braces",
+      "price": 8000,
+      "oldPrice": 15000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400"
+    },
+    {
+      "id": 75,
+      "name": "Van Cleef Braces",
+      "price": 3000,
+      "oldPrice": 3500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400"
+    },
+    {
+      "id": 76,
+      "name": "Normal Clip On Braces",
+      "price": 8000,
+      "oldPrice": 10000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400"
+    },
+    {
+      "id": 77,
+      "name": "Fixing Braces Semi Permanent",
+      "price": 16000,
+      "oldPrice": 25000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400"
+    },
+    {
+      "id": 78,
+      "name": "Tattoo Sticker (50pcs)",
+      "price": 500,
+      "oldPrice": 1500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400"
+    },
+    {
+      "id": 79,
+      "name": "Halal Tattoo Stickers (30pcs)",
+      "price": 1500,
+      "oldPrice": 2000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400"
+    },
+    {
+      "id": 80,
+      "name": "Rhode Sticker",
+      "price": 1000,
+      "oldPrice": 1500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400"
+    },
+    {
+      "id": 81,
+      "name": "Rhode Purse",
+      "price": 10000,
+      "oldPrice": 11000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400"
+    },
+    {
+      "id": 82,
+      "name": "Pause Bag",
+      "price": 18000,
+      "oldPrice": 25000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400"
+    },
+    {
+      "id": 83,
+      "name": "Mirror",
+      "price": 2000,
+      "oldPrice": 2500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1616627561950-9f746e330187?w=400"
+    },
+    {
+      "id": 84,
+      "name": "LED Light",
+      "price": 5000,
+      "oldPrice": 7500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1565636192335-2d3e0f4f4f4f?w=400"
+    },
+    {
+      "id": 85,
+      "name": "Tripod",
+      "price": 4500,
+      "oldPrice": 5000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1606986628253-2b5c0c0c0c0c?w=400"
+    },
+    {
+      "id": 86,
+      "name": "Face Trimmer (3pcs)",
+      "price": 900,
+      "oldPrice": 1000,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400"
+    },
+    {
+      "id": 87,
+      "name": "Thank You Cards (50pcs)",
+      "price": 3000,
+      "oldPrice": 3500,
+      "cat": "accessories",
+      "stock": true,
+      "img": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=400"
+    },
+    {
+      "oldPrice": 2500,
+      "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
+      "price": 2000,
+      "name": "Rhode Lip Tints (Wholesale)",
+      "wholesaleNote": "Minimum 10pcs per order",
+      "stock": true,
+      "cat": "bundles",
+      "id": 90,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 0,
+      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
+      "price": 15000,
+      "name": "Tattoo Stickers Wholesale (50pcs)",
+      "wholesaleNote": "50pcs pack — wholesale only",
+      "stock": true,
+      "cat": "bundles",
+      "id": 91,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 2500,
+      "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
+      "price": 2000,
+      "name": "Rhode Lip Tints Peptides (Wholesale)",
+      "wholesaleNote": "Minimum 10pcs per order",
+      "stock": true,
+      "cat": "bundles",
+      "id": 92,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 8000,
+      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
+      "price": 6500,
+      "name": "Clip On Braces Wholesale (10pcs)",
+      "wholesaleNote": "10pcs minimum",
+      "stock": true,
+      "cat": "bundles",
+      "id": 93,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 2500,
+      "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
+      "price": 2000,
+      "name": "Press On Nails Wholesale (10pcs)",
+      "wholesaleNote": "10pcs minimum",
+      "stock": true,
+      "cat": "bundles",
+      "id": 94,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 2500,
+      "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
+      "price": 2000,
+      "name": "Fashion Glass Wholesale (10pcs)",
+      "wholesaleNote": "10pcs minimum",
+      "stock": true,
+      "cat": "bundles",
+      "id": 95,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 2000,
+      "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
+      "price": 1500,
+      "name": "Phone Cases Wholesale (10pcs)",
+      "wholesaleNote": "10pcs minimum",
+      "stock": true,
+      "cat": "bundles",
+      "id": 96,
+      "wholesale": true
+    }
   ]
 }
