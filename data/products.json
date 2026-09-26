@@ -11,7 +11,7 @@
     },
     {
       "oldPrice": 8000,
-      "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
+      "img": "/images/products/fa79b1ab-e915-40bb-a544-42dd3ee25b9e.jpeg",
       "price": 2500,
       "name": "Rhode Lip Tint Peptides",
       "wholesaleNote": "Wholesale (10pcs+): ₦2,000 each",
@@ -550,17 +550,6 @@
       "stock": true,
       "cat": "bundles",
       "id": 92,
-      "wholesale": true
-    },
-    {
-      "oldPrice": 8000,
-      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
-      "price": 6500,
-      "name": "Clip On Braces Wholesale (10pcs)",
-      "wholesaleNote": "10pcs minimum",
-      "stock": true,
-      "cat": "bundles",
-      "id": 93,
       "wholesale": true
     },
     {
