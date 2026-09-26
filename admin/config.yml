@@ -17,13 +17,22 @@ collections:
           - label: "Products"
             name: "products"
             widget: "list"
-            # This creates a nice summary for each product in the list
-            summary: "{{fields.name}} — ₦{{fields.price}}"
+            # Summary shows retail price + wholesale indicator
+            summary: "{{fields.name}} — Retail ₦{{fields.price}}{{#if fields.wholesale}} | 📦 Wholesale ₦{{fields.wholesalePrice}}{{/if}}"
             fields:
-              - { label: "Product ID", name: "id", widget: "number" }
+              - { label: "Product ID (unique number)", name: "id", widget: "number", value_type: "int", hint: "Must be unique. Do not reuse numbers." }
               - { label: "Product Name", name: "name", widget: "string" }
-              - { label: "Price (₦)", name: "price", widget: "number" }
-              - { label: "Old Price (₦)", name: "oldPrice", widget: "number", required: false }
+
+              # ─── RETAIL PRICING ───
+              - { label: "🛒 Retail Price (₦)", name: "price", widget: "number", value_type: "int", min: 0, hint: "The normal price for buying 1 piece" }
+              - { label: "Old Price (₦) — for 'Sale' badge", name: "oldPrice", widget: "number", value_type: "int", required: false, default: 0, min: 0, hint: "Leave 0 or blank if not on sale" }
+
+              # ─── WHOLESALE PRICING ───
+              - { label: "Enable Wholesale Pricing?", name: "wholesale", widget: "boolean", default: false, hint: "Turn ON to show the wholesale tag and bulk pricing on the site" }
+              - { label: "📦 Wholesale Price per piece (₦)", name: "wholesalePrice", widget: "number", value_type: "int", required: false, default: 0, min: 0, hint: "The price per piece when buying in bulk. Leave 0 if not offering wholesale." }
+              - { label: "Minimum Order for Wholesale (pieces)", name: "minOrder", widget: "number", value_type: "int", required: false, default: 10, min: 1, hint: "Customer must buy at least this many pieces to get wholesale price" }
+
+              # ─── DETAILS ───
               - { label: "Category", name: "cat", widget: "select", options: ["beauty", "nails", "cases", "eyewear", "accessories", "bundles"] }
-              - { label: "In Stock?", name: "stock", widget: "boolean", default: true }
+              - { label: "In Stock?", name: "stock", widget: "boolean", default: true, hint: "Turn OFF to show as Sold Out" }
               - { label: "Product Image", name: "img", widget: "image" }
