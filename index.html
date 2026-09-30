@@ -8,12 +8,12 @@
 <link rel="icon" type="image/jpeg" href="images/logo.png..JPG">
 <style>
 :root {
-  --pink: #F06292;
+  --pink: #EC6A9C;
   --pink-light: #F8BBD0;
   --pink-pale: #FCE4EC;
-  --pink-dark: #C2185B;
-  --pink-deep: #AD1457;
-  --pink-gradient: linear-gradient(135deg, #F06292 0%, #EC407A 100%);
+  --pink-dark: #D81B60;
+  --pink-deep: #C2185B;
+  --pink-gradient: linear-gradient(135deg, #EC6A9C 0%, #F06292 100%);
   --white: #FFFFFF;
   --off-white: #FFF5F8;
   --gray-100: #F8F9FA;
@@ -23,9 +23,9 @@
   --text-body: #666666;
   --text-light: #999999;
   --green: #25D366;
-  --shadow-sm: 0 1px 3px rgba(240,98,146,0.08);
-  --shadow-md: 0 8px 24px rgba(240,98,146,0.10);
-  --shadow-lg: 0 20px 40px rgba(240,98,146,0.15);
+  --shadow-sm: 0 1px 3px rgba(236,106,156,0.08);
+  --shadow-md: 0 8px 24px rgba(236,106,156,0.10);
+  --shadow-lg: 0 20px 40px rgba(236,106,156,0.15);
   --radius: 12px;
   --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Arial, sans-serif;
 }
@@ -38,10 +38,10 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 1.25rem; }
 
 /* HEADER */
-.header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--pink-pale); box-shadow: 0 2px 12px rgba(240,98,146,0.06); }
+.header { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--pink-pale); box-shadow: 0 2px 12px rgba(236,106,156,0.06); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 0.75rem 0; gap: 1rem; }
 .brand { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
-.brand-logo { width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; background: var(--pink-pale); box-shadow: 0 4px 12px rgba(240,98,146,0.25); }
+.brand-logo { width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; background: var(--pink-pale); box-shadow: 0 4px 12px rgba(236,106,156,0.25); }
 .brand-logo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .brand-logo-fallback { width: 100%; height: 100%; background: var(--pink-gradient); color: white; font-weight: 800; font-size: 1rem; display: flex; align-items: center; justify-content: center; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
@@ -57,13 +57,13 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .hero { background: linear-gradient(135deg, #FFF5F8 0%, #FCE4EC 100%); padding: 2rem 0 2.5rem; position: relative; overflow: hidden; }
 .hero::before { content: ''; position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; border-radius: 50%; background: var(--pink-light); opacity: 0.4; }
 .hero-content { position: relative; z-index: 1; max-width: 600px; }
-.hero-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--white); color: var(--pink-deep); padding: 0.4rem 0.9rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; margin-bottom: 1rem; box-shadow: var(--shadow-sm); }
+.hero-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--white); color: var(--pink-dark); padding: 0.4rem 0.9rem; border-radius: 50px; font-size: 0.72rem; font-weight: 700; margin-bottom: 1rem; box-shadow: var(--shadow-sm); }
 .hero-title { font-size: clamp(1.75rem, 4.5vw, 2.5rem); font-weight: 800; color: var(--text-heading); line-height: 1.15; margin-bottom: 0.75rem; }
-.hero-title .accent { color: var(--pink-deep); }
+.hero-title .accent { color: var(--pink-dark); }
 .hero-subtitle { font-size: 0.95rem; color: var(--text-body); margin-bottom: 1.25rem; line-height: 1.6; }
 .hero-stats { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.5rem; }
 .hero-stat { display: flex; flex-direction: column; }
-.hero-stat-num { font-size: 1.4rem; font-weight: 800; color: var(--pink-deep); line-height: 1; }
+.hero-stat-num { font-size: 1.4rem; font-weight: 800; color: var(--pink-dark); line-height: 1; }
 .hero-stat-label { font-size: 0.72rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; margin-top: 0.25rem; }
 
 /* SEARCH */
@@ -72,13 +72,13 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .search-bar:focus-within { border-color: var(--pink); background: white; }
 .search-bar svg { width: 18px; height: 18px; color: var(--text-light); flex-shrink: 0; }
 .search-bar input { flex: 1; border: none; outline: none; background: transparent; font-size: 0.9rem; font-family: inherit; color: var(--text-heading); }
-.search-clear { background: var(--pink-pale); color: var(--pink-deep); width: 22px; height: 22px; border-radius: 50%; font-size: 0.7rem; display: none; align-items: center; justify-content: center; font-weight: 700; }
+.search-clear { background: var(--pink-pale); color: var(--pink-dark); width: 22px; height: 22px; border-radius: 50%; font-size: 0.7rem; display: none; align-items: center; justify-content: center; font-weight: 700; }
 .search-clear.show { display: flex; }
 .categories { display: flex; gap: 0.5rem; overflow-x: auto; scrollbar-width: none; padding-bottom: 0.25rem; }
 .categories::-webkit-scrollbar { display: none; }
 .cat-btn { flex-shrink: 0; padding: 0.5rem 1.1rem; border-radius: 50px; background: var(--off-white); color: var(--text-body); font-size: 0.82rem; font-weight: 600; transition: all 0.2s; white-space: nowrap; }
 .cat-btn:hover { background: var(--pink-pale); }
-.cat-btn.active { background: var(--pink-gradient); color: white; box-shadow: 0 4px 12px rgba(240,98,146,0.25); }
+.cat-btn.active { background: var(--pink-gradient); color: white; box-shadow: 0 4px 12px rgba(236,106,156,0.25); }
 
 /* PRODUCTS */
 .products-section { padding: 2rem 0 4rem; }
@@ -94,13 +94,13 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .product-image { position: relative; width: 100%; aspect-ratio: 1; background: var(--off-white); overflow: hidden; }
 .product-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
 .product-card:hover .product-image img { transform: scale(1.05); }
-.product-badge { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.25rem 0.55rem; border-radius: 50px; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background: var(--pink-gradient); color: white; box-shadow: 0 2px 8px rgba(240,98,146,0.3); }
+.product-badge { position: absolute; top: 0.5rem; left: 0.5rem; padding: 0.25rem 0.55rem; border-radius: 50px; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; background: var(--pink-gradient); color: white; box-shadow: 0 2px 8px rgba(236,106,156,0.3); }
 .product-badge.sold-out-badge { background: #333; }
 .product-badge.wholesale-badge { background: linear-gradient(135deg, #FF9800 0%, #FF5722 100%); }
 .product-info { padding: 0.75rem 0.85rem 0.9rem; display: flex; flex-direction: column; flex: 1; }
 .product-name { font-size: 0.85rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.3rem; line-height: 1.3; min-height: 2.2em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .product-price-row { display: flex; align-items: baseline; gap: 0.4rem; margin-bottom: 0.6rem; flex-wrap: wrap; }
-.product-price { font-size: 1rem; font-weight: 800; color: var(--pink-deep); }
+.product-price { font-size: 1rem; font-weight: 800; color: var(--pink-dark); }
 .product-old-price { font-size: 0.78rem; color: var(--text-light); text-decoration: line-through; }
 .product-wholesale-note { font-size: 0.7rem; color: #FF5722; font-weight: 700; margin-top: 0.2rem; }
 .retail-tag { background: #FCE4EC; color: var(--pink-deep); font-size: 0.6rem; font-weight: 800; padding: 0.15rem 0.45rem; border-radius: 3px; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid #F8BBD0; }
@@ -109,7 +109,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .wholesale-price-tag { background: #FFF8E1; color: #E65100; font-size: 0.7rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #FFE082; }
 .wholesale-min { background: #FCE4EC; color: var(--pink-deep); font-size: 0.68rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #F8BBD0; }
 .product-add { margin-top: auto; background: var(--pink-gradient); color: white; padding: 0.55rem 0.75rem; border-radius: 8px; font-size: 0.78rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 0.35rem; transition: all 0.2s; width: 100%; }
-.product-add:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(240,98,146,0.3); }
+.product-add:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(236,106,156,0.3); }
 .product-add svg { width: 14px; height: 14px; }
 .product-add.added { background: var(--green); }
 .no-results { text-align: center; padding: 3rem 1rem; color: var(--text-light); display: none; }
@@ -132,7 +132,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .info-section { padding: 2.5rem 0; background: var(--off-white); border-top: 1px solid var(--pink-pale); }
 .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 .info-card { background: white; padding: 1.25rem; border-radius: var(--radius); border: 1px solid var(--pink-pale); text-align: center; }
-.info-icon { width: 44px; height: 44px; background: var(--pink-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; color: var(--pink-deep); }
+.info-icon { width: 44px; height: 44px; background: var(--pink-pale); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; color: var(--pink-dark); }
 .info-icon svg { width: 22px; height: 22px; }
 .info-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.4rem; }
 .info-card p { font-size: 0.82rem; color: var(--text-body); line-height: 1.5; }
@@ -144,7 +144,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .cart-drawer.open { transform: translateX(0); }
 .cart-header { padding: 1rem 1.25rem; border-bottom: 1px solid var(--pink-pale); display: flex; align-items: center; justify-content: space-between; background: var(--off-white); }
 .cart-header h2 { font-size: 1.1rem; font-weight: 800; color: var(--text-heading); }
-.cart-header h2 span { color: var(--pink-deep); }
+.cart-header h2 span { color: var(--pink-dark); }
 .cart-close { width: 36px; height: 36px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; color: var(--text-heading); transition: background 0.2s; }
 .cart-close:hover { background: var(--pink-pale); }
 .cart-close svg { width: 18px; height: 18px; }
@@ -159,36 +159,36 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .cart-item-img img { width: 100%; height: 100%; object-fit: cover; }
 .cart-item-info { flex: 1; min-width: 0; }
 .cart-item-name { font-size: 0.85rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.cart-item-price { font-size: 0.85rem; font-weight: 700; color: var(--pink-deep); margin-bottom: 0.4rem; }
-.cart-item-price strong { color: var(--pink-deep); font-weight: 800; }
+.cart-item-price { font-size: 0.85rem; font-weight: 700; color: var(--pink-dark); margin-bottom: 0.4rem; }
+.cart-item-price strong { color: var(--pink-dark); font-weight: 800; }
 .cart-item-controls { display: flex; align-items: center; gap: 0.5rem; }
-.qty-btn { width: 26px; height: 26px; border-radius: 50%; background: var(--pink-pale); color: var(--pink-deep); font-size: 0.9rem; font-weight: 700; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+.qty-btn { width: 26px; height: 26px; border-radius: 50%; background: var(--pink-pale); color: var(--pink-dark); font-size: 0.9rem; font-weight: 700; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
 .qty-btn:hover { background: var(--pink-light); }
 .qty-num { font-size: 0.85rem; font-weight: 700; min-width: 20px; text-align: center; color: var(--text-heading); }
 .cart-item-remove { margin-left: auto; background: transparent; color: var(--text-light); font-size: 0.7rem; padding: 0.2rem; transition: color 0.2s; }
-.cart-item-remove:hover { color: var(--pink-deep); }
+.cart-item-remove:hover { color: var(--pink-dark); }
 .cart-wholesale-badge { display: inline-block; background: #E8F5E9; color: #2E7D32; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; margin-bottom: 0.4rem; border: 1px solid #A5D6A7; }
 .cart-wholesale-hint { display: inline-block; background: #FFF8E1; color: #E65100; font-size: 0.68rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; margin-bottom: 0.4rem; border: 1px solid #FFE082; }
 
 .cart-footer { padding: 1rem 1.25rem 1.25rem; border-top: 1px solid var(--pink-pale); background: var(--off-white); }
 .cart-total-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; font-size: 0.85rem; }
-.cart-total-row.delivery { color: var(--pink-deep); font-weight: 700; }
+.cart-total-row.delivery { color: var(--pink-dark); font-weight: 700; }
 .cart-total-row.final { border-top: 1px dashed var(--pink-light); padding-top: 0.75rem; margin-top: 0.5rem; }
 .cart-total-label { font-size: 0.85rem; color: var(--text-body); font-weight: 600; }
-.cart-total-value { font-size: 1.4rem; font-weight: 800; color: var(--pink-deep); }
+.cart-total-value { font-size: 1.4rem; font-weight: 800; color: var(--pink-dark); }
 .cart-total-value.small { font-size: 1rem; }
 .cart-checkout-btn { width: 100%; background: var(--green); color: white; padding: 0.9rem; border-radius: 10px; font-size: 0.95rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.2s; box-shadow: 0 4px 16px rgba(37,211,102,0.3); margin-top: 1rem; }
 .cart-checkout-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,0.4); }
 .cart-checkout-btn svg { width: 20px; height: 20px; }
 
 /* FLOATING CART */
-.floating-cart { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(120px); z-index: 90; background: var(--pink-gradient); color: white; padding: 0.8rem 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 0.9rem; box-shadow: 0 8px 30px rgba(240,98,146,0.4); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); max-width: calc(100% - 40px); }
+.floating-cart { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(120px); z-index: 90; background: var(--pink-gradient); color: white; padding: 0.8rem 1.5rem; border-radius: 50px; display: flex; align-items: center; gap: 0.6rem; font-weight: 700; font-size: 0.9rem; box-shadow: 0 8px 30px rgba(236,106,156,0.4); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); max-width: calc(100% - 40px); }
 .floating-cart.show { transform: translateX(-50%) translateY(0); }
 .floating-cart:hover { transform: translateX(-50%) translateY(-3px); }
 .floating-cart svg { width: 20px; height: 20px; }
 
 /* FOOTER */
-.footer { background: linear-gradient(135deg, var(--pink-deep) 0%, #7B1140 100%); color: rgba(255,255,255,0.85); padding: 3rem 0 1.5rem; }
+.footer { background: linear-gradient(135deg, var(--pink-dark) 0%, #AD1457 100%); color: rgba(255,255,255,0.85); padding: 3rem 0 1.5rem; }
 .footer-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.15); }
 @media (min-width: 640px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; } }
 .footer-brand h3 { color: white; font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 800; }
@@ -227,18 +227,18 @@ button { cursor: pointer; border: none; font-family: inherit; }
 
 /* PAYMENT BOX */
 .payment-box { background: var(--off-white); border: 2px dashed var(--pink-light); border-radius: 12px; padding: 1rem; margin-bottom: 1rem; }
-.payment-box h4 { font-size: 0.9rem; font-weight: 800; color: var(--pink-deep); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem; }
+.payment-box h4 { font-size: 0.9rem; font-weight: 800; color: var(--pink-dark); margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.4rem; }
 .payment-box h4 svg { width: 16px; height: 16px; }
 .bank-detail { background: white; padding: 0.7rem 0.9rem; border-radius: 8px; margin-bottom: 0.5rem; font-size: 0.85rem; display: flex; justify-content: space-between; align-items: center; border: 1px solid var(--pink-pale); gap: 0.5rem; }
 .bank-detail-label { color: var(--text-light); font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; flex-shrink: 0; }
 .bank-detail-value { color: var(--text-heading); font-weight: 800; font-family: 'Courier New', monospace; font-size: 0.85rem; flex: 1; text-align: right; word-break: break-all; }
-.copy-btn { background: var(--pink-pale); color: var(--pink-deep); padding: 0.35rem 0.6rem; border-radius: 6px; font-size: 0.7rem; font-weight: 700; transition: all 0.2s; flex-shrink: 0; }
+.copy-btn { background: var(--pink-pale); color: var(--pink-dark); padding: 0.35rem 0.6rem; border-radius: 6px; font-size: 0.7rem; font-weight: 700; transition: all 0.2s; flex-shrink: 0; }
 .copy-btn:hover { background: var(--pink-light); }
 .copy-btn.copied { background: var(--green); color: white; }
 
 .payment-amount-box { background: linear-gradient(135deg, #FFF5F8 0%, #FCE4EC 100%); border: 2px solid var(--pink); border-radius: 10px; padding: 1rem; margin: 1rem 0; text-align: center; }
 .payment-amount-label { font-size: 0.78rem; color: var(--text-body); font-weight: 600; margin-bottom: 0.3rem; }
-.payment-amount-value { font-size: 1.6rem; font-weight: 900; color: var(--pink-deep); letter-spacing: -0.02em; }
+.payment-amount-value { font-size: 1.6rem; font-weight: 900; color: var(--pink-dark); letter-spacing: -0.02em; }
 .payment-amount-note { font-size: 0.72rem; color: var(--text-light); margin-top: 0.35rem; }
 
 .payment-warning { background: #FFF8E1; border-left: 4px solid #FF9800; padding: 0.75rem 0.9rem; border-radius: 8px; margin-top: 0.75rem; font-size: 0.78rem; color: #663C00; line-height: 1.5; }
@@ -432,50 +432,58 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
       <label for="deliveryZone">Delivery Location *</label>
       <select id="deliveryZone" onchange="updateDeliveryFee()">
         <option value="">Select your delivery zone</option>
-        <optgroup label="Kaduna State">
-          <option value="Kaduna South">Kaduna South (Inside Kaduna)</option>
-          <option value="Kaduna North">Kaduna North (Inside Kaduna)</option>
+        <optgroup label="Kaduna State (Same Day)">
+          <option value="Kaduna South">Kaduna South</option>
+          <option value="Kaduna North">Kaduna North</option>
           <option value="Kaduna Other">Other Kaduna Areas</option>
         </optgroup>
-        <optgroup label="Northern States">
+        <optgroup label="North West">
           <option value="Kano">Kano</option>
           <option value="Katsina">Katsina</option>
-          <option value="Abuja">Abuja (FCT)</option>
+          <option value="Jigawa">Jigawa</option>
+          <option value="Kebbi">Kebbi</option>
+          <option value="Sokoto">Sokoto</option>
+          <option value="Zamfara">Zamfara</option>
         </optgroup>
-        <optgroup label="Southern States">
-          <option value="Lagos">Lagos</option>
-          <option value="Ogun">Ogun</option>
-          <option value="Oyo">Oyo</option>
-          <option value="Osun">Osun</option>
-          <option value="Ondo">Ondo</option>
-          <option value="Ekiti">Ekiti</option>
-          <option value="Edo">Edo</option>
-          <option value="Delta">Delta</option>
-          <option value="Rivers">Rivers</option>
-          <option value="Bayelsa">Bayelsa</option>
-          <option value="Akwa Ibom">Akwa Ibom</option>
-          <option value="Cross River">Cross River</option>
-          <option value="Abia">Abia</option>
-          <option value="Imo">Imo</option>
-          <option value="Anambra">Anambra</option>
-          <option value="Enugu">Enugu</option>
-          <option value="Ebonyi">Ebonyi</option>
+        <optgroup label="North East">
+          <option value="Borno (Maiduguri)">Borno (Maiduguri)</option>
+          <option value="Yobe">Yobe</option>
+          <option value="Bauchi">Bauchi</option>
+          <option value="Gombe">Gombe</option>
+          <option value="Adamawa">Adamawa</option>
+          <option value="Taraba">Taraba</option>
+        </optgroup>
+        <optgroup label="North Central">
+          <option value="Abuja (FCT)">Abuja (FCT)</option>
           <option value="Benue">Benue</option>
           <option value="Kogi">Kogi</option>
           <option value="Kwara">Kwara</option>
           <option value="Nasarawa">Nasarawa</option>
           <option value="Niger">Niger</option>
           <option value="Plateau">Plateau</option>
-          <option value="Taraba">Taraba</option>
-          <option value="Adamawa">Adamawa</option>
-          <option value="Borno">Borno</option>
-          <option value="Yobe">Yobe</option>
-          <option value="Bauchi">Bauchi</option>
-          <option value="Gombe">Gombe</option>
-          <option value="Jigawa">Jigawa</option>
-          <option value="Kebbi">Kebbi</option>
-          <option value="Sokoto">Sokoto</option>
-          <option value="Zamfara">Zamfara</option>
+        </optgroup>
+        <optgroup label="South West">
+          <option value="Lagos">Lagos</option>
+          <option value="Ogun">Ogun</option>
+          <option value="Oyo">Oyo</option>
+          <option value="Osun">Osun</option>
+          <option value="Ondo">Ondo</option>
+          <option value="Ekiti">Ekiti</option>
+        </optgroup>
+        <optgroup label="South East">
+          <option value="Abia">Abia</option>
+          <option value="Imo">Imo</option>
+          <option value="Anambra">Anambra</option>
+          <option value="Enugu">Enugu</option>
+          <option value="Ebonyi">Ebonyi</option>
+        </optgroup>
+        <optgroup label="South South">
+          <option value="Edo">Edo</option>
+          <option value="Delta">Delta</option>
+          <option value="Rivers">Rivers</option>
+          <option value="Bayelsa">Bayelsa</option>
+          <option value="Akwa Ibom">Akwa Ibom</option>
+          <option value="Cross River">Cross River</option>
         </optgroup>
       </select>
     </div>
@@ -517,7 +525,7 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
         <button class="copy-btn" onclick="copyText('accountNameText', this)">Copy</button>
       </div>
       <div class="payment-warning">
-        ⚠️ <strong>IMPORTANT:</strong> Your order will NOT be processed until payment is confirmed by admin. Please wait for a confirmation message on WhatsApp before expecting delivery.
+        ⚠️ <strong>IMPORTANT:</strong> Your order will NOT be processed until payment is confirmed by admin.
       </div>
     </div>
 
@@ -604,32 +612,55 @@ document.getElementById('footerWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}
 document.getElementById('floatWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 // ============================================================
-// DELIVERY FEES (Naira)
+// DELIVERY FEES — ALL 36 STATES + FCT
 // ============================================================
 const DELIVERY_FEES = {
-  // Kaduna zones
   "Kaduna South": 1500,
   "Kaduna North": 2000,
   "Kaduna Other": 2000,
-  // Northern states
   "Kano": 2000,
   "Katsina": 2000,
-  "Abuja": 2000,
-  // Southern + other states
-  "Lagos": 3000, "Ogun": 3000, "Oyo": 3000, "Osun": 3000, "Ondo": 3000, "Ekiti": 3000,
-  "Edo": 3000, "Delta": 3000, "Rivers": 3000, "Bayelsa": 3000, "Akwa Ibom": 3000,
-  "Cross River": 3000, "Abia": 3000, "Imo": 3000, "Anambra": 3000, "Enugu": 3000,
-  "Ebonyi": 3000, "Benue": 3000, "Kogi": 3000, "Kwara": 3000, "Nasarawa": 3000,
-  "Niger": 3000, "Plateau": 3000, "Taraba": 3000, "Adamawa": 3000, "Borno": 3000,
-  "Yobe": 3000, "Bauchi": 3000, "Gombe": 3000, "Jigawa": 3000, "Kebbi": 3000,
-  "Sokoto": 3000, "Zamfara": 3000
+  "Jigawa": 2500,
+  "Kebbi": 2500,
+  "Sokoto": 2500,
+  "Zamfara": 2500,
+  "Borno (Maiduguri)": 2500,
+  "Yobe": 2500,
+  "Bauchi": 2500,
+  "Gombe": 2500,
+  "Adamawa": 2500,
+  "Taraba": 2500,
+  "Abuja (FCT)": 2000,
+  "Benue": 2500,
+  "Kogi": 2500,
+  "Kwara": 2500,
+  "Nasarawa": 2500,
+  "Niger": 2500,
+  "Plateau": 2500,
+  "Lagos": 3000,
+  "Ogun": 3000,
+  "Oyo": 3000,
+  "Osun": 3000,
+  "Ondo": 3000,
+  "Ekiti": 3000,
+  "Abia": 3500,
+  "Imo": 3500,
+  "Anambra": 3500,
+  "Enugu": 3500,
+  "Ebonyi": 3500,
+  "Edo": 3500,
+  "Delta": 3500,
+  "Rivers": 3500,
+  "Bayelsa": 3500,
+  "Akwa Ibom": 3500,
+  "Cross River": 3500
 };
 
 let currentDeliveryFee = 0;
 let currentDeliveryZone = "";
 
 // ============================================================
-// PRODUCTS — LOADED FROM data/products.json
+// PRODUCTS
 // ============================================================
 let PRODUCTS = [];
 
@@ -650,25 +681,16 @@ async function loadProducts() {
   }
 }
 
-// ============================================================
-// STATE
-// ============================================================
 let cart = [];
 try { cart = JSON.parse(localStorage.getItem('ptk_cart') || '[]'); } catch(e) { cart = []; }
 let activeCategory = 'all';
 let searchQuery = '';
 
-// ============================================================
-// FORMAT PRICE
-// ============================================================
 function formatPrice(n) {
   if (typeof n !== 'number' || isNaN(n)) return '₦0';
   return '₦' + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
-// ============================================================
-// PRICING LOGIC (Wholesale vs Retail)
-// ============================================================
 function getItemPrice(product, qty) {
   if (!product) return 0;
   const hasWholesale = product.wholesalePrice && product.wholesalePrice > 0;
@@ -684,9 +706,6 @@ function isWholesaleApplied(product, qty) {
   return hasWholesale && qty >= minQty;
 }
 
-// ============================================================
-// DELIVERY FEE
-// ============================================================
 function updateDeliveryFee() {
   const zone = document.getElementById('deliveryZone').value;
   const estimate = document.getElementById('deliveryEstimate');
@@ -723,9 +742,6 @@ function getCartCount() {
   return cart.reduce((sum, item) => sum + item.qty, 0);
 }
 
-// ============================================================
-// RENDER PRODUCTS
-// ============================================================
 function renderProducts() {
   const grid = document.getElementById('productsGrid');
   const noResults = document.getElementById('noResults');
@@ -784,9 +800,6 @@ function renderProducts() {
   }).join('');
 }
 
-// ============================================================
-// CATEGORY & SEARCH
-// ============================================================
 document.getElementById('categories').addEventListener('click', (e) => {
   if (e.target.classList.contains('cat-btn')) {
     document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
@@ -809,9 +822,6 @@ document.getElementById('searchClear').addEventListener('click', () => {
   renderProducts();
 });
 
-// ============================================================
-// CART OPERATIONS
-// ============================================================
 function addToCart(id) {
   const product = PRODUCTS.find(p => p.id === id);
   if (!product || !product.stock) return;
@@ -845,9 +855,6 @@ function saveCart() {
   try { localStorage.setItem('ptk_cart', JSON.stringify(cart)); } catch(e) {}
 }
 
-// ============================================================
-// UPDATE CART UI
-// ============================================================
 function updateCartUI() {
   const count = getCartCount();
   const subtotal = getCartSubtotal();
@@ -929,9 +936,6 @@ function updateCartUI() {
   }).join('');
 }
 
-// ============================================================
-// UPDATE MODAL TOTAL
-// ============================================================
 function updateModalTotal() {
   const subtotal = getCartSubtotal();
   const total = subtotal + currentDeliveryFee;
@@ -946,9 +950,6 @@ function updateModalTotal() {
   }
 }
 
-// ============================================================
-// CART DRAWER
-// ============================================================
 function openCart() {
   document.getElementById('cartDrawer').classList.add('open');
   document.getElementById('cartOverlay').classList.add('open');
@@ -961,9 +962,6 @@ function closeCart() {
   document.body.style.overflow = '';
 }
 
-// ============================================================
-// ORDER MODAL
-// ============================================================
 function openOrderModal() {
   if (cart.length === 0) return;
   updateModalTotal();
@@ -974,9 +972,6 @@ function closeOrderModal() {
   document.getElementById('orderModal').classList.remove('open');
 }
 
-// ============================================================
-// COPY TO CLIPBOARD
-// ============================================================
 function copyText(elementId, btn) {
   const text = document.getElementById(elementId).textContent;
   navigator.clipboard.writeText(text).then(() => {
@@ -996,9 +991,6 @@ function copyText(elementId, btn) {
   });
 }
 
-// ============================================================
-// SEND ORDER TO WHATSAPP
-// ============================================================
 function sendOrderToWhatsApp() {
   const name = document.getElementById('customerName').value.trim();
   const phone = document.getElementById('customerPhone').value.trim();
@@ -1006,18 +998,9 @@ function sendOrderToWhatsApp() {
   const address = document.getElementById('customerAddress').value.trim();
   const note = document.getElementById('customerNote').value.trim();
 
-  if (!name || !phone) {
-    alert('Please fill in your name and phone number.');
-    return;
-  }
-  if (!zone) {
-    alert('Please select your delivery location.');
-    return;
-  }
-  if (!address) {
-    alert('Please enter your street address.');
-    return;
-  }
+  if (!name || !phone) { alert('Please fill in your name and phone number.'); return; }
+  if (!zone) { alert('Please select your delivery location.'); return; }
+  if (!address) { alert('Please enter your street address.'); return; }
 
   const subtotal = getCartSubtotal();
   const total = subtotal + currentDeliveryFee;
@@ -1036,7 +1019,6 @@ function sendOrderToWhatsApp() {
       const unitPrice = getItemPrice(p, item.qty);
       const lineTotal = unitPrice * item.qty;
       const wholesaleActive = isWholesaleApplied(p, item.qty);
-
       msg += `${index + 1}. ${p.name}\n`;
       msg += `   Qty: ${item.qty} × ${formatPrice(unitPrice)} = *${formatPrice(lineTotal)}*`;
       if (wholesaleActive) msg += ` _[Wholesale]_`;
@@ -1063,9 +1045,6 @@ function sendOrderToWhatsApp() {
   showToast('WhatsApp opened — send order, then attach receipt');
 }
 
-// ============================================================
-// TOAST
-// ============================================================
 let toastTimer;
 function showToast(text) {
   const toast = document.getElementById('toast');
@@ -1075,9 +1054,6 @@ function showToast(text) {
   toastTimer = setTimeout(() => toast.classList.remove('show'), 2500);
 }
 
-// ============================================================
-// PREVENT DOUBLE-TAP ZOOM
-// ============================================================
 let lastTouchEnd = 0;
 document.addEventListener('touchend', function(event) {
     const now = Date.now();
@@ -1089,9 +1065,6 @@ document.addEventListener('gesturestart', function(e) {
     e.preventDefault();
 });
 
-// ============================================================
-// INIT
-// ============================================================
 loadProducts();
 
 document.getElementById('orderModal').addEventListener('click', (e) => {
