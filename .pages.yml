@@ -33,14 +33,6 @@ content:
             list: true
             required: false
             fields:
-              - { name: name, label: "Color Name", type: string }
-              - { name: hex, label: "Color HEX", type: string, required: false }
-              - { name: available, label: "Available?", type: boolean, default: true }
-          - name: sizes
-            label: "📏 Sizes / iPhone Models"
-            type: object
-            list: true
-            required: false
-            fields:
-              - { name: name, label: "Size/Model", type: string }
+              - { name: name, label: "Color Name (e.g. Pink)", type: string }
+              - { name: hex, label: "Color HEX (e.g. #F06292)", type: string, required: false }
               - { name: available, label: "Available?", type: boolean, default: true }
