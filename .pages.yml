@@ -36,7 +36,7 @@ content:
           - name: img
             label: "Product Image"
             type: image
-            required: true
+            required: false
           - name: colors
             label: "🎨 Available Colors"
             type: object
