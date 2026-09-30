@@ -10,8 +10,9 @@ content:
     fields:
       - name: products
         label: Product List
-        type: list
-        summary: "{{name}}"
+        type: object
+        list: true
+        summary: "{name}"
         fields:
           - { name: id, label: "Product ID", type: number }
           - { name: name, label: "Product Name", type: string }
@@ -28,7 +29,8 @@ content:
           - { name: img, label: "Product Image", type: image }
           - name: colors
             label: "🎨 Available Colors"
-            type: list
+            type: object
+            list: true
             required: false
             fields:
               - { name: name, label: "Color Name", type: string }
@@ -36,7 +38,8 @@ content:
               - { name: available, label: "Available?", type: boolean, default: true }
           - name: sizes
             label: "📏 Sizes / iPhone Models"
-            type: list
+            type: object
+            list: true
             required: false
             fields:
               - { name: name, label: "Size/Model", type: string }
