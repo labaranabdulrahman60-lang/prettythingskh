@@ -24,15 +24,25 @@ content:
           - name: cat
             label: "Category"
             type: select
-            options: ["beauty", "nails", "cases", "eyewear", "accessories", "bundles"]
+            options:
+              values:
+                - { label: "Beauty & Lips", value: "beauty" }
+                - { label: "Nails", value: "nails" }
+                - { label: "Phone Cases", value: "cases" }
+                - { label: "Eyewear", value: "eyewear" }
+                - { label: "Accessories", value: "accessories" }
+                - { label: "Wholesale", value: "bundles" }
           - { name: stock, label: "In Stock?", type: boolean, default: true }
-          - { name: img, label: "Product Image", type: image }
+          - name: img
+            label: "Product Image"
+            type: image
+            required: true
           - name: colors
             label: "🎨 Available Colors"
             type: object
             list: true
             required: false
             fields:
-              - { name: name, label: "Color Name (e.g. Pink)", type: string }
+              - { name: name, label: "Color Name", type: string }
               - { name: hex, label: "Color HEX (e.g. #F06292)", type: string, required: false }
               - { name: available, label: "Available?", type: boolean, default: true }
