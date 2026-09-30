@@ -1,1 +1,49 @@
+media:
+  input: images/products
+  output: /images/products
 
+content:
+  - name: products
+    label: 🛍️ Products
+    type: file
+    path: data/products.json
+    fields:
+      - name: products
+        label: Product List
+        type: list
+        summary: "{{fields.name}} — ₦{{fields.price}}"
+        fields:
+          - { name: id, label: "Product ID (unique number)", type: number, required: true }
+          - { name: name, label: "Product Name", type: string, required: true }
+          - { name: price, label: "🛒 Retail Price (₦)", type: number, required: true }
+          - { name: oldPrice, label: "Old Price (₦) — for Sale badge", type: number, required: false }
+          - { name: wholesale, label: "Enable Wholesale Pricing?", type: boolean, default: false }
+          - { name: wholesalePrice, label: "📦 Wholesale Price per piece (₦)", type: number, required: false, default: 0 }
+          - { name: minOrder, label: "Minimum Order for Wholesale (pcs)", type: number, required: false, default: 10 }
+          - name: cat
+            label: "Category"
+            type: select
+            options:
+              - { label: "Beauty & Lips", value: "beauty" }
+              - { label: "Nails", value: "nails" }
+              - { label: "Phone Cases", value: "cases" }
+              - { label: "Eyewear", value: "eyewear" }
+              - { label: "Accessories", value: "accessories" }
+              - { label: "Wholesale", value: "bundles" }
+          - { name: stock, label: "In Stock?", type: boolean, default: true }
+          - { name: img, label: "Product Image", type: image, required: true }
+          - name: colors
+            label: "🎨 Available Colors (leave empty if not applicable)"
+            type: list
+            required: false
+            fields:
+              - { name: name, label: "Color Name (e.g. Pink)", type: string }
+              - { name: hex, label: "Color HEX (e.g. #F06292)", type: string, required: false }
+              - { name: available, label: "Available?", type: boolean, default: true }
+          - name: sizes
+            label: "📏 Sizes / iPhone Models (leave empty if not applicable)"
+            type: list
+            required: false
+            fields:
+              - { name: name, label: "Size/Model (e.g. iPhone 15, Medium)", type: string }
+              - { name: available, label: "Available?", type: boolean, default: true }
