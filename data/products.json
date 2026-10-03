@@ -6,10 +6,10 @@
       "cat": "beauty", "stock": true,
       "img": "/images/products/fa79b1ab-e915-40bb-a544-42dd3ee25b9e.jpeg",
       "colors": [
-        { "name": "Raspberry Jelly", "hex": "#C2185B", "available": true },
-        { "name": "Ribbon", "hex": "#F06292", "available": true },
-        { "name": "Toast", "hex": "#A1887F", "available": true },
-        { "name": "Espresso", "hex": "#4E342E", "available": true }
+        { "name": "Raspberry", "available": true },
+        { "name": "Rose", "available": true },
+        { "name": "Toast", "available": true },
+        { "name": "Espresso", "available": true }
       ]
     },
     {
@@ -18,8 +18,8 @@
       "cat": "beauty", "stock": true,
       "img": "/images/products/fa79b1ab-e915-40bb-a544-42dd3ee25b9e.jpeg",
       "colors": [
-        { "name": "Ribbon", "hex": "#F06292", "available": true },
-        { "name": "Toast", "hex": "#A1887F", "available": true }
+        { "name": "Rose", "available": true },
+        { "name": "Toast", "available": true }
       ]
     },
     {
@@ -28,8 +28,8 @@
       "cat": "beauty", "stock": true,
       "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
       "colors": [
-        { "name": "Peanut Butter", "hex": "#A1887F", "available": true },
-        { "name": "Jelly", "hex": "#C2185B", "available": true }
+        { "name": "Brown", "available": true },
+        { "name": "Raspberry", "available": true }
       ]
     },
     {
@@ -38,7 +38,7 @@
       "cat": "beauty", "stock": true,
       "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400",
       "colors": [
-        { "name": "Ribbon Pink", "hex": "#F06292", "available": true }
+        { "name": "Rose", "available": true }
       ]
     },
     {
@@ -47,8 +47,8 @@
       "cat": "beauty", "stock": true,
       "img": "https://images.unsplash.com/photo-1599733589046-833caccbb1e0?w=400",
       "colors": [
-        { "name": "Pink", "hex": "#F8BBD0", "available": true },
-        { "name": "Clear", "hex": "#FFFFFF", "available": true }
+        { "name": "Pink", "available": true },
+        { "name": "Clear", "available": true }
       ]
     },
     {
@@ -64,8 +64,8 @@
       "cat": "beauty", "stock": true,
       "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
       "colors": [
-        { "name": "Black", "hex": "#000000", "available": true },
-        { "name": "Brown", "hex": "#5D4037", "available": true }
+        { "name": "Black", "available": true },
+        { "name": "Brown", "available": true }
       ]
     },
     {
@@ -74,8 +74,8 @@
       "cat": "beauty", "stock": true,
       "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
       "colors": [
-        { "name": "Pink", "hex": "#F06292", "available": true },
-        { "name": "Red", "hex": "#C2185B", "available": true }
+        { "name": "Pink", "available": true },
+        { "name": "Red", "available": true }
       ]
     },
     {
@@ -140,9 +140,9 @@
       "cat": "cases", "stock": true,
       "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
       "colors": [
-        { "name": "Clear", "hex": "#FFFFFF", "available": true },
-        { "name": "Black", "hex": "#000000", "available": true },
-        { "name": "Pink", "hex": "#F06292", "available": true }
+        { "name": "Clear", "available": true },
+        { "name": "Black", "available": true },
+        { "name": "Pink", "available": true }
       ]
     },
     {
@@ -151,9 +151,9 @@
       "cat": "cases", "stock": true,
       "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400",
       "colors": [
-        { "name": "Pink", "hex": "#F8BBD0", "available": true },
-        { "name": "White", "hex": "#FFFFFF", "available": true },
-        { "name": "Black", "hex": "#000000", "available": true }
+        { "name": "Pink", "available": true },
+        { "name": "White", "available": true },
+        { "name": "Black", "available": true }
       ]
     },
     {
@@ -162,8 +162,8 @@
       "cat": "cases", "stock": true,
       "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
       "colors": [
-        { "name": "Black/Orange", "hex": "#FF5722", "available": true },
-        { "name": "Silver", "hex": "#B0BEC5", "available": true }
+        { "name": "Orange", "available": true },
+        { "name": "Silver", "available": true }
       ]
     },
     {
@@ -172,9 +172,9 @@
       "cat": "cases", "stock": true,
       "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
       "colors": [
-        { "name": "Orange", "hex": "#FF9800", "available": true },
-        { "name": "Black", "hex": "#000000", "available": true },
-        { "name": "Silver", "hex": "#B0BEC5", "available": true }
+        { "name": "Orange", "available": true },
+        { "name": "Black", "available": true },
+        { "name": "Silver", "available": true }
       ]
     },
     {
@@ -225,8 +225,8 @@
       "cat": "eyewear", "stock": true,
       "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
       "colors": [
-        { "name": "Brown", "hex": "#5D4037", "available": true },
-        { "name": "Black", "hex": "#000000", "available": true }
+        { "name": "Brown", "available": true },
+        { "name": "Black", "available": true }
       ]
     },
     {
@@ -270,8 +270,8 @@
       "cat": "eyewear", "stock": true,
       "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
       "colors": [
-        { "name": "Black", "hex": "#000000", "available": true },
-        { "name": "Clear", "hex": "#FFFFFF", "available": true }
+        { "name": "Black", "available": true },
+        { "name": "Clear", "available": true }
       ]
     },
     {
@@ -280,7 +280,7 @@
       "cat": "eyewear", "stock": true,
       "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400",
       "colors": [
-        { "name": "Clear", "hex": "#FFFFFF", "available": true }
+        { "name": "Clear", "available": true }
       ]
     },
     {
@@ -289,9 +289,9 @@
       "cat": "eyewear", "stock": true,
       "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400",
       "colors": [
-        { "name": "Black", "hex": "#000000", "available": true },
-        { "name": "Brown", "hex": "#5D4037", "available": true },
-        { "name": "Blue", "hex": "#1976D2", "available": true }
+        { "name": "Black", "available": true },
+        { "name": "Brown", "available": true },
+        { "name": "Blue", "available": true }
       ]
     },
     {
@@ -300,7 +300,7 @@
       "cat": "eyewear", "stock": true,
       "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400",
       "colors": [
-        { "name": "Black", "hex": "#000000", "available": true }
+        { "name": "Black", "available": true }
       ]
     },
     {
@@ -309,7 +309,7 @@
       "cat": "eyewear", "stock": true,
       "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
       "colors": [
-        { "name": "Clear", "hex": "#FFFFFF", "available": true }
+        { "name": "Clear", "available": true }
       ]
     },
     {
@@ -325,9 +325,9 @@
       "cat": "eyewear", "stock": true,
       "img": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400",
       "colors": [
-        { "name": "Black", "hex": "#000000", "available": true },
-        { "name": "Pink", "hex": "#F06292", "available": true },
-        { "name": "Beige", "hex": "#D7CCC8", "available": true }
+        { "name": "Black", "available": true },
+        { "name": "Pink", "available": true },
+        { "name": "Beige", "available": true }
       ]
     },
     {
@@ -343,8 +343,8 @@
       "cat": "accessories", "stock": true,
       "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
       "colors": [
-        { "name": "Pink", "hex": "#F06292", "available": true },
-        { "name": "Black", "hex": "#000000", "available": true }
+        { "name": "Pink", "available": true },
+        { "name": "Black", "available": true }
       ]
     },
     {
@@ -360,9 +360,9 @@
       "cat": "accessories", "stock": true,
       "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
       "colors": [
-        { "name": "Silver", "hex": "#B0BEC5", "available": true },
-        { "name": "Gold", "hex": "#FFD54F", "available": true },
-        { "name": "Pink", "hex": "#F06292", "available": true }
+        { "name": "Silver", "available": true },
+        { "name": "Gold", "available": true },
+        { "name": "Pink", "available": true }
       ]
     },
     {
@@ -371,8 +371,8 @@
       "cat": "accessories", "stock": true,
       "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
       "colors": [
-        { "name": "Silver", "hex": "#B0BEC5", "available": true },
-        { "name": "Gold", "hex": "#FFD54F", "available": true }
+        { "name": "Silver", "available": true },
+        { "name": "Gold", "available": true }
       ]
     },
     {
@@ -388,9 +388,9 @@
       "cat": "accessories", "stock": true,
       "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
       "colors": [
-        { "name": "Black", "hex": "#000000", "available": true },
-        { "name": "Silver", "hex": "#B0BEC5", "available": true },
-        { "name": "Pink", "hex": "#F06292", "available": true }
+        { "name": "Black", "available": true },
+        { "name": "Silver", "available": true },
+        { "name": "Pink", "available": true }
       ]
     },
     {
@@ -427,7 +427,7 @@
       "cat": "accessories", "stock": true,
       "img": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400",
       "colors": [
-        { "name": "Pink", "hex": "#F06292", "available": true }
+        { "name": "Pink", "available": true }
       ]
     },
     {
@@ -436,7 +436,7 @@
       "cat": "accessories", "stock": true,
       "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
       "colors": [
-        { "name": "Gold", "hex": "#FFD54F", "available": true }
+        { "name": "Gold", "available": true }
       ]
     },
     {
@@ -445,7 +445,7 @@
       "cat": "accessories", "stock": true,
       "img": "https://images.unsplash.com/photo-1616627561950-9f746e330187?w=400",
       "colors": [
-        { "name": "Pink", "hex": "#F8BBD0", "available": true }
+        { "name": "Pink", "available": true }
       ]
     },
     {
