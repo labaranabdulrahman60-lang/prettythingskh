@@ -43,6 +43,34 @@ content:
             list: true
             required: false
             fields:
-              - { name: name, label: "Color Name", type: string }
-              - { name: hex, label: "Color HEX (e.g. #F06292)", type: string, required: false }
+              - name: name
+                label: "Color Name"
+                type: select
+                options:
+                  values:
+                    - "Pink"
+                    - "Light Pink"
+                    - "Dark Pink"
+                    - "Rose Gold"
+                    - "Red"
+                    - "Maroon"
+                    - "Black"
+                    - "White"
+                    - "Clear"
+                    - "Silver"
+                    - "Gold"
+                    - "Beige"
+                    - "Brown"
+                    - "Orange"
+                    - "Yellow"
+                    - "Green"
+                    - "Teal"
+                    - "Blue"
+                    - "Navy Blue"
+                    - "Purple"
+                    - "Lavender"
+                    - "Grey"
+                    - "Nude"
+                    - "Multicolor"
+              - { name: hex, label: "Custom HEX (optional — leave blank to auto-fill)", type: string, required: false }
               - { name: available, label: "Available?", type: boolean, default: true }
