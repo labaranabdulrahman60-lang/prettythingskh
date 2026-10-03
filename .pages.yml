@@ -52,6 +52,15 @@ content:
                     - "Light Pink"
                     - "Dark Pink"
                     - "Rose Gold"
+                    - "Rose"
+                    - "Peach"
+                    - "Coral"
+                    - "Raspberry"
+                    - "Berry"
+                    - "Cherry"
+                    - "Strawberry"
+                    - "Toast"
+                    - "Espresso"
                     - "Red"
                     - "Maroon"
                     - "Black"
@@ -60,6 +69,7 @@ content:
                     - "Silver"
                     - "Gold"
                     - "Beige"
+                    - "Nude"
                     - "Brown"
                     - "Orange"
                     - "Yellow"
@@ -70,7 +80,6 @@ content:
                     - "Purple"
                     - "Lavender"
                     - "Grey"
-                    - "Nude"
                     - "Multicolor"
-              - { name: hex, label: "Custom HEX (optional — leave blank to auto-fill)", type: string, required: false }
+              - { name: hex, label: "Custom HEX (optional — leave blank)", type: string, required: false }
               - { name: available, label: "Available?", type: boolean, default: true }
