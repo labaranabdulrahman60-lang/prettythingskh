@@ -696,6 +696,43 @@ document.getElementById('footerWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}
 document.getElementById('floatWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 // ============================================================
+// COLOR NAME → HEX MAPPING
+// ============================================================
+const COLOR_HEX_MAP = {
+  "Pink": "#F06292",
+  "Light Pink": "#F8BBD0",
+  "Dark Pink": "#C2185B",
+  "Rose Gold": "#E8B4A0",
+  "Red": "#D32F2F",
+  "Maroon": "#800000",
+  "Black": "#000000",
+  "White": "#FFFFFF",
+  "Clear": "#F5F5F5",
+  "Silver": "#C0C0C0",
+  "Gold": "#FFD700",
+  "Beige": "#D7CCC8",
+  "Brown": "#795548",
+  "Orange": "#FF9800",
+  "Yellow": "#FFEB3B",
+  "Green": "#4CAF50",
+  "Teal": "#009688",
+  "Blue": "#1976D2",
+  "Navy Blue": "#0A1A3A",
+  "Purple": "#9C27B0",
+  "Lavender": "#E6E6FA",
+  "Grey": "#9E9E9E",
+  "Nude": "#EBC8B5",
+  "Multicolor": "#C2185B"
+};
+
+function getColorHex(colorObj) {
+  if (!colorObj) return '#CCCCCC';
+  if (colorObj.hex && colorObj.hex.trim() !== '') return colorObj.hex.trim();
+  if (colorObj.name && COLOR_HEX_MAP[colorObj.name]) return COLOR_HEX_MAP[colorObj.name];
+  return '#CCCCCC';
+}
+
+// ============================================================
 // DELIVERY FEES
 // ============================================================
 const DELIVERY_FEES = {
@@ -822,7 +859,10 @@ function renderProducts() {
           ${soldOut ? '<span class="product-badge sold-out-badge">Sold Out</span>' : (isWholesale ? '<span class="product-badge wholesale-badge">Wholesale</span>' : (p.oldPrice > p.price ? '<span class="product-badge">Sale</span>' : ''))}
           ${availableColors.length > 0 ? `
             <div class="color-count-badge">
-              ${availableColors.slice(0, 3).map(c => `<span class="color-count-dot" style="background:${c.hex || '#999'};${isLightColor(c.hex) ? 'border:1px solid #ddd;' : ''}"></span>`).join('')}
+              ${availableColors.slice(0, 3).map(c => {
+                const cHex = getColorHex(c);
+                return `<span class="color-count-dot" style="background:${cHex};${isLightColor(cHex) ? 'border:1px solid #ddd;' : ''}"></span>`;
+              }).join('')}
               ${availableColors.length > 3 ? `<span>+${availableColors.length - 3}</span>` : ''}
             </div>
           ` : ''}
@@ -923,11 +963,12 @@ function renderModalColors(product) {
 
   swatchContainer.innerHTML = colors.map(c => {
     const isSelected = c.name === pmSelectedColor;
-    const lightBorder = isLightColor(c.hex) ? ' border-white' : '';
+    const cHex = getColorHex(c);
+    const lightBorder = isLightColor(cHex) ? ' border-white' : '';
     return `
       <button
         class="color-swatch${isSelected ? ' selected' : ''}${!c.available ? ' sold-out' : ''}${lightBorder}"
-        style="background:${c.hex || '#ccc'};"
+        style="background:${cHex};"
         onclick="selectModalColor('${c.name.replace(/'/g, "\\'")}')"
         ${!c.available ? 'disabled' : ''}
         title="${c.name}${!c.available ? ' (Sold Out)' : ''}"
@@ -1131,7 +1172,7 @@ function updateCartUI() {
     let colorHex = null;
     if (item.color && p.colors) {
       const c = p.colors.find(x => x.name === item.color);
-      if (c) colorHex = c.hex;
+      if (c) colorHex = getColorHex(c);
     }
 
     return `
