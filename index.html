@@ -696,13 +696,22 @@ document.getElementById('footerWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}
 document.getElementById('floatWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 // ============================================================
-// COLOR NAME → HEX MAPPING
+// COLOR NAME → HEX MAPPING (EXPANDED with beauty colors)
 // ============================================================
 const COLOR_HEX_MAP = {
   "Pink": "#F06292",
   "Light Pink": "#F8BBD0",
   "Dark Pink": "#C2185B",
   "Rose Gold": "#E8B4A0",
+  "Rose": "#E8B4B8",
+  "Peach": "#FFAB91",
+  "Coral": "#FF7043",
+  "Raspberry": "#C2185B",
+  "Berry": "#8E24AA",
+  "Cherry": "#B71C1C",
+  "Strawberry": "#E91E63",
+  "Toast": "#A1887F",
+  "Espresso": "#4E342E",
   "Red": "#D32F2F",
   "Maroon": "#800000",
   "Black": "#000000",
@@ -711,6 +720,7 @@ const COLOR_HEX_MAP = {
   "Silver": "#C0C0C0",
   "Gold": "#FFD700",
   "Beige": "#D7CCC8",
+  "Nude": "#EBC8B5",
   "Brown": "#795548",
   "Orange": "#FF9800",
   "Yellow": "#FFEB3B",
@@ -721,7 +731,6 @@ const COLOR_HEX_MAP = {
   "Purple": "#9C27B0",
   "Lavender": "#E6E6FA",
   "Grey": "#9E9E9E",
-  "Nude": "#EBC8B5",
   "Multicolor": "#C2185B"
 };
 
@@ -796,7 +805,6 @@ function isWholesaleApplied(product, qty) {
   return hasWholesale && qty >= minQty;
 }
 
-// Generate a unique key for a cart item (product + color combination)
 function getCartItemKey(productId, colorName) {
   return `${productId}__${colorName || 'default'}`;
 }
@@ -901,20 +909,15 @@ function openProductModal(id) {
   pmCurrentProduct = product;
   pmQty = 1;
 
-  // Auto-select first available color
   const colors = product.colors || [];
   const availableColors = colors.filter(c => c.available);
   pmSelectedColor = availableColors.length > 0 ? availableColors[0].name : null;
 
-  // Fill image
   document.getElementById('pmImage').src = product.img;
   document.getElementById('pmImage').alt = product.name;
-
-  // Fill name
   document.getElementById('pmName').textContent = product.name;
-
-  // Fill price
   document.getElementById('pmPrice').textContent = formatPrice(product.price);
+
   const oldPriceEl = document.getElementById('pmOldPrice');
   if (product.oldPrice > product.price) {
     oldPriceEl.textContent = formatPrice(product.oldPrice);
@@ -923,7 +926,6 @@ function openProductModal(id) {
     oldPriceEl.style.display = 'none';
   }
 
-  // Wholesale info
   const hasWholesale = product.wholesalePrice && product.wholesalePrice > 0;
   const wholesaleEl = document.getElementById('pmWholesale');
   if (hasWholesale) {
@@ -934,16 +936,10 @@ function openProductModal(id) {
     wholesaleEl.style.display = 'none';
   }
 
-  // Color swatches
   renderModalColors(product);
-
-  // Qty display
   document.getElementById('pmQty').textContent = pmQty;
-
-  // Total price
   updateModalTotal();
 
-  // Show modal
   document.getElementById('productModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
@@ -1017,7 +1013,6 @@ function addFromModal() {
   const colors = product.colors || [];
   const availableColors = colors.filter(c => c.available);
 
-  // If product has colors, require selection
   if (availableColors.length > 0 && !pmSelectedColor) {
     alert('Please choose a color first.');
     return;
@@ -1030,12 +1025,7 @@ function addFromModal() {
   if (existing) {
     existing.qty += pmQty;
   } else {
-    cart.push({
-      key,
-      id: product.id,
-      qty: pmQty,
-      color: colorName || null
-    });
+    cart.push({ key, id: product.id, qty: pmQty, color: colorName || null });
   }
 
   saveCart();
@@ -1168,7 +1158,6 @@ function updateCartUI() {
     const minQty = p.minOrder || 10;
     const remaining = hasWholesale && !wholesaleActive ? (minQty - item.qty) : 0;
 
-    // Get color hex if the product has a color selected
     let colorHex = null;
     if (item.color && p.colors) {
       const c = p.colors.find(x => x.name === item.color);
