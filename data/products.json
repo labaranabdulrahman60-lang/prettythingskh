@@ -1,147 +1,198 @@
 {
   "products": [
     {
-      "oldPrice": 3000,
-      "img": "/images/products/2F511B29-1989-4D61-A34A-804B60FA444C.png",
-      "price": 2500,
-      "wholesalePrice": 2000,
-      "name": "Rhode Lip Tint",
-      "colors": [
+      "variations": [
         {
-          "name": "Raspberry",
-          "available": true
+          "variantName": "Stawberry ",
+          "variantColors": [
+            "Red "
+          ]
         },
         {
-          "name": "Rose",
-          "available": true
+          "variantName": "Raspberry ",
+          "variantColors": [
+            "Red"
+          ]
         },
         {
-          "name": "Toast",
-          "available": true
+          "variantName": "Honey infused ",
+          "variantColors": [
+            "Light yellow "
+          ]
         },
         {
-          "name": "Espresso",
-          "available": true
+          "variantName": "Vanilla glaze ",
+          "variantColors": [
+            "Light pink "
+          ]
         },
         {
-          "available": true,
-          "name": "Pink"
+          "variantName": "Watermelon "
         },
         {
-          "available": true,
-          "name": "Light Pink"
+          "variantName": "Sticky toffee",
+          "variantColors": [
+            "Dark brown"
+          ]
         },
         {
-          "available": true,
-          "name": "Dark Pink"
+          "variantName": "Milky mocha ",
+          "variantColors": [
+            "Dark brown"
+          ]
         },
         {
-          "available": true,
-          "name": "Peach"
+          "variantName": "Bee-li-chii"
         },
         {
-          "available": true,
-          "name": "Berry"
+          "variantName": "Cherry "
         },
         {
-          "available": true,
-          "name": "Strawberry"
-        },
-        {
-          "available": true,
-          "name": "Red"
-        },
-        {
-          "available": true,
-          "name": "White"
-        },
-        {
-          "available": true,
-          "name": "Clear"
-        },
-        {
-          "available": true,
-          "name": "Nude"
-        },
-        {
-          "available": true,
-          "name": "Yellow"
-        },
-        {
-          "available": true,
-          "name": "Multicolor"
-        },
-        {
-          "available": true,
-          "name": "Orange"
+          "variantName": "Coconut frost "
         }
       ],
-      "stock": true,
-      "cat": "beauty",
-      "id": 1,
-      "minOrder": 10,
-      "wholesale": true
-    },
-    {
       "oldPrice": 8000,
       "img": "/images/products/img_8943.jpeg",
       "price": 5000,
-      "wholesalePrice": 5,
-      "name": "Gissou Lip Oil",
-      "colors": [
+      "wholesalePrice": 4500,
+      "name": "Gissou lip oil ",
+      "colors": [],
+      "stock": true,
+      "cat": "beauty",
+      "id": 1,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "variations": [
         {
-          "name": "Pink",
-          "available": true
+          "variantName": "Raspberry ",
+          "variantColors": [
+            "Maroon "
+          ]
         },
         {
-          "name": "Clear",
-          "available": true
+          "variantName": "Toast ",
+          "variantColors": [
+            "Brown "
+          ]
         },
         {
-          "available": true,
-          "name": "Light Pink"
+          "variantName": "Pbj",
+          "variantColors": [
+            "Dark brown "
+          ]
         },
         {
-          "available": true,
-          "name": "Cherry"
+          "variantName": "Espresso ",
+          "variantColors": [
+            "Coffee brown "
+          ]
         },
         {
-          "available": true,
-          "name": "Raspberry"
+          "variantName": "Stawberry ",
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
-          "available": true,
-          "name": "Strawberry"
+          "variantName": "Ribbon ",
+          "variantColors": [
+            "Light pink "
+          ]
         },
         {
-          "available": true,
-          "name": "Brown"
+          "variantName": "Gauva spritz ",
+          "variantColors": [
+            "Red "
+          ]
         },
         {
-          "available": true,
-          "name": "Nude"
+          "variantName": "Pepper mint ",
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
-          "available": true,
-          "name": "Red"
+          "variantName": "Sugarberry ",
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
-          "available": true,
-          "name": "Pink"
+          "variantName": "Sugarcookie ",
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
-          "available": true,
-          "name": "Rose"
+          "variantName": "Espresso ",
+          "variantColors": [
+            "Coffee brown "
+          ]
         },
         {
-          "available": true,
-          "name": "Gold"
+          "variantName": "Watermelon slice ",
+          "variantColors": [
+            "White "
+          ]
+        },
+        {
+          "variantName": "Salted caramel ",
+          "variantColors": [
+            "White "
+          ]
+        },
+        {
+          "variantName": "Cinnamon roll ",
+          "variantColors": [
+            "Dark brown "
+          ]
+        },
+        {
+          "variantName": "Unscented "
+        },
+        {
+          "variantName": "Salty tan "
+        },
+        {
+          "variantName": "Short cake ",
+          "variantColors": [
+            "Dark pink "
+          ]
+        },
+        {
+          "variantName": "Lemontini ",
+          "variantColors": [
+            "White with shimmering "
+          ]
+        },
+        {
+          "variantName": "Passion fruit "
+        },
+        {
+          "variantName": "Caramalized banana "
+        },
+        {
+          "variantName": "Vanilla cake "
+        },
+        {
+          "variantName": "Peach pit "
+        },
+        {
+          "variantName": "Vanilla rhode "
         }
       ],
+      "oldPrice": 8000,
+      "img": "/images/products/2F511B29-1989-4D61-A34A-804B60FA444C.png",
+      "price": 2500,
+      "wholesalePrice": 2000,
+      "name": "Rhode lip tints ",
+      "colors": [],
       "stock": true,
       "cat": "beauty",
       "id": 5,
-      "minOrder": 5,
+      "minOrder": 10,
       "wholesale": true
     },
     {
