@@ -1,0 +1,80 @@
+backend:
+  name: github
+  repo: labaranabdulrahman60-lang/prettythingskh
+  branch: main
+  base_url: https://prettythingskhairat.com
+  auth_endpoint: /api/auth
+
+media_folder: "images/products"
+public_folder: "/images/products"
+
+collections:
+  - name: "products"
+    label: "🛍️ Products"
+    files:
+      - name: "products"
+        label: "All Products"
+        file: "data/products.json"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} — ₦{{fields.price}}"
+            fields:
+              - { label: "Product ID", name: "id", widget: "number" }
+              - { label: "Product Name", name: "name", widget: "string" }
+              - { label: "🛒 Retail Price (₦)", name: "price", widget: "number" }
+              - { label: "Old Price (₦)", name: "oldPrice", widget: "number", required: false }
+              - { label: "Enable Wholesale", name: "wholesale", widget: "boolean", default: false }
+              - { label: "📦 Wholesale Price (₦)", name: "wholesalePrice", widget: "number", required: false }
+              - { label: "Minimum Order (pcs)", name: "minOrder", widget: "number", required: false, default: 10 }
+              - label: "Category"
+                name: "cat"
+                widget: "select"
+                options: ["beauty", "nails", "cases", "eyewear", "accessories", "bundles"]
+              - { label: "In Stock?", name: "stock", widget: "boolean", default: true }
+              - { label: "Product Image", name: "img", widget: "image", required: false }
+              - label: "🎨 Available Colors"
+                name: "colors"
+                widget: "list"
+                required: false
+                fields:
+                  - label: "Color Name"
+                    name: "name"
+                    widget: "select"
+                    options:
+                      - "Pink"
+                      - "Light Pink"
+                      - "Dark Pink"
+                      - "Rose Gold"
+                      - "Rose"
+                      - "Peach"
+                      - "Coral"
+                      - "Raspberry"
+                      - "Berry"
+                      - "Cherry"
+                      - "Strawberry"
+                      - "Toast"
+                      - "Espresso"
+                      - "Red"
+                      - "Maroon"
+                      - "Black"
+                      - "White"
+                      - "Clear"
+                      - "Silver"
+                      - "Gold"
+                      - "Beige"
+                      - "Nude"
+                      - "Brown"
+                      - "Orange"
+                      - "Yellow"
+                      - "Green"
+                      - "Teal"
+                      - "Blue"
+                      - "Navy Blue"
+                      - "Purple"
+                      - "Lavender"
+                      - "Grey"
+                      - "Multicolor"
+                  - { label: "Custom HEX (optional)", name: "hex", widget: "string", required: false }
+                  - { label: "Available?", name: "available", widget: "boolean", default: true }
