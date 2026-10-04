@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: labaranabdulrahman60-lang/prettythingskh
+  repo: labaranabdulrahman60-lang/prettythingskhairat
   branch: main
   base_url: https://prettythingskhairat.com
-  auth_endpoint: /api/auth
+  auth_endpoint: /api/callback
 
 media_folder: "images/products"
 public_folder: "/images/products"
