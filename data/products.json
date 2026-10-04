@@ -1,522 +1,1056 @@
 {
   "products": [
     {
-      "id": 1, "name": "Rhode Lip Tint", "price": 2500, "oldPrice": 3000,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "beauty", "stock": true,
-      "img": "/images/products/fa79b1ab-e915-40bb-a544-42dd3ee25b9e.jpeg",
+      "oldPrice": 3000,
+      "img": "/images/products/2F511B29-1989-4D61-A34A-804B60FA444C.png",
+      "price": 2500,
+      "wholesalePrice": 2000,
+      "name": "Rhode Lip Tint",
       "colors": [
-        { "name": "Raspberry", "available": true },
-        { "name": "Rose", "available": true },
-        { "name": "Toast", "available": true },
-        { "name": "Espresso", "available": true }
-      ]
+        {
+          "name": "Raspberry",
+          "available": true
+        },
+        {
+          "name": "Rose",
+          "available": true
+        },
+        {
+          "name": "Toast",
+          "available": true
+        },
+        {
+          "name": "Espresso",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 1,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 2, "name": "Rhode Lip Tint Peptides", "price": 2500, "oldPrice": 8000,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 8000,
       "img": "/images/products/fa79b1ab-e915-40bb-a544-42dd3ee25b9e.jpeg",
+      "price": 2500,
+      "wholesalePrice": 2000,
+      "name": "Rhode Lip Tint Peptides",
       "colors": [
-        { "name": "Rose", "available": true },
-        { "name": "Toast", "available": true }
-      ]
+        {
+          "name": "Rose",
+          "available": true
+        },
+        {
+          "name": "Toast",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 2,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 3, "name": "Rhode Pbj Lip Tint", "price": 2500, "oldPrice": 8000,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 8000,
       "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
+      "price": 2500,
+      "wholesalePrice": 2000,
+      "name": "Rhode Pbj Lip Tint",
       "colors": [
-        { "name": "Brown", "available": true },
-        { "name": "Raspberry", "available": true }
-      ]
+        {
+          "name": "Brown",
+          "available": true
+        },
+        {
+          "name": "Raspberry",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 3,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 4, "name": "Rhode Ribbon Lip Tint", "price": 2500, "oldPrice": 8000,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 8000,
       "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400",
+      "price": 2500,
+      "wholesalePrice": 2000,
+      "name": "Rhode Ribbon Lip Tint",
       "colors": [
-        { "name": "Rose", "available": true }
-      ]
+        {
+          "name": "Rose",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 4,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 5, "name": "Gissou Lip Oil", "price": 5000, "oldPrice": 8000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 8000,
       "img": "https://images.unsplash.com/photo-1599733589046-833caccbb1e0?w=400",
+      "price": 5000,
+      "wholesalePrice": 0,
+      "name": "Gissou Lip Oil",
       "colors": [
-        { "name": "Pink", "available": true },
-        { "name": "Clear", "available": true }
-      ]
+        {
+          "name": "Pink",
+          "available": true
+        },
+        {
+          "name": "Clear",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 5,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 6, "name": "Lipstick", "price": 4000, "oldPrice": 3000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 3000,
       "img": "/images/products/img_2386.jpeg",
-      "colors": []
+      "price": 4000,
+      "wholesalePrice": 0,
+      "name": "Lipstick",
+      "colors": [],
+      "stock": true,
+      "cat": "beauty",
+      "id": 6,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 7, "name": "Black Lip Liner", "price": 1500, "oldPrice": 2000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 2000,
       "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
+      "price": 1500,
+      "wholesalePrice": 0,
+      "name": "Black Lip Liner",
       "colors": [
-        { "name": "Black", "available": true },
-        { "name": "Brown", "available": true }
-      ]
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Brown",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 7,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 8, "name": "Peel Off Lip Liner", "price": 3000, "oldPrice": 9000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 9000,
       "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
+      "price": 3000,
+      "wholesalePrice": 0,
+      "name": "Peel Off Lip Liner",
       "colors": [
-        { "name": "Pink", "available": true },
-        { "name": "Red", "available": true }
-      ]
+        {
+          "name": "Pink",
+          "available": true
+        },
+        {
+          "name": "Red",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 8,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 9, "name": "Lip Liners (Assorted)", "price": 1500, "oldPrice": 3000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 3000,
       "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400",
-      "colors": []
+      "price": 1500,
+      "wholesalePrice": 0,
+      "name": "Lip Liners (Assorted)",
+      "colors": [],
+      "stock": true,
+      "cat": "beauty",
+      "id": 9,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 10, "name": "Whitening Strips", "price": 8500, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400",
-      "colors": []
+      "price": 8500,
+      "wholesalePrice": 0,
+      "name": "Whitening Strips",
+      "colors": [],
+      "stock": true,
+      "cat": "beauty",
+      "id": 10,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 11, "name": "Cluster DIY Lashes", "price": 8500, "oldPrice": 14000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "beauty", "stock": true,
+      "oldPrice": 14000,
       "img": "https://images.unsplash.com/photo-1583241800698-9c2e0e1e4e1e?w=400",
-      "colors": []
+      "price": 8500,
+      "wholesalePrice": 0,
+      "name": "Cluster DIY Lashes",
+      "colors": [],
+      "stock": true,
+      "cat": "beauty",
+      "id": 11,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 20, "name": "Press On Nails (White Tip)", "price": 2500, "oldPrice": 3000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "nails", "stock": true,
+      "oldPrice": 3000,
       "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-      "colors": []
+      "price": 2500,
+      "wholesalePrice": 0,
+      "name": "Press On Nails (White Tip)",
+      "colors": [],
+      "stock": true,
+      "cat": "nails",
+      "id": 20,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 21, "name": "Press On Nails (Pink Bow)", "price": 3000, "oldPrice": 3500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "nails", "stock": true,
+      "oldPrice": 3500,
       "img": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=400",
-      "colors": []
+      "price": 3000,
+      "wholesalePrice": 0,
+      "name": "Press On Nails (Pink Bow)",
+      "colors": [],
+      "stock": true,
+      "cat": "nails",
+      "id": 21,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 22, "name": "Black Press On Nails", "price": 2500, "oldPrice": 3000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "nails", "stock": true,
+      "oldPrice": 3000,
       "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400",
-      "colors": []
+      "price": 2500,
+      "wholesalePrice": 0,
+      "name": "Black Press On Nails",
+      "colors": [],
+      "stock": true,
+      "cat": "nails",
+      "id": 22,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 23, "name": "Press On Nails (Glitter)", "price": 3000, "oldPrice": 3500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "nails", "stock": true,
+      "oldPrice": 3500,
       "img": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=400",
-      "colors": []
+      "price": 3000,
+      "wholesalePrice": 0,
+      "name": "Press On Nails (Glitter)",
+      "colors": [],
+      "stock": true,
+      "cat": "nails",
+      "id": 23,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 24, "name": "Press On Nails (Classic Pink)", "price": 2800, "oldPrice": 3000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "nails", "stock": true,
+      "oldPrice": 3000,
       "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400",
-      "colors": []
+      "price": 2800,
+      "wholesalePrice": 0,
+      "name": "Press On Nails (Classic Pink)",
+      "colors": [],
+      "stock": true,
+      "cat": "nails",
+      "id": 24,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 30, "name": "MagSafe Case", "price": 2000, "oldPrice": 5000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 5000,
       "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
+      "price": 2000,
+      "wholesalePrice": 0,
+      "name": "MagSafe Case",
       "colors": [
-        { "name": "Clear", "available": true },
-        { "name": "Black", "available": true },
-        { "name": "Pink", "available": true }
-      ]
+        {
+          "name": "Clear",
+          "available": true
+        },
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Pink",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "cases",
+      "id": 30,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 31, "name": "Silicone Cases (iPhone)", "price": 2000, "oldPrice": 3500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 3500,
       "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400",
+      "price": 2000,
+      "wholesalePrice": 0,
+      "name": "Silicone Cases (iPhone)",
       "colors": [
-        { "name": "Pink", "available": true },
-        { "name": "White", "available": true },
-        { "name": "Black", "available": true }
-      ]
+        {
+          "name": "Pink",
+          "available": true
+        },
+        {
+          "name": "White",
+          "available": true
+        },
+        {
+          "name": "Black",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "cases",
+      "id": 31,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 32, "name": "Fire Flame Case", "price": 5000, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
+      "price": 5000,
+      "wholesalePrice": 0,
+      "name": "Fire Flame Case",
       "colors": [
-        { "name": "Orange", "available": true },
-        { "name": "Silver", "available": true }
-      ]
+        {
+          "name": "Orange",
+          "available": true
+        },
+        {
+          "name": "Silver",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "cases",
+      "id": 32,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 33, "name": "Hollow Fire Flame Case", "price": 5000, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
+      "price": 5000,
+      "wholesalePrice": 0,
+      "name": "Hollow Fire Flame Case",
       "colors": [
-        { "name": "Orange", "available": true },
-        { "name": "Black", "available": true },
-        { "name": "Silver", "available": true }
-      ]
+        {
+          "name": "Orange",
+          "available": true
+        },
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Silver",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "cases",
+      "id": 33,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 34, "name": "MagSafe Lip Case", "price": 10000, "oldPrice": 17000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 17000,
       "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
-      "colors": []
+      "price": 10000,
+      "wholesalePrice": 0,
+      "name": "MagSafe Lip Case",
+      "colors": [],
+      "stock": true,
+      "cat": "cases",
+      "id": 34,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 35, "name": "Dollar Case", "price": 3000, "oldPrice": 5000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 5000,
       "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400",
-      "colors": []
+      "price": 3000,
+      "wholesalePrice": 0,
+      "name": "Dollar Case",
+      "colors": [],
+      "stock": true,
+      "cat": "cases",
+      "id": 35,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 36, "name": "Phone Suctions", "price": 800, "oldPrice": 1000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 1000,
       "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
-      "colors": []
+      "price": 800,
+      "wholesalePrice": 0,
+      "name": "Phone Suctions",
+      "colors": [],
+      "stock": true,
+      "cat": "cases",
+      "id": 36,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 37, "name": "Rhode Case Regular Box", "price": 8500, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
-      "colors": []
+      "price": 8500,
+      "wholesalePrice": 0,
+      "name": "Rhode Case Regular Box",
+      "colors": [],
+      "stock": true,
+      "cat": "cases",
+      "id": 37,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 38, "name": "Rhode Case (Full Set)", "price": 8500, "oldPrice": 32000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 32000,
       "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400",
-      "colors": []
+      "price": 8500,
+      "wholesalePrice": 0,
+      "name": "Rhode Case (Full Set)",
+      "colors": [],
+      "stock": true,
+      "cat": "cases",
+      "id": 38,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 39, "name": "Rhode Fully Packaged Case", "price": 16500, "oldPrice": 60000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "cases", "stock": true,
+      "oldPrice": 60000,
       "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
-      "colors": []
+      "price": 16500,
+      "wholesalePrice": 0,
+      "name": "Rhode Fully Packaged Case",
+      "colors": [],
+      "stock": true,
+      "cat": "cases",
+      "id": 39,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 50, "name": "Gucci Glass", "price": 2500, "oldPrice": 3500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 3500,
       "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
+      "price": 2500,
+      "wholesalePrice": 0,
+      "name": "Gucci Glass",
       "colors": [
-        { "name": "Brown", "available": true },
-        { "name": "Black", "available": true }
-      ]
+        {
+          "name": "Brown",
+          "available": true
+        },
+        {
+          "name": "Black",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 50,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 51, "name": "LV Glass", "price": 5500, "oldPrice": 6000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 6000,
       "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
-      "colors": []
+      "price": 5500,
+      "wholesalePrice": 0,
+      "name": "LV Glass",
+      "colors": [],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 51,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 52, "name": "Prada Glass", "price": 5600, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400",
-      "colors": []
+      "price": 5600,
+      "wholesalePrice": 0,
+      "name": "Prada Glass",
+      "colors": [],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 52,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 53, "name": "Y2K Glass", "price": 5600, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400",
-      "colors": []
+      "price": 5600,
+      "wholesalePrice": 0,
+      "name": "Y2K Glass",
+      "colors": [],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 53,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 54, "name": "Large Cat Eye", "price": 3500, "oldPrice": 6000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 6000,
       "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400",
-      "colors": []
+      "price": 3500,
+      "wholesalePrice": 0,
+      "name": "Large Cat Eye",
+      "colors": [],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 54,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 55, "name": "Small Cat Eye", "price": 2000, "oldPrice": 2500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 2500,
       "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
-      "colors": []
+      "price": 2000,
+      "wholesalePrice": 0,
+      "name": "Small Cat Eye",
+      "colors": [],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 55,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 56, "name": "Thick Influencer Glass", "price": 4500, "oldPrice": 5000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 5000,
       "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+      "price": 4500,
+      "wholesalePrice": 0,
+      "name": "Thick Influencer Glass",
       "colors": [
-        { "name": "Black", "available": true },
-        { "name": "Clear", "available": true }
-      ]
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Clear",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 56,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 57, "name": "Clear Fashion Glass", "price": 4500, "oldPrice": 5000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 5000,
       "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400",
+      "price": 4500,
+      "wholesalePrice": 0,
+      "name": "Clear Fashion Glass",
       "colors": [
-        { "name": "Clear", "available": true }
-      ]
+        {
+          "name": "Clear",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 57,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 58, "name": "Fashion Glass (Assorted)", "price": 2500, "oldPrice": 3000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 3000,
       "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400",
+      "price": 2500,
+      "wholesalePrice": 0,
+      "name": "Fashion Glass (Assorted)",
       "colors": [
-        { "name": "Black", "available": true },
-        { "name": "Brown", "available": true },
-        { "name": "Blue", "available": true }
-      ]
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Brown",
+          "available": true
+        },
+        {
+          "name": "Blue",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 58,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 59, "name": "Black Fashion Glass", "price": 2500, "oldPrice": 3000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 3000,
       "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400",
+      "price": 2500,
+      "wholesalePrice": 0,
+      "name": "Black Fashion Glass",
       "colors": [
-        { "name": "Black", "available": true }
-      ]
+        {
+          "name": "Black",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 59,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 60, "name": "Clear White Anti Blue Light Glass", "price": 3500, "oldPrice": 5000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 5000,
       "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
+      "price": 3500,
+      "wholesalePrice": 0,
+      "name": "Clear White Anti Blue Light Glass",
       "colors": [
-        { "name": "Clear", "available": true }
-      ]
+        {
+          "name": "Clear",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 60,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 61, "name": "Blue Light Myopia Glass", "price": 4000, "oldPrice": 5000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 5000,
       "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
-      "colors": []
+      "price": 4000,
+      "wholesalePrice": 0,
+      "name": "Blue Light Myopia Glass",
+      "colors": [],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 61,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 62, "name": "Visor Cap Sun Protection", "price": 3000, "oldPrice": 4000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "eyewear", "stock": true,
+      "oldPrice": 4000,
       "img": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400",
+      "price": 3000,
+      "wholesalePrice": 0,
+      "name": "Visor Cap Sun Protection",
       "colors": [
-        { "name": "Black", "available": true },
-        { "name": "Pink", "available": true },
-        { "name": "Beige", "available": true }
-      ]
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Pink",
+          "available": true
+        },
+        {
+          "name": "Beige",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "eyewear",
+      "id": 62,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 70, "name": "Bag Charm (Cherry)", "price": 2000, "oldPrice": 2500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 2500,
       "img": "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=400",
-      "colors": []
+      "price": 2000,
+      "wholesalePrice": 0,
+      "name": "Bag Charm (Cherry)",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 70,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 71, "name": "Chic Bah", "price": 5000, "oldPrice": 5500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 5500,
       "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+      "price": 5000,
+      "wholesalePrice": 0,
+      "name": "Chic Bah",
       "colors": [
-        { "name": "Pink", "available": true },
-        { "name": "Black", "available": true }
-      ]
+        {
+          "name": "Pink",
+          "available": true
+        },
+        {
+          "name": "Black",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 71,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 72, "name": "Van Cleef Necklace Set", "price": 8500, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400",
-      "colors": []
+      "price": 8500,
+      "wholesalePrice": 0,
+      "name": "Van Cleef Necklace Set",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 72,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 73, "name": "Clip On Fashion Braces", "price": 8000, "oldPrice": 15000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 15000,
       "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
+      "price": 8000,
+      "wholesalePrice": 0,
+      "name": "Clip On Fashion Braces",
       "colors": [
-        { "name": "Silver", "available": true },
-        { "name": "Gold", "available": true },
-        { "name": "Pink", "available": true }
-      ]
+        {
+          "name": "Silver",
+          "available": true
+        },
+        {
+          "name": "Gold",
+          "available": true
+        },
+        {
+          "name": "Pink",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 73,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 74, "name": "Power Chain Clip On Braces", "price": 8000, "oldPrice": 15000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 15000,
       "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
+      "price": 8000,
+      "wholesalePrice": 0,
+      "name": "Power Chain Clip On Braces",
       "colors": [
-        { "name": "Silver", "available": true },
-        { "name": "Gold", "available": true }
-      ]
+        {
+          "name": "Silver",
+          "available": true
+        },
+        {
+          "name": "Gold",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 74,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 75, "name": "Van Cleef Braces", "price": 3000, "oldPrice": 3500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 3500,
       "img": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400",
-      "colors": []
+      "price": 3000,
+      "wholesalePrice": 0,
+      "name": "Van Cleef Braces",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 75,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 76, "name": "Normal Clip On Braces", "price": 8000, "oldPrice": 10000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 10000,
       "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
+      "price": 8000,
+      "wholesalePrice": 0,
+      "name": "Normal Clip On Braces",
       "colors": [
-        { "name": "Black", "available": true },
-        { "name": "Silver", "available": true },
-        { "name": "Pink", "available": true }
-      ]
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Silver",
+          "available": true
+        },
+        {
+          "name": "Pink",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 76,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 77, "name": "Fixing Braces Semi Permanent", "price": 16000, "oldPrice": 25000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 25000,
       "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
-      "colors": []
+      "price": 16000,
+      "wholesalePrice": 0,
+      "name": "Fixing Braces Semi Permanent",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 77,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 78, "name": "Tattoo Sticker (50pcs)", "price": 500, "oldPrice": 1500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 1500,
       "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
-      "colors": []
+      "price": 500,
+      "wholesalePrice": 0,
+      "name": "Tattoo Sticker (50pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 78,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 79, "name": "Halal Tattoo Stickers (30pcs)", "price": 1500, "oldPrice": 2000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 2000,
       "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
-      "colors": []
+      "price": 1500,
+      "wholesalePrice": 0,
+      "name": "Halal Tattoo Stickers (30pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 79,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 80, "name": "Rhode Sticker", "price": 1000, "oldPrice": 1500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 1500,
       "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
-      "colors": []
+      "price": 1000,
+      "wholesalePrice": 0,
+      "name": "Rhode Sticker",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 80,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 81, "name": "Rhode Purse", "price": 10000, "oldPrice": 11000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 11000,
       "img": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400",
+      "price": 10000,
+      "wholesalePrice": 0,
+      "name": "Rhode Purse",
       "colors": [
-        { "name": "Pink", "available": true }
-      ]
+        {
+          "name": "Pink",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 81,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 82, "name": "Pause Bag", "price": 18000, "oldPrice": 25000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 25000,
       "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+      "price": 18000,
+      "wholesalePrice": 0,
+      "name": "Pause Bag",
       "colors": [
-        { "name": "Gold", "available": true }
-      ]
+        {
+          "name": "Gold",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 82,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 83, "name": "Mirror", "price": 2000, "oldPrice": 2500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 2500,
       "img": "https://images.unsplash.com/photo-1616627561950-9f746e330187?w=400",
+      "price": 2000,
+      "wholesalePrice": 0,
+      "name": "Mirror",
       "colors": [
-        { "name": "Pink", "available": true }
-      ]
+        {
+          "name": "Pink",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 83,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 84, "name": "LED Light", "price": 5000, "oldPrice": 7500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 7500,
       "img": "https://images.unsplash.com/photo-1565636192335-2d3e0f4f4f4f?w=400",
-      "colors": []
+      "price": 5000,
+      "wholesalePrice": 0,
+      "name": "LED Light",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 84,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 85, "name": "Tripod", "price": 4500, "oldPrice": 5000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 5000,
       "img": "https://images.unsplash.com/photo-1606986628253-2b5c0c0c0c0c?w=400",
-      "colors": []
+      "price": 4500,
+      "wholesalePrice": 0,
+      "name": "Tripod",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 85,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 86, "name": "Face Trimmer (3pcs)", "price": 900, "oldPrice": 1000,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 1000,
       "img": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400",
-      "colors": []
+      "price": 900,
+      "wholesalePrice": 0,
+      "name": "Face Trimmer (3pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 86,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 87, "name": "Thank You Cards (50pcs)", "price": 3000, "oldPrice": 3500,
-      "wholesale": false, "wholesalePrice": 0, "minOrder": 10,
-      "cat": "accessories", "stock": true,
+      "oldPrice": 3500,
       "img": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=400",
-      "colors": []
+      "price": 3000,
+      "wholesalePrice": 0,
+      "name": "Thank You Cards (50pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "accessories",
+      "id": 87,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
-      "id": 90, "name": "Rhode Lip Tints (Wholesale)", "price": 2000, "oldPrice": 2500,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "bundles", "stock": true,
+      "oldPrice": 2500,
       "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
-      "colors": []
+      "price": 2000,
+      "wholesalePrice": 2000,
+      "name": "Rhode Lip Tints (Wholesale)",
+      "colors": [],
+      "stock": true,
+      "cat": "bundles",
+      "id": 90,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 91, "name": "Tattoo Stickers Wholesale (50pcs)", "price": 15000, "oldPrice": 0,
-      "wholesale": true, "wholesalePrice": 15000, "minOrder": 1,
-      "cat": "bundles", "stock": true,
+      "oldPrice": 0,
       "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
-      "colors": []
+      "price": 15000,
+      "wholesalePrice": 15000,
+      "name": "Tattoo Stickers Wholesale (50pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "bundles",
+      "id": 91,
+      "minOrder": 1,
+      "wholesale": true
     },
     {
-      "id": 92, "name": "Rhode Lip Tints Peptides (Wholesale)", "price": 2000, "oldPrice": 2500,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "bundles", "stock": true,
+      "oldPrice": 2500,
       "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
-      "colors": []
+      "price": 2000,
+      "wholesalePrice": 2000,
+      "name": "Rhode Lip Tints Peptides (Wholesale)",
+      "colors": [],
+      "stock": true,
+      "cat": "bundles",
+      "id": 92,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 94, "name": "Press On Nails Wholesale (10pcs)", "price": 2000, "oldPrice": 2500,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "bundles", "stock": true,
+      "oldPrice": 2500,
       "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-      "colors": []
+      "price": 2000,
+      "wholesalePrice": 2000,
+      "name": "Press On Nails Wholesale (10pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "bundles",
+      "id": 94,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 95, "name": "Fashion Glass Wholesale (10pcs)", "price": 2000, "oldPrice": 2500,
-      "wholesale": true, "wholesalePrice": 2000, "minOrder": 10,
-      "cat": "bundles", "stock": true,
+      "oldPrice": 2500,
       "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
-      "colors": []
+      "price": 2000,
+      "wholesalePrice": 2000,
+      "name": "Fashion Glass Wholesale (10pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "bundles",
+      "id": 95,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
-      "id": 96, "name": "Phone Cases Wholesale (10pcs)", "price": 1500, "oldPrice": 2000,
-      "wholesale": true, "wholesalePrice": 1500, "minOrder": 10,
-      "cat": "bundles", "stock": true,
+      "oldPrice": 2000,
       "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
-      "colors": []
+      "price": 1500,
+      "wholesalePrice": 1500,
+      "name": "Phone Cases Wholesale (10pcs)",
+      "colors": [],
+      "stock": true,
+      "cat": "bundles",
+      "id": 96,
+      "minOrder": 10,
+      "wholesale": true
     }
   ]
 }
