@@ -59,4 +59,5 @@ collections:
                       - "Pink"
                       # ... etc ...
                   - { label: "Available?", name: "available", widget: "boolean", default: true }
+                  - { label: "📦 Quantity in Stock", name: "qty", widget: "number", required: true, default: 1 }
              
