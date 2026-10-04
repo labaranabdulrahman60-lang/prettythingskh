@@ -22,6 +22,58 @@
         {
           "name": "Espresso",
           "available": true
+        },
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Light Pink"
+        },
+        {
+          "available": true,
+          "name": "Dark Pink"
+        },
+        {
+          "available": true,
+          "name": "Peach"
+        },
+        {
+          "available": true,
+          "name": "Berry"
+        },
+        {
+          "available": true,
+          "name": "Strawberry"
+        },
+        {
+          "available": true,
+          "name": "Red"
+        },
+        {
+          "available": true,
+          "name": "White"
+        },
+        {
+          "available": true,
+          "name": "Clear"
+        },
+        {
+          "available": true,
+          "name": "Nude"
+        },
+        {
+          "available": true,
+          "name": "Yellow"
+        },
+        {
+          "available": true,
+          "name": "Multicolor"
+        },
+        {
+          "available": true,
+          "name": "Orange"
         }
       ],
       "stock": true,
@@ -32,71 +84,9 @@
     },
     {
       "oldPrice": 8000,
-      "img": "/images/products/fa79b1ab-e915-40bb-a544-42dd3ee25b9e.jpeg",
-      "price": 2500,
-      "wholesalePrice": 2000,
-      "name": "Rhode Lip Tint Peptides",
-      "colors": [
-        {
-          "name": "Rose",
-          "available": true
-        },
-        {
-          "name": "Toast",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "beauty",
-      "id": 2,
-      "minOrder": 10,
-      "wholesale": true
-    },
-    {
-      "oldPrice": 8000,
-      "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
-      "price": 2500,
-      "wholesalePrice": 2000,
-      "name": "Rhode Pbj Lip Tint",
-      "colors": [
-        {
-          "name": "Brown",
-          "available": true
-        },
-        {
-          "name": "Raspberry",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "beauty",
-      "id": 3,
-      "minOrder": 10,
-      "wholesale": true
-    },
-    {
-      "oldPrice": 8000,
-      "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400",
-      "price": 2500,
-      "wholesalePrice": 2000,
-      "name": "Rhode Ribbon Lip Tint",
-      "colors": [
-        {
-          "name": "Rose",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "beauty",
-      "id": 4,
-      "minOrder": 10,
-      "wholesale": true
-    },
-    {
-      "oldPrice": 8000,
-      "img": "https://images.unsplash.com/photo-1599733589046-833caccbb1e0?w=400",
+      "img": "/images/products/img_8943.jpeg",
       "price": 5000,
-      "wholesalePrice": 0,
+      "wholesalePrice": 5,
       "name": "Gissou Lip Oil",
       "colors": [
         {
@@ -106,18 +96,66 @@
         {
           "name": "Clear",
           "available": true
+        },
+        {
+          "available": true,
+          "name": "Light Pink"
+        },
+        {
+          "available": true,
+          "name": "Cherry"
+        },
+        {
+          "available": true,
+          "name": "Raspberry"
+        },
+        {
+          "available": true,
+          "name": "Strawberry"
+        },
+        {
+          "available": true,
+          "name": "Brown"
+        },
+        {
+          "available": true,
+          "name": "Nude"
+        },
+        {
+          "available": true,
+          "name": "Red"
+        },
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Rose"
+        },
+        {
+          "available": true,
+          "name": "Gold"
         }
       ],
       "stock": true,
       "cat": "beauty",
       "id": 5,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
-      "oldPrice": 3000,
-      "img": "/images/products/img_2386.jpeg",
-      "price": 4000,
+      "variations": [
+        {
+          "variantName": "Mo8 ",
+          "variantColors": [
+            "Dark burgundy "
+          ]
+        }
+      ],
+      "oldPrice": 4000,
+      "img": "/images/products/img_8945.jpeg",
+      "price": 2650,
       "wholesalePrice": 0,
       "name": "Lipstick",
       "colors": [],
