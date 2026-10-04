@@ -162,9 +162,14 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .color-swatch.selected { border-color: var(--pink-deep); transform: scale(1.1); box-shadow: 0 4px 12px rgba(236,106,156,0.4); }
 .color-swatch.sold-out { opacity: 0.4; cursor: not-allowed; position: relative; }
 .color-swatch.sold-out::after { content: ''; position: absolute; inset: 0; background: linear-gradient(45deg, transparent 45%, #333 45%, #333 55%, transparent 55%); border-radius: 50%; }
-.color-swatch-inner { width: 100%; height: 100%; border-radius: 50%; }
 .color-swatch.border-white { border: 2px solid var(--gray-300); }
 .color-swatch.border-white.selected { border-color: var(--pink-deep); border-width: 3px; }
+
+/* NEW STYLES FOR VARIATIONS */
+.variation-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.variation-btn { padding: 0.5rem 1rem; border-radius: 50px; background: var(--off-white); color: var(--text-body); font-size: 0.8rem; font-weight: 600; border: 2px solid var(--pink-pale); transition: all 0.2s; }
+.variation-btn:hover { background: var(--pink-pale); }
+.variation-btn.selected { background: var(--pink-gradient); color: white; border-color: transparent; box-shadow: 0 4px 12px rgba(236,106,156,0.25); }
 
 .qty-selector { display: flex; align-items: center; gap: 1rem; background: var(--off-white); border-radius: 10px; padding: 0.5rem 0.75rem; width: fit-content; }
 .qty-selector-btn { width: 36px; height: 36px; border-radius: 50%; background: white; color: var(--pink-dark); font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
@@ -315,8 +320,8 @@ button { cursor: pointer; border: none; font-family: inherit; }
 
 /* MOBILE ZOOM PREVENTION */
 * { -webkit-tap-highlight-color: transparent; }
-button, a, input, select, textarea, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .floating-cart, .wa-float, .search-clear, .cart-close, .search-bar input, .form-group input, .form-group select, .form-group textarea, .color-swatch, .qty-selector-btn, .product-modal-add-btn, .product-modal-close, .product-card { touch-action: manipulation; -webkit-touch-callout: none; }
-button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .color-swatch, .qty-selector-btn { -webkit-user-select: none; user-select: none; }
+button, a, input, select, textarea, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .floating-cart, .wa-float, .search-clear, .cart-close, .search-bar input, .form-group input, .form-group select, .form-group textarea, .color-swatch, .qty-selector-btn, .product-modal-add-btn, .product-modal-close, .product-card, .variation-btn { touch-action: manipulation; -webkit-touch-callout: none; }
+button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .color-swatch, .qty-selector-btn, .variation-btn { -webkit-user-select: none; user-select: none; }
 .form-group input, .form-group select, .form-group textarea, .search-bar input { font-size: 16px !important; }
 </style>
 </head>
@@ -440,6 +445,15 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
       <div class="product-modal-wholesale" id="pmWholesale" style="display:none;">
         <span>📦</span>
         <span>Wholesale: <strong id="pmWholesalePrice">₦0</strong>/pc — Min <strong id="pmMinOrder">10</strong>pcs</span>
+      </div>
+
+      <!-- NEW SECTION FOR VARIATIONS -->
+      <div class="product-modal-section" id="pmVariationSection" style="display:none;">
+        <div class="product-modal-section-title">
+          <span>Choose Type</span>
+          <span class="selected-color-label" id="pmSelectedVariation">—</span>
+        </div>
+        <div class="variation-buttons" id="pmVariationButtons"></div>
       </div>
 
       <div class="product-modal-section" id="pmColorSection" style="display:none;">
@@ -696,41 +710,17 @@ document.getElementById('footerWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}
 document.getElementById('floatWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 // ============================================================
-// COLOR NAME → HEX MAPPING (EXPANDED with beauty colors)
+// COLOR NAME → HEX MAPPING
 // ============================================================
 const COLOR_HEX_MAP = {
-  "Pink": "#F06292",
-  "Light Pink": "#F8BBD0",
-  "Dark Pink": "#C2185B",
-  "Rose Gold": "#E8B4A0",
-  "Rose": "#E8B4B8",
-  "Peach": "#FFAB91",
-  "Coral": "#FF7043",
-  "Raspberry": "#C2185B",
-  "Berry": "#8E24AA",
-  "Cherry": "#B71C1C",
-  "Strawberry": "#E91E63",
-  "Toast": "#A1887F",
-  "Espresso": "#4E342E",
-  "Red": "#D32F2F",
-  "Maroon": "#800000",
-  "Black": "#000000",
-  "White": "#FFFFFF",
-  "Clear": "#F5F5F5",
-  "Silver": "#C0C0C0",
-  "Gold": "#FFD700",
-  "Beige": "#D7CCC8",
-  "Nude": "#EBC8B5",
-  "Brown": "#795548",
-  "Orange": "#FF9800",
-  "Yellow": "#FFEB3B",
-  "Green": "#4CAF50",
-  "Teal": "#009688",
-  "Blue": "#1976D2",
-  "Navy Blue": "#0A1A3A",
-  "Purple": "#9C27B0",
-  "Lavender": "#E6E6FA",
-  "Grey": "#9E9E9E",
+  "Pink": "#F06292", "Light Pink": "#F8BBD0", "Dark Pink": "#C2185B", "Rose Gold": "#E8B4A0",
+  "Rose": "#E8B4B8", "Peach": "#FFAB91", "Coral": "#FF7043", "Raspberry": "#C2185B",
+  "Berry": "#8E24AA", "Cherry": "#B71C1C", "Strawberry": "#E91E63", "Toast": "#A1887F",
+  "Espresso": "#4E342E", "Red": "#D32F2F", "Maroon": "#800000", "Black": "#000000",
+  "White": "#FFFFFF", "Clear": "#F5F5F5", "Silver": "#C0C0C0", "Gold": "#FFD700",
+  "Beige": "#D7CCC8", "Nude": "#EBC8B5", "Brown": "#795548", "Orange": "#FF9800",
+  "Yellow": "#FFEB3B", "Green": "#4CAF50", "Teal": "#009688", "Blue": "#1976D2",
+  "Navy Blue": "#0A1A3A", "Purple": "#9C27B0", "Lavender": "#E6E6FA", "Grey": "#9E9E9E",
   "Multicolor": "#C2185B"
 };
 
@@ -768,6 +758,7 @@ let searchQuery = '';
 
 // Product modal state
 let pmCurrentProduct = null;
+let pmSelectedVariation = null;
 let pmSelectedColor = null;
 let pmQty = 1;
 
@@ -805,8 +796,8 @@ function isWholesaleApplied(product, qty) {
   return hasWholesale && qty >= minQty;
 }
 
-function getCartItemKey(productId, colorName) {
-  return `${productId}__${colorName || 'default'}`;
+function getCartItemKey(productId, variationName, colorName) {
+  return `${productId}__${variationName || 'default'}__${colorName || 'default'}`;
 }
 
 // ============================================================
@@ -859,6 +850,7 @@ function renderProducts() {
     const minQty = p.minOrder || 10;
     const colors = p.colors || [];
     const availableColors = colors.filter(c => c.available);
+    const hasVariations = p.variations && p.variations.length > 0;
 
     return `
       <div class="product-card ${soldOut ? 'sold-out' : ''}" onclick="openProductModal(${p.id})">
@@ -891,7 +883,7 @@ function renderProducts() {
           ` : ''}
           <button class="product-add" onclick="event.stopPropagation(); openProductModal(${p.id})">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
-            ${availableColors.length > 0 ? 'Choose Options' : 'View & Add'}
+            ${availableColors.length > 0 || hasVariations ? 'Choose Options' : 'View & Add'}
           </button>
         </div>
       </div>
@@ -908,10 +900,20 @@ function openProductModal(id) {
 
   pmCurrentProduct = product;
   pmQty = 1;
+  pmSelectedVariation = null;
+  pmSelectedColor = null;
 
+  const variations = product.variations || [];
   const colors = product.colors || [];
+  
+  if (variations.length > 0) {
+    pmSelectedVariation = variations[0].variantName;
+  }
+  
   const availableColors = colors.filter(c => c.available);
-  pmSelectedColor = availableColors.length > 0 ? availableColors[0].name : null;
+  if (availableColors.length > 0) {
+    pmSelectedColor = availableColors[0].name;
+  }
 
   document.getElementById('pmImage').src = product.img;
   document.getElementById('pmImage').alt = product.name;
@@ -936,12 +938,57 @@ function openProductModal(id) {
     wholesaleEl.style.display = 'none';
   }
 
+  renderModalVariations(product);
   renderModalColors(product);
   document.getElementById('pmQty').textContent = pmQty;
   updateModalTotal();
 
   document.getElementById('productModal').classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+
+// NEW FUNCTION FOR VARIATIONS
+function renderModalVariations(product) {
+  const variationSection = document.getElementById('pmVariationSection');
+  const buttonContainer = document.getElementById('pmVariationButtons');
+  const variations = product.variations || [];
+
+  if (variations.length === 0) {
+    variationSection.style.display = 'none';
+    return;
+  }
+
+  variationSection.style.display = 'block';
+  document.getElementById('pmSelectedVariation').textContent = pmSelectedVariation || '';
+
+  buttonContainer.innerHTML = variations.map(v => {
+    const isSelected = v.variantName === pmSelectedVariation;
+    return `
+      <button
+        class="variation-btn${isSelected ? ' selected' : ''}"
+        onclick="selectModalVariation('${v.variantName.replace(/'/g, "\\'")}')"
+        title="${v.variantName}"
+      >${v.variantName}</button>
+    `;
+  }).join('');
+}
+
+// NEW FUNCTION TO SELECT A VARIATION
+function selectModalVariation(variantName) {
+  const product = pmCurrentProduct;
+  if (!product) return;
+  
+  pmSelectedVariation = variantName;
+  renderModalVariations(product);
+  updateModalTotal();
+  
+  // If the variation has its own image, update the modal image
+  const variation = (product.variations || []).find(v => v.variantName === variantName);
+  if (variation && variation.variantImg) {
+    document.getElementById('pmImage').src = variation.variantImg;
+  } else {
+    document.getElementById('pmImage').src = product.img;
+  }
 }
 
 function renderModalColors(product) {
@@ -1002,6 +1049,7 @@ function closeProductModal() {
   document.getElementById('productModal').classList.remove('open');
   document.body.style.overflow = '';
   pmCurrentProduct = null;
+  pmSelectedVariation = null;
   pmSelectedColor = null;
   pmQty = 1;
 }
@@ -1013,26 +1061,40 @@ function addFromModal() {
   const colors = product.colors || [];
   const availableColors = colors.filter(c => c.available);
 
+  // Check if a color needs to be selected
   if (availableColors.length > 0 && !pmSelectedColor) {
     alert('Please choose a color first.');
     return;
   }
 
+  const variationName = pmSelectedVariation;
   const colorName = pmSelectedColor;
-  const key = getCartItemKey(product.id, colorName);
+  const key = getCartItemKey(product.id, variationName, colorName);
 
   const existing = cart.find(item => item.key === key);
   if (existing) {
     existing.qty += pmQty;
   } else {
-    cart.push({ key, id: product.id, qty: pmQty, color: colorName || null });
+    cart.push({ 
+      key, 
+      id: product.id, 
+      qty: pmQty, 
+      variation: variationName || null,
+      color: colorName || null 
+    });
   }
 
   saveCart();
   updateCartUI();
   renderProducts();
   closeProductModal();
-  showToast(`✓ ${product.name}${colorName ? ' (' + colorName + ')' : ''} added`);
+  
+  let toastMsg = `✓ ${product.name}`;
+  if (variationName) toastMsg += ` (${variationName})`;
+  if (colorName) toastMsg += ` (${colorName})`;
+  toastMsg += ` added`;
+  
+  showToast(toastMsg);
 }
 
 // ============================================================
@@ -1171,6 +1233,11 @@ function updateCartUI() {
         </div>
         <div class="cart-item-info">
           <div class="cart-item-name">${p.name}</div>
+          ${item.variation ? `
+            <div class="cart-item-variant">
+              Type: ${item.variation}
+            </div>
+          ` : ''}
           ${item.color ? `
             <div class="cart-item-variant">
               ${colorHex ? `<span class="cart-item-variant-dot" style="background:${colorHex};${isLightColor(colorHex) ? 'border:1px solid #ddd;' : ''}"></span>` : ''}
@@ -1311,7 +1378,8 @@ function sendOrderToWhatsApp() {
       const wholesaleActive = isWholesaleApplied(p, item.qty);
 
       msg += `${index + 1}. ${p.name}`;
-      if (item.color) msg += ` — ${item.color}`;
+      if (item.variation) msg += ` — ${item.variation}`;
+      if (item.color) msg += ` (${item.color})`;
       msg += `\n`;
       msg += `   Qty: ${item.qty} × ${formatPrice(unitPrice)} = *${formatPrice(lineTotal)}*`;
       if (wholesaleActive) msg += ` _[Wholesale]_`;
