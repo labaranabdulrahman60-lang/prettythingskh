@@ -83,3 +83,5 @@ content:
                     - "Multicolor"
               - { name: hex, label: "Custom HEX (optional — leave blank)", type: string, required: false }
               - { name: available, label: "Available?", type: boolean, default: true }
+
+              
