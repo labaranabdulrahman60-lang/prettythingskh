@@ -108,10 +108,24 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .wholesale-label-tag { background: #FFF3E0; color: #E65100; font-size: 0.6rem; font-weight: 800; padding: 0.15rem 0.45rem; border-radius: 3px; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid #FFCC80; }
 .wholesale-price-tag { background: #FFF8E1; color: #E65100; font-size: 0.7rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #FFE082; }
 .wholesale-min { background: #FCE4EC; color: var(--pink-deep); font-size: 0.68rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #F8BBD0; }
+
+/* --- NEW STOCK INDICATOR STYLES --- */
+.stock-indicator { font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.35rem; }
+.stock-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.stock-in { color: #2E7D32; }
+.stock-in .stock-dot { background: #2E7D32; }
+.stock-low { color: #E65100; }
+.stock-low .stock-dot { background: #E65100; animation: pulse 1.5s infinite; }
+.stock-out { color: #C62828; }
+.stock-out .stock-dot { background: #C62828; }
+@keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
+/* --------------------------------- */
+
 .product-add { margin-top: auto; background: var(--pink-gradient); color: white; padding: 0.55rem 0.75rem; border-radius: 8px; font-size: 0.78rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 0.35rem; transition: all 0.2s; width: 100%; }
 .product-add:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(236,106,156,0.3); }
 .product-add svg { width: 14px; height: 14px; }
 .product-add.added { background: var(--green); }
+.product-add:disabled { background: var(--gray-300); color: var(--text-light); cursor: not-allowed; transform: none; box-shadow: none; }
 
 .no-results { text-align: center; padding: 3rem 1rem; color: var(--text-light); display: none; }
 .no-results.show { display: block; }
@@ -844,7 +858,7 @@ function renderProducts() {
   noResults.classList.remove('show');
 
   grid.innerHTML = filtered.map(p => {
-    const soldOut = !p.stock;
+    const soldOut = !p.stock || (p.qty !== undefined && p.qty <= 0);
     const isWholesale = p.wholesale || p.cat === 'bundles';
     const hasWholesale = p.wholesalePrice && p.wholesalePrice > 0;
     const minQty = p.minOrder || 10;
@@ -852,8 +866,19 @@ function renderProducts() {
     const availableColors = colors.filter(c => c.available);
     const hasVariations = p.variations && p.variations.length > 0;
 
+    // --- NEW STOCK LOGIC ---
+    let stockHTML = '';
+    if (soldOut) {
+      stockHTML = `<div class="stock-indicator stock-out"><span class="stock-dot"></span> Out of Stock</div>`;
+    } else if (p.qty !== undefined && p.qty <= 5) {
+      stockHTML = `<div class="stock-indicator stock-low"><span class="stock-dot"></span> Only ${p.qty} left!</div>`;
+    } else {
+      stockHTML = `<div class="stock-indicator stock-in"><span class="stock-dot"></span> In Stock</div>`;
+    }
+    // -----------------------
+
     return `
-      <div class="product-card ${soldOut ? 'sold-out' : ''}" onclick="openProductModal(${p.id})">
+      <div class="product-card ${soldOut ? 'sold-out' : ''}" onclick="${soldOut ? '' : `openProductModal(${p.id})`}">
         <div class="product-image">
           <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/FCE4EC/E91E63?text=PrettyThings'">
           ${soldOut ? '<span class="product-badge sold-out-badge">Sold Out</span>' : (isWholesale ? '<span class="product-badge wholesale-badge">Wholesale</span>' : (p.oldPrice > p.price ? '<span class="product-badge">Sale</span>' : ''))}
@@ -881,9 +906,12 @@ function renderProducts() {
               <span class="wholesale-min">Min ${minQty}pcs</span>
             </div>
           ` : ''}
-          <button class="product-add" onclick="event.stopPropagation(); openProductModal(${p.id})">
+          
+          ${stockHTML} <!-- STOCK INDICATOR INSERTED HERE -->
+
+          <button class="product-add" onclick="event.stopPropagation(); ${soldOut ? '' : `openProductModal(${p.id})`}" ${soldOut ? 'disabled' : ''}>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
-            ${availableColors.length > 0 || hasVariations ? 'Choose Options' : 'View & Add'}
+            ${soldOut ? 'Out of Stock' : (availableColors.length > 0 || hasVariations ? 'Choose Options' : 'View & Add')}
           </button>
         </div>
       </div>
@@ -896,7 +924,7 @@ function renderProducts() {
 // ============================================================
 function openProductModal(id) {
   const product = PRODUCTS.find(p => p.id === id);
-  if (!product || !product.stock) return;
+  if (!product || !product.stock || (product.qty !== undefined && product.qty <= 0)) return;
 
   pmCurrentProduct = product;
   pmQty = 1;
