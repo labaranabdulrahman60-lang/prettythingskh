@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: labaranabdulrahman60-lang/prettythingskhairat
+  repo: labaranabdulrahman60-lang/prettythingskh
   branch: main
   base_url: https://prettythingskhairat.com
   auth_endpoint: /api/auth
