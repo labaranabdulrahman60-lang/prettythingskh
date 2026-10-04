@@ -218,13 +218,31 @@
     },
     {
       "oldPrice": 2000,
-      "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
+      "img": "/images/products/img_8955.jpeg",
       "price": 1500,
-      "wholesalePrice": 0,
+      "wholesalePrice": 750,
       "name": "Black Lip Liner",
       "colors": [
         {
           "name": "Black",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 7,
+      "minOrder": 10,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 9000,
+      "img": "/images/products/c9a1e57a-9a9e-4bc0-b64d-fd04bcc0c3ee.jpeg",
+      "price": 3000,
+      "wholesalePrice": 2000,
+      "name": "Peel Off Lip Liner",
+      "colors": [
+        {
+          "name": "Pink",
           "available": true
         },
         {
@@ -234,48 +252,13 @@
       ],
       "stock": true,
       "cat": "beauty",
-      "id": 7,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 9000,
-      "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
-      "price": 3000,
-      "wholesalePrice": 0,
-      "name": "Peel Off Lip Liner",
-      "colors": [
-        {
-          "name": "Pink",
-          "available": true
-        },
-        {
-          "name": "Red",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "beauty",
       "id": 8,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 3000,
-      "img": "https://images.unsplash.com/photo-1614859324967-bdf471b40aa9?w=400",
-      "price": 1500,
-      "wholesalePrice": 0,
-      "name": "Lip Liners (Assorted)",
-      "colors": [],
-      "stock": true,
-      "cat": "beauty",
-      "id": 9,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?w=400",
+      "img": "/images/products/img_8960.jpeg",
       "price": 8500,
       "wholesalePrice": 0,
       "name": "Whitening Strips",
@@ -287,114 +270,167 @@
       "wholesale": false
     },
     {
-      "oldPrice": 14000,
-      "img": "https://images.unsplash.com/photo-1583241800698-9c2e0e1e4e1e?w=400",
-      "price": 8500,
-      "wholesalePrice": 0,
-      "name": "Cluster DIY Lashes",
-      "colors": [],
-      "stock": true,
-      "cat": "beauty",
-      "id": 11,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
+      "variations": [],
       "oldPrice": 3000,
-      "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
+      "img": "/images/products/img_8981.png",
       "price": 2500,
-      "wholesalePrice": 0,
-      "name": "Press On Nails (White Tip)",
+      "wholesalePrice": 1500,
+      "name": "Press On Nails",
       "colors": [],
       "stock": true,
       "cat": "nails",
       "id": 20,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 3500,
-      "img": "https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=400",
-      "price": 3000,
-      "wholesalePrice": 0,
-      "name": "Press On Nails (Pink Bow)",
+      "img": "/images/products/img_8980.png",
+      "price": 2500,
+      "wholesalePrice": 1500,
+      "name": "Press On Nails ()",
       "colors": [],
       "stock": true,
       "cat": "nails",
       "id": 21,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 3000,
-      "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400",
-      "price": 2500,
-      "wholesalePrice": 0,
-      "name": "Black Press On Nails",
-      "colors": [],
-      "stock": true,
-      "cat": "nails",
-      "id": 22,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 3500,
-      "img": "https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=400",
-      "price": 3000,
-      "wholesalePrice": 0,
-      "name": "Press On Nails (Glitter)",
+      "img": "/images/products/img_8979.png",
+      "price": 2500,
+      "wholesalePrice": 1500,
+      "name": "Press On Nails",
       "colors": [],
       "stock": true,
       "cat": "nails",
       "id": 23,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 3000,
-      "img": "https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=400",
-      "price": 2800,
-      "wholesalePrice": 0,
-      "name": "Press On Nails (Classic Pink)",
+      "img": "/images/products/img_8978.png",
+      "price": 2500,
+      "wholesalePrice": 1500,
+      "name": "Press On Nails",
       "colors": [],
       "stock": true,
       "cat": "nails",
       "id": 24,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
-      "oldPrice": 5000,
-      "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
-      "price": 2000,
-      "wholesalePrice": 0,
-      "name": "MagSafe Case",
-      "colors": [
+      "variations": [
         {
-          "name": "Clear",
-          "available": true
+          "variantName": "16pro max "
         },
         {
-          "name": "Black",
-          "available": true
+          "variantName": "16pro "
         },
         {
-          "name": "Pink",
-          "available": true
+          "variantName": "13pro "
+        },
+        {
+          "variantName": "15pro "
+        },
+        {
+          "variantName": "14pro "
+        },
+        {
+          "variantName": "11pro "
+        },
+        {
+          "variantName": "15pro max "
+        },
+        {
+          "variantName": "14pro max "
+        },
+        {
+          "variantName": "Xs max "
+        },
+        {
+          "variantName": "7plus "
+        },
+        {
+          "variantName": "iPhone 7"
+        },
+        {
+          "variantName": "iPhone XR "
+        },
+        {
+          "variantName": "iPhone 8"
+        },
+        {
+          "variantName": "iPhone 8plus "
+        },
+        {
+          "variantName": "Xs"
         }
       ],
+      "oldPrice": "",
+      "img": "/images/products/img_8987.jpeg",
+      "price": 1500,
+      "wholesalePrice": 1000,
+      "name": "MagSafe Case",
+      "colors": [],
       "stock": true,
       "cat": "cases",
       "id": 30,
       "minOrder": 10,
-      "wholesale": false
+      "wholesale": true
     },
     {
-      "oldPrice": 3500,
-      "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400",
-      "price": 2000,
-      "wholesalePrice": 0,
+      "variations": [
+        {
+          "variantName": "16"
+        },
+        {
+          "variantName": "16pro max "
+        },
+        {
+          "variantName": "16pro"
+        },
+        {
+          "variantName": "13pro "
+        },
+        {
+          "variantName": "11pro "
+        },
+        {
+          "variantName": "11pro max "
+        },
+        {
+          "variantName": "Xr "
+        },
+        {
+          "variantName": "Xs max "
+        },
+        {
+          "variantName": "iPhone x"
+        },
+        {
+          "variantName": "7"
+        },
+        {
+          "variantName": "7plus "
+        },
+        {
+          "variantName": "Xs"
+        },
+        {
+          "variantName": "7plus "
+        },
+        {
+          "variantName": "iPhone 8plus "
+        }
+      ],
+      "oldPrice": 2000,
+      "img": "/images/products/img_8988.jpeg",
+      "price": 1500,
+      "wholesalePrice": 1000,
       "name": "Silicone Cases (iPhone)",
       "colors": [
         {
@@ -408,13 +444,21 @@
         {
           "name": "Black",
           "available": true
+        },
+        {
+          "available": true,
+          "name": "Purple"
+        },
+        {
+          "available": true,
+          "name": "Light Pink"
         }
       ],
       "stock": true,
       "cat": "cases",
       "id": 31,
       "minOrder": 10,
-      "wholesale": false
+      "wholesale": true
     },
     {
       "oldPrice": 10000,
@@ -994,125 +1038,54 @@
       "wholesale": false
     },
     {
-      "oldPrice": 2500,
-      "img": "https://images.unsplash.com/photo-1616627561950-9f746e330187?w=400",
-      "price": 2000,
-      "wholesalePrice": 0,
-      "name": "Mirror",
-      "colors": [
-        {
-          "name": "Pink",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "accessories",
-      "id": 83,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
       "oldPrice": 7500,
-      "img": "https://images.unsplash.com/photo-1565636192335-2d3e0f4f4f4f?w=400",
-      "price": 5000,
-      "wholesalePrice": 0,
+      "img": "/images/products/img_8984.png",
+      "price": 4500,
+      "wholesalePrice": 4000,
       "name": "LED Light",
       "colors": [],
       "stock": true,
       "cat": "accessories",
       "id": 84,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 5000,
-      "img": "https://images.unsplash.com/photo-1606986628253-2b5c0c0c0c0c?w=400",
-      "price": 4500,
-      "wholesalePrice": 0,
-      "name": "Tripod",
-      "colors": [],
-      "stock": true,
-      "cat": "accessories",
-      "id": 85,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 1000,
-      "img": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400",
-      "price": 900,
-      "wholesalePrice": 0,
-      "name": "Face Trimmer (3pcs)",
-      "colors": [],
-      "stock": true,
-      "cat": "accessories",
-      "id": 86,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 3500,
-      "img": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=400",
-      "price": 3000,
-      "wholesalePrice": 0,
-      "name": "Thank You Cards (50pcs)",
-      "colors": [],
-      "stock": true,
-      "cat": "accessories",
-      "id": 87,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 2500,
-      "img": "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=400",
-      "price": 2000,
-      "wholesalePrice": 2000,
-      "name": "Rhode Lip Tints (Wholesale)",
-      "colors": [],
-      "stock": true,
-      "cat": "bundles",
-      "id": 90,
-      "minOrder": 10,
+      "minOrder": 5,
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Butterfly ",
+          "variantColors": []
+        },
+        {
+          "variantName": "Rose"
+        },
+        {
+          "variantName": "Flower "
+        }
+      ],
       "oldPrice": 0,
-      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
-      "price": 15000,
-      "wholesalePrice": 15000,
-      "name": "Tattoo Stickers Wholesale (50pcs)",
+      "img": "/images/products/img_0056.jpeg",
+      "price": 5000,
+      "wholesalePrice": 5000,
+      "name": "Tattoo Stickers Wholesale (30pc)",
       "colors": [],
       "stock": true,
       "cat": "bundles",
       "id": 91,
-      "minOrder": 1,
+      "minOrder": 30,
       "wholesale": true
     },
     {
-      "oldPrice": 2500,
-      "img": "https://images.unsplash.com/photo-1631214540242-3cd8c4b0b3d4?w=400",
-      "price": 2000,
-      "wholesalePrice": 2000,
-      "name": "Rhode Lip Tints Peptides (Wholesale)",
+      "oldPrice": 3000,
+      "img": "/images/products/img_8971.png",
+      "price": 2500,
+      "wholesalePrice": 1500,
+      "name": "Press On Nails",
       "colors": [],
       "stock": true,
-      "cat": "bundles",
-      "id": 92,
-      "minOrder": 10,
-      "wholesale": true
-    },
-    {
-      "oldPrice": 2500,
-      "img": "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400",
-      "price": 2000,
-      "wholesalePrice": 2000,
-      "name": "Press On Nails Wholesale (10pcs)",
-      "colors": [],
-      "stock": true,
-      "cat": "bundles",
-      "id": 94,
-      "minOrder": 10,
+      "cat": "nails",
+      "id": 95,
+      "minOrder": 5,
       "wholesale": true
     },
     {
