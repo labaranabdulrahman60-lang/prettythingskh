@@ -4,42 +4,30 @@
       "variations": [
         {
           "variantName": "Stawberry ",
-          "variantColors": [
-            "Red "
-          ]
+          "variantColors": ["Red "]
         },
         {
           "variantName": "Raspberry ",
-          "variantColors": [
-            "Red"
-          ]
+          "variantColors": ["Red"]
         },
         {
           "variantName": "Honey infused ",
-          "variantColors": [
-            "Light yellow "
-          ]
+          "variantColors": ["Light yellow "]
         },
         {
           "variantName": "Vanilla glaze ",
-          "variantColors": [
-            "Light pink "
-          ]
+          "variantColors": ["Light pink "]
         },
         {
           "variantName": "Watermelon "
         },
         {
           "variantName": "Sticky toffee",
-          "variantColors": [
-            "Dark brown"
-          ]
+          "variantColors": ["Dark brown"]
         },
         {
           "variantName": "Milky mocha ",
-          "variantColors": [
-            "Dark brown"
-          ]
+          "variantColors": ["Dark brown"]
         },
         {
           "variantName": "Bee-li-chii"
@@ -67,87 +55,59 @@
       "variations": [
         {
           "variantName": "Raspberry ",
-          "variantColors": [
-            "Maroon "
-          ]
+          "variantColors": ["Maroon "]
         },
         {
           "variantName": "Toast ",
-          "variantColors": [
-            "Brown "
-          ]
+          "variantColors": ["Brown "]
         },
         {
           "variantName": "Pbj",
-          "variantColors": [
-            "Dark brown "
-          ]
+          "variantColors": ["Dark brown "]
         },
         {
           "variantName": "Espresso ",
-          "variantColors": [
-            "Coffee brown "
-          ]
+          "variantColors": ["Coffee brown "]
         },
         {
           "variantName": "Stawberry ",
-          "variantColors": [
-            "Clear white "
-          ]
+          "variantColors": ["Clear white "]
         },
         {
           "variantName": "Ribbon ",
-          "variantColors": [
-            "Light pink "
-          ]
+          "variantColors": ["Light pink "]
         },
         {
           "variantName": "Gauva spritz ",
-          "variantColors": [
-            "Red "
-          ]
+          "variantColors": ["Red "]
         },
         {
           "variantName": "Pepper mint ",
-          "variantColors": [
-            "Clear white "
-          ]
+          "variantColors": ["Clear white "]
         },
         {
           "variantName": "Sugarberry ",
-          "variantColors": [
-            "Clear white "
-          ]
+          "variantColors": ["Clear white "]
         },
         {
           "variantName": "Sugarcookie ",
-          "variantColors": [
-            "Clear white "
-          ]
+          "variantColors": ["Clear white "]
         },
         {
           "variantName": "Espresso ",
-          "variantColors": [
-            "Coffee brown "
-          ]
+          "variantColors": ["Coffee brown "]
         },
         {
           "variantName": "Watermelon slice ",
-          "variantColors": [
-            "White "
-          ]
+          "variantColors": ["White "]
         },
         {
           "variantName": "Salted caramel ",
-          "variantColors": [
-            "White "
-          ]
+          "variantColors": ["White "]
         },
         {
           "variantName": "Cinnamon roll ",
-          "variantColors": [
-            "Dark brown "
-          ]
+          "variantColors": ["Dark brown "]
         },
         {
           "variantName": "Unscented "
@@ -157,15 +117,11 @@
         },
         {
           "variantName": "Short cake ",
-          "variantColors": [
-            "Dark pink "
-          ]
+          "variantColors": ["Dark pink "]
         },
         {
           "variantName": "Lemontini ",
-          "variantColors": [
-            "White with shimmering "
-          ]
+          "variantColors": ["White with shimmering "]
         },
         {
           "variantName": "Passion fruit "
@@ -199,9 +155,7 @@
       "variations": [
         {
           "variantName": "Mo8 ",
-          "variantColors": [
-            "Dark burgundy "
-          ]
+          "variantColors": ["Dark burgundy "]
         }
       ],
       "oldPrice": 4000,
@@ -1097,7 +1051,7 @@
       "colors": [],
       "stock": true,
       "cat": "eyewear",
-      "id": 95,
+      "id": 96,
       "minOrder": 5,
       "wholesale": true
     },
@@ -1131,7 +1085,7 @@
       "name": "Press on nails ",
       "stock": true,
       "cat": "nails",
-      "id": 101,
+      "id": 98,
       "minOrder": 5,
       "wholesale": true
     },
@@ -1179,7 +1133,7 @@
       "name": "Press on nails ",
       "stock": true,
       "cat": "nails",
-      "id": 104,
+      "id": 99,
       "minOrder": 5,
       "wholesale": true
     },
