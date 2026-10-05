@@ -186,6 +186,28 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .product-modal-add-btn:disabled { background: var(--gray-300); box-shadow: none; cursor: not-allowed; }
 .product-modal-add-btn svg { width: 20px; height: 20px; }
 
+/* NEW: Selection list inside the modal */
+.selection-list { background: var(--off-white); border-radius: 10px; padding: 0.6rem 0.75rem; margin-bottom: 1rem; }
+.selection-list-empty { font-size: 0.8rem; color: var(--text-light); text-align: center; padding: 0.5rem; }
+.selection-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0; border-bottom: 1px dashed var(--pink-pale); font-size: 0.82rem; }
+.selection-item:last-child { border-bottom: none; }
+.selection-item-name { flex: 1; color: var(--text-heading); font-weight: 600; }
+.selection-item-qty { color: var(--pink-deep); font-weight: 700; }
+.selection-item-price { color: var(--text-body); font-weight: 600; min-width: 70px; text-align: right; }
+.selection-item-remove { background: #FFE5E5; color: #C62828; width: 22px; height: 22px; border-radius: 50%; font-size: 0.75rem; display: flex; align-items: center; justify-content: center; font-weight: 700; }
+.selection-item-remove:hover { background: #FFCCCC; }
+
+.add-selection-btn { width: 100%; background: white; border: 2px solid var(--pink); color: var(--pink-dark); padding: 0.6rem; border-radius: 10px; font-size: 0.85rem; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 0.4rem; margin-top: 0.6rem; transition: all 0.2s; }
+.add-selection-btn:hover:not(:disabled) { background: var(--pink-pale); }
+.add-selection-btn:disabled { opacity: 0.4; cursor: not-allowed; border-color: var(--gray-300); color: var(--text-light); }
+
+.modal-total-row { display: flex; justify-content: space-between; align-items: baseline; margin: 1rem 0 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--pink-light); }
+.modal-total-row .label { font-size: 0.85rem; color: var(--text-body); font-weight: 600; }
+.modal-total-row .value { font-size: 1.4rem; font-weight: 800; color: var(--pink-dark); }
+
+.wholesale-applied-note { background: #E8F5E9; border: 1px solid #A5D6A7; border-radius: 8px; padding: 0.5rem 0.75rem; font-size: 0.78rem; color: #2E7D32; font-weight: 700; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem; }
+.wholesale-almost-note { background: #FFF8E1; border: 1px solid #FFE082; border-radius: 8px; padding: 0.5rem 0.75rem; font-size: 0.78rem; color: #E65100; font-weight: 700; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.35rem; }
+
 .cart-overlay { position: fixed; inset: 0; background: rgba(45,27,46,0.5); z-index: 200; opacity: 0; pointer-events: none; transition: opacity 0.3s; backdrop-filter: blur(4px); }
 .cart-overlay.open { opacity: 1; pointer-events: auto; }
 .cart-drawer { position: fixed; top: 0; right: 0; bottom: 0; width: 100%; max-width: 420px; background: white; z-index: 201; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.4,0,0.2,1); display: flex; flex-direction: column; box-shadow: -10px 0 40px rgba(0,0,0,0.15); }
@@ -201,25 +223,25 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .cart-empty svg { width: 70px; height: 70px; color: var(--pink-light); margin: 0 auto 1rem; }
 .cart-empty h3 { font-size: 1.05rem; color: var(--text-heading); margin-bottom: 0.4rem; }
 .cart-empty p { font-size: 0.85rem; }
-.cart-item { display: flex; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid var(--pink-pale); }
-.cart-item:last-child { border-bottom: none; }
-.cart-item-img { width: 60px; height: 60px; border-radius: 8px; background: var(--off-white); overflow: hidden; flex-shrink: 0; }
-.cart-item-img img { width: 100%; height: 100%; object-fit: cover; }
-.cart-item-info { flex: 1; min-width: 0; }
-.cart-item-name { font-size: 0.85rem; font-weight: 700; color: var(--text-heading); margin-bottom: 0.2rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.cart-item-variant { font-size: 0.72rem; color: var(--pink-deep); font-weight: 600; margin-bottom: 0.2rem; display: flex; align-items: center; gap: 0.35rem; }
-.cart-item-variant-dot { width: 10px; height: 10px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.1); }
-.cart-item-price { font-size: 0.85rem; font-weight: 700; color: var(--pink-dark); margin-bottom: 0.4rem; }
-.cart-item-price strong { color: var(--pink-dark); font-weight: 800; }
-.cart-item-controls { display: flex; align-items: center; gap: 0.5rem; }
-.qty-btn { width: 26px; height: 26px; border-radius: 50%; background: var(--pink-pale); color: var(--pink-dark); font-size: 0.9rem; font-weight: 700; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
-.qty-btn:hover:not(:disabled) { background: var(--pink-light); }
-.qty-btn:disabled { opacity: 0.35; cursor: not-allowed; }
-.qty-num { font-size: 0.85rem; font-weight: 700; min-width: 20px; text-align: center; color: var(--text-heading); }
-.cart-item-remove { margin-left: auto; background: transparent; color: var(--text-light); font-size: 0.7rem; padding: 0.2rem; transition: color 0.2s; }
-.cart-item-remove:hover { color: var(--pink-dark); }
-.cart-wholesale-badge { display: inline-block; background: #E8F5E9; color: #2E7D32; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; margin-bottom: 0.4rem; border: 1px solid #A5D6A7; }
-.cart-wholesale-hint { display: inline-block; background: #FFF8E1; color: #E65100; font-size: 0.68rem; font-weight: 600; padding: 0.2rem 0.5rem; border-radius: 4px; margin-bottom: 0.4rem; border: 1px solid #FFE082; }
+
+/* NEW: Cart group (product) with multiple variations inside */
+.cart-group { background: white; border: 1px solid var(--pink-pale); border-radius: 12px; padding: 0.85rem; margin-bottom: 0.85rem; }
+.cart-group-header { display: flex; gap: 0.75rem; align-items: flex-start; }
+.cart-group-img { width: 60px; height: 60px; border-radius: 8px; background: var(--off-white); overflow: hidden; flex-shrink: 0; }
+.cart-group-img img { width: 100%; height: 100%; object-fit: cover; }
+.cart-group-info { flex: 1; min-width: 0; }
+.cart-group-name { font-size: 0.9rem; font-weight: 800; color: var(--text-heading); margin-bottom: 0.2rem; }
+.cart-group-total { font-size: 0.9rem; font-weight: 800; color: var(--pink-dark); }
+.cart-group-remove { background: transparent; color: var(--text-light); font-size: 0.7rem; padding: 0.2rem; margin-top: 0.15rem; }
+.cart-group-remove:hover { color: var(--pink-dark); }
+
+.cart-group-variations { margin-top: 0.6rem; border-top: 1px dashed var(--pink-pale); padding-top: 0.5rem; }
+.cart-variation-item { display: flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0; font-size: 0.78rem; }
+.cart-variation-name { flex: 1; color: var(--pink-deep); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cart-variation-qty { color: var(--text-heading); font-weight: 700; min-width: 40px; text-align: center; }
+.cart-variation-price { color: var(--text-body); font-weight: 600; min-width: 70px; text-align: right; }
+.cart-variation-remove { background: transparent; color: var(--text-light); font-size: 0.7rem; padding: 0.15rem 0.3rem; }
+.cart-variation-remove:hover { color: var(--pink-dark); }
 
 .cart-footer { padding: 1rem 1.25rem 1.25rem; border-top: 1px solid var(--pink-pale); background: var(--off-white); }
 .cart-total-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem; font-size: 0.85rem; }
@@ -320,8 +342,8 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .whatsapp-instructions-note strong { color: #E65100; }
 
 * { -webkit-tap-highlight-color: transparent; }
-button, a, input, select, textarea, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .floating-cart, .wa-float, .search-clear, .cart-close, .search-bar input, .form-group input, .form-group select, .form-group textarea, .color-swatch, .qty-selector-btn, .product-modal-add-btn, .product-modal-close, .product-card, .variation-btn { touch-action: manipulation; -webkit-touch-callout: none; }
-button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .color-swatch, .qty-selector-btn, .variation-btn { -webkit-user-select: none; user-select: none; }
+button, a, input, select, textarea, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .floating-cart, .wa-float, .search-clear, .cart-close, .search-bar input, .form-group input, .form-group select, .form-group textarea, .color-swatch, .qty-selector-btn, .product-modal-add-btn, .product-modal-close, .product-card, .variation-btn, .add-selection-btn { touch-action: manipulation; -webkit-touch-callout: none; }
+button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .color-swatch, .qty-selector-btn, .variation-btn, .add-selection-btn { -webkit-user-select: none; user-select: none; }
 .form-group input, .form-group select, .form-group textarea, .search-bar input { font-size: 16px !important; }
 </style>
 </head>
@@ -463,11 +485,30 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
           <span class="qty-selector-num" id="pmQty">1</span>
           <button class="qty-selector-btn" id="pmQtyPlus" onclick="changeModalQty(1)">+</button>
         </div>
+        <button class="add-selection-btn" id="pmAddSelectionBtn" onclick="addToSelection()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M12 5v14M5 12h14"/></svg>
+          <span>Add this variation to selection</span>
+        </button>
       </div>
 
-      <button class="product-modal-add-btn" id="pmAddBtn" onclick="addFromModal()">
+      <div class="product-modal-section" id="pmSelectionSection" style="display:none;">
+        <div class="product-modal-section-title">
+          <span>Your Selection</span>
+          <span class="selected-color-label" id="pmSelectionCount">0 items</span>
+        </div>
+        <div class="selection-list" id="pmSelectionList"></div>
+      </div>
+
+      <div id="pmWholesaleNote"></div>
+
+      <div class="modal-total-row">
+        <span class="label">Total</span>
+        <span class="value" id="pmTotalPrice">₦0</span>
+      </div>
+
+      <button class="product-modal-add-btn" id="pmAddBtn" onclick="addSelectionToCart()" disabled>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
-        <span>Add to Cart — <span id="pmTotalPrice">₦0</span></span>
+        <span>Add All to Cart</span>
       </button>
     </div>
   </div>
@@ -682,9 +723,6 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
 </a>
 
 <script>
-// ============================================================
-// CONFIGURATION
-// ============================================================
 const WHATSAPP_NUMBER = "2347084885790";
 const BANK_NAME = "PalmPay";
 const ACCOUNT_NUMBER = "7040596806";
@@ -696,9 +734,6 @@ document.getElementById('accountNameText').textContent = ACCOUNT_NAME;
 document.getElementById('footerWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}`;
 document.getElementById('floatWaLink').href = `https://wa.me/${WHATSAPP_NUMBER}`;
 
-// ============================================================
-// COLOR NAME → HEX MAPPING
-// ============================================================
 const COLOR_HEX_MAP = {
   "Pink": "#F06292", "Light Pink": "#F8BBD0", "Dark Pink": "#C2185B", "Rose Gold": "#E8B4A0",
   "Rose": "#E8B4B8", "Peach": "#FFAB91", "Coral": "#FF7043", "Raspberry": "#C2185B",
@@ -718,9 +753,6 @@ function getColorHex(colorObj) {
   return '#CCCCCC';
 }
 
-// ============================================================
-// DELIVERY FEES
-// ============================================================
 const DELIVERY_FEES = {
   "Kaduna South": 2500, "Kaduna North": 1500, "Kaduna Other": 2000,
   "Kano": 2000, "Katsina": 2000, "Jigawa": 2500, "Kebbi": 2500, "Sokoto": 2500, "Zamfara": 2500,
@@ -734,12 +766,11 @@ const DELIVERY_FEES = {
 let currentDeliveryFee = 0;
 let currentDeliveryZone = "";
 
-// ============================================================
-// STATE
-// ============================================================
 let PRODUCTS = [];
-let cart = [];
+let cart = []; // Each item: { id, items: [{variation, color, qty}] }
 try { cart = JSON.parse(localStorage.getItem('ptk_cart') || '[]'); } catch(e) { cart = []; }
+// Migration: if old cart format (with .key), rebuild as new format
+if (cart.length > 0 && cart[0].key !== undefined) { cart = []; }
 let activeCategory = 'all';
 let searchQuery = '';
 
@@ -749,10 +780,8 @@ let pmSelectedVariation = null;
 let pmSelectedColor = null;
 let pmQty = 1;
 let pmStockLevel = 999;
+let pmSelection = []; // [{variation, color, qty}]
 
-// ============================================================
-// HELPERS
-// ============================================================
 function formatPrice(n) {
   if (typeof n !== 'number' || isNaN(n)) return '₦0';
   return '₦' + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -769,25 +798,6 @@ function isLightColor(hex) {
   return brightness > 220;
 }
 
-function getItemPrice(product, qty) {
-  if (!product) return 0;
-  const hasWholesale = product.wholesalePrice && product.wholesalePrice > 0;
-  const minQty = product.minOrder || 10;
-  if (hasWholesale && qty >= minQty) return product.wholesalePrice;
-  return product.price;
-}
-
-function isWholesaleApplied(product, qty) {
-  if (!product) return false;
-  const hasWholesale = product.wholesalePrice && product.wholesalePrice > 0;
-  const minQty = product.minOrder || 10;
-  return hasWholesale && qty >= minQty;
-}
-
-function getCartItemKey(productId, variationName, colorName) {
-  return `${productId}__${variationName || 'default'}__${colorName || 'default'}`;
-}
-
 function findStockLevel(product, name) {
   if (!product || !name) return null;
   const stockLevels = product.stock_levels || [];
@@ -799,9 +809,18 @@ function findStockLevel(product, name) {
   return null;
 }
 
-// ============================================================
-// LOAD PRODUCTS
-// ============================================================
+// Compute pricing for a group of variations of the same product
+function computeGroupPricing(product, selections) {
+  // selections: [{ variation, color, qty }]
+  const totalQty = selections.reduce((s, x) => s + x.qty, 0);
+  const hasWholesale = product.wholesalePrice && product.wholesalePrice > 0;
+  const minQty = product.minOrder || 10;
+  const wholesaleActive = hasWholesale && totalQty >= minQty;
+  const unitPrice = wholesaleActive ? product.wholesalePrice : product.price;
+  const total = unitPrice * totalQty;
+  return { totalQty, unitPrice, total, wholesaleActive, hasWholesale, minQty };
+}
+
 async function loadProducts() {
   const loadingState = document.getElementById('loadingState');
   loadingState.style.display = 'block';
@@ -819,9 +838,6 @@ async function loadProducts() {
   }
 }
 
-// ============================================================
-// RENDER PRODUCTS GRID
-// ============================================================
 function renderProducts() {
   const grid = document.getElementById('productsGrid');
   const noResults = document.getElementById('noResults');
@@ -898,9 +914,6 @@ function renderProducts() {
   }).join('');
 }
 
-// ============================================================
-// PRODUCT MODAL
-// ============================================================
 function openProductModal(id) {
   const product = PRODUCTS.find(p => p.id === id);
   if (!product || !product.stock || (product.qty !== undefined && product.qty <= 0)) return;
@@ -910,6 +923,7 @@ function openProductModal(id) {
   pmSelectedVariation = null;
   pmSelectedColor = null;
   pmStockLevel = 999;
+  pmSelection = [];
 
   const variations = product.variations || [];
   const colors = product.colors || [];
@@ -954,13 +968,13 @@ function openProductModal(id) {
   renderModalColors(product);
   document.getElementById('pmQty').textContent = pmQty;
   updateQtyButtons();
+  renderSelectionList();
   updateModalTotal();
 
   document.getElementById('productModal').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
-// NEW FUNCTION FOR VARIATIONS
 function renderModalVariations(product) {
   const variationSection = document.getElementById('pmVariationSection');
   const buttonContainer = document.getElementById('pmVariationButtons');
@@ -986,7 +1000,6 @@ function renderModalVariations(product) {
   }).join('');
 }
 
-// NEW FUNCTION TO SELECT A VARIATION
 function selectModalVariation(variantName) {
   const product = pmCurrentProduct;
   if (!product) return;
@@ -1081,11 +1094,112 @@ function updateQtyButtons() {
   plusBtn.disabled = (pmStockLevel !== 999 && pmQty >= pmStockLevel);
 }
 
+// Add currently-selected variation to the "Your Selection" list (staying in modal)
+function addToSelection() {
+  const product = pmCurrentProduct;
+  if (!product) return;
+
+  const variationName = pmSelectedVariation;
+  const colorName = pmSelectedColor;
+
+  // Calculate already-in-selection qty for this exact variation
+  const existingIndex = pmSelection.findIndex(x => x.variation === variationName && x.color === colorName);
+
+  // Check per-variation stock limit (if defined)
+  if (pmStockLevel !== 999) {
+    const alreadyIn = existingIndex >= 0 ? pmSelection[existingIndex].qty : 0;
+    if (alreadyIn + pmQty > pmStockLevel) {
+      showToast(`Only ${pmStockLevel} of "${variationName || colorName}" available`);
+      return;
+    }
+  }
+
+  if (existingIndex >= 0) {
+    pmSelection[existingIndex].qty += pmQty;
+  } else {
+    pmSelection.push({ variation: variationName, color: colorName, qty: pmQty });
+  }
+
+  // Reset qty for next selection
+  pmQty = 1;
+  document.getElementById('pmQty').textContent = pmQty;
+  updateQtyButtons();
+
+  renderSelectionList();
+  updateModalTotal();
+
+  showToast(`Added to selection`);
+}
+
+function removeSelectionItem(index) {
+  if (index < 0 || index >= pmSelection.length) return;
+  pmSelection.splice(index, 1);
+  renderSelectionList();
+  updateModalTotal();
+}
+
+function renderSelectionList() {
+  const section = document.getElementById('pmSelectionSection');
+  const listEl = document.getElementById('pmSelectionList');
+  const countEl = document.getElementById('pmSelectionCount');
+  const addBtn = document.getElementById('pmAddBtn');
+
+  if (pmSelection.length === 0) {
+    section.style.display = 'none';
+    addBtn.disabled = true;
+    countEl.textContent = '0 items';
+    return;
+  }
+
+  section.style.display = 'block';
+  addBtn.disabled = false;
+  const totalQty = pmSelection.reduce((s, x) => s + x.qty, 0);
+  countEl.textContent = `${totalQty} pc${totalQty > 1 ? 's' : ''}`;
+
+  const product = pmCurrentProduct;
+  listEl.innerHTML = pmSelection.map((item, idx) => {
+    const label = item.variation || item.color || 'Default';
+    const lineTotal = product ? (product.wholesalePrice && product.wholesalePrice > 0 ? 0 : 0) : 0;
+    // We don't show per-line price here; the total is shown at the bottom.
+    return `
+      <div class="selection-item">
+        <span class="selection-item-name">${label}</span>
+        <span class="selection-item-qty">× ${item.qty}</span>
+        <button class="selection-item-remove" onclick="removeSelectionItem(${idx})" aria-label="Remove">✕</button>
+      </div>
+    `;
+  }).join('');
+}
+
 function updateModalTotal() {
-  if (!pmCurrentProduct) return;
-  const unitPrice = getItemPrice(pmCurrentProduct, pmQty);
-  const total = unitPrice * pmQty;
-  document.getElementById('pmTotalPrice').textContent = formatPrice(total);
+  const product = pmCurrentProduct;
+  if (!product) return;
+
+  const noteEl = document.getElementById('pmWholesaleNote');
+  const totalEl = document.getElementById('pmTotalPrice');
+
+  if (pmSelection.length === 0) {
+    const single = pmQty;
+    const hasWholesale = product.wholesalePrice && product.wholesalePrice > 0;
+    const minQty = product.minOrder || 10;
+    const wholesaleActive = hasWholesale && single >= minQty;
+    const unitPrice = wholesaleActive ? product.wholesalePrice : product.price;
+    totalEl.textContent = formatPrice(unitPrice * single);
+    noteEl.innerHTML = '';
+    return;
+  }
+
+  const pricing = computeGroupPricing(product, pmSelection);
+  totalEl.textContent = formatPrice(pricing.total);
+
+  if (pricing.wholesaleActive) {
+    noteEl.innerHTML = `<div class="wholesale-applied-note">✓ Wholesale price applied (${pricing.totalQty} pcs total)</div>`;
+  } else if (pricing.hasWholesale) {
+    const remaining = pricing.minQty - pricing.totalQty;
+    noteEl.innerHTML = `<div class="wholesale-almost-note">Add ${remaining} more piece${remaining > 1 ? 's' : ''} to unlock wholesale (need ${pricing.minQty} total)</div>`;
+  } else {
+    noteEl.innerHTML = '';
+  }
 }
 
 function closeProductModal() {
@@ -1096,62 +1210,37 @@ function closeProductModal() {
   pmSelectedColor = null;
   pmQty = 1;
   pmStockLevel = 999;
+  pmSelection = [];
 }
 
-function addFromModal() {
-  if (!pmCurrentProduct) return;
-
+function addSelectionToCart() {
   const product = pmCurrentProduct;
-  const colors = product.colors || [];
-  const availableColors = colors.filter(c => c.available);
+  if (!product) return;
+  if (pmSelection.length === 0) return;
 
-  if (availableColors.length > 0 && !pmSelectedColor) {
-    alert('Please choose a color first.');
-    return;
+  // Find or create a cart group for this product
+  let group = cart.find(g => g.id === product.id);
+  if (!group) {
+    group = { id: product.id, items: [] };
+    cart.push(group);
   }
 
-  if (pmStockLevel !== 999 && pmQty > pmStockLevel) {
-    alert(`Sorry, we only have ${pmStockLevel} left in this specific variation.`);
-    return;
-  }
-
-  const variationName = pmSelectedVariation;
-  const colorName = pmSelectedColor;
-  const key = getCartItemKey(product.id, variationName, colorName);
-
-  const existing = cart.find(item => item.key === key);
-  if (existing) {
-    if (pmStockLevel !== 999 && (existing.qty + pmQty) > pmStockLevel) {
-      alert(`Sorry, you already have ${existing.qty} in cart. Only ${pmStockLevel} total available.`);
-      return;
+  // Merge each selection item into the group
+  pmSelection.forEach(sel => {
+    const existing = group.items.find(x => x.variation === sel.variation && x.color === sel.color);
+    if (existing) {
+      existing.qty += sel.qty;
+    } else {
+      group.items.push({ variation: sel.variation, color: sel.color, qty: sel.qty });
     }
-    existing.qty += pmQty;
-  } else {
-    cart.push({
-      key,
-      id: product.id,
-      qty: pmQty,
-      variation: variationName || null,
-      color: colorName || null
-    });
-  }
+  });
 
   saveCart();
   updateCartUI();
-  renderProducts();
   closeProductModal();
-
-  let toastMsg = `✓ ${product.name}`;
-  if (variationName) toastMsg += ` (${variationName})`;
-  if (colorName) toastMsg += ` (${colorName})`;
-  toastMsg += ` added`;
-
-  showToast(toastMsg);
+  showToast(`✓ ${product.name} added to cart`);
 }
 
-// ============================================================
-// CATEGORY & SEARCH
-// ============================================================
 document.getElementById('categories').addEventListener('click', (e) => {
   if (e.target.classList.contains('cat-btn')) {
     document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
@@ -1174,60 +1263,44 @@ document.getElementById('searchClear').addEventListener('click', () => {
   renderProducts();
 });
 
-// ============================================================
-// CART OPERATIONS
-// ============================================================
-function removeFromCart(key) {
-  cart = cart.filter(c => c.key !== key);
+function removeCartGroup(productId) {
+  cart = cart.filter(g => g.id !== productId);
   saveCart();
   updateCartUI();
-  renderProducts();
 }
 
-function changeQty(key, delta) {
-  const item = cart.find(c => c.key === key);
-  if (!item) return;
-
-  if (delta > 0) {
-    const p = PRODUCTS.find(prod => prod.id === item.id);
-    if (p) {
-      const stockName = item.variation || item.color;
-      const match = findStockLevel(p, stockName);
-      if (match !== null && (item.qty + delta) > match) {
-        showToast(`Only ${match} available for this variation`);
-        return;
-      }
-    }
+function removeVariationFromGroup(productId, variation, color) {
+  const group = cart.find(g => g.id === productId);
+  if (!group) return;
+  group.items = group.items.filter(x => !(x.variation === variation && x.color === color));
+  if (group.items.length === 0) {
+    cart = cart.filter(g => g.id !== productId);
   }
-
-  item.qty += delta;
-  if (item.qty <= 0) { removeFromCart(key); return; }
   saveCart();
   updateCartUI();
-  renderProducts();
 }
 
 function saveCart() {
   try { localStorage.setItem('ptk_cart', JSON.stringify(cart)); } catch(e) {}
 }
 
+function getCartTotalQty() {
+  return cart.reduce((sum, g) => sum + g.items.reduce((s, x) => s + x.qty, 0), 0);
+}
+
 function getCartSubtotal() {
-  return cart.reduce((sum, item) => {
-    const p = PRODUCTS.find(prod => prod.id === item.id);
-    if (!p) return sum;
-    return sum + (getItemPrice(p, item.qty) * item.qty);
-  }, 0);
+  let subtotal = 0;
+  cart.forEach(g => {
+    const p = PRODUCTS.find(prod => prod.id === g.id);
+    if (!p) return;
+    const pricing = computeGroupPricing(p, g.items);
+    subtotal += pricing.total;
+  });
+  return subtotal;
 }
 
-function getCartCount() {
-  return cart.reduce((sum, item) => sum + item.qty, 0);
-}
-
-// ============================================================
-// UPDATE CART UI
-// ============================================================
 function updateCartUI() {
-  const count = getCartCount();
+  const count = getCartTotalQty();
   const subtotal = getCartSubtotal();
   const total = subtotal + currentDeliveryFee;
 
@@ -1274,59 +1347,51 @@ function updateCartUI() {
     deliveryRow.style.display = 'none';
   }
 
-  cartBody.innerHTML = cart.map(item => {
-    const p = PRODUCTS.find(prod => prod.id === item.id);
+  cartBody.innerHTML = cart.map(group => {
+    const p = PRODUCTS.find(prod => prod.id === group.id);
     if (!p) return '';
-
-    const unitPrice = getItemPrice(p, item.qty);
-    const lineTotal = unitPrice * item.qty;
-    const wholesaleActive = isWholesaleApplied(p, item.qty);
-    const hasWholesale = p.wholesalePrice && p.wholesalePrice > 0;
-    const minQty = p.minOrder || 10;
-    const remaining = hasWholesale && !wholesaleActive ? (minQty - item.qty) : 0;
-
-    let colorHex = null;
-    if (item.color && p.colors) {
-      const c = p.colors.find(x => x.name === item.color);
-      if (c) colorHex = getColorHex(c);
-    }
+    const pricing = computeGroupPricing(p, group.items);
+    const totalQty = group.items.reduce((s, x) => s + x.qty, 0);
 
     return `
-      <div class="cart-item">
-        <div class="cart-item-img">
-          <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/60x60/FCE4EC/E91E63?text=PTK'">
-        </div>
-        <div class="cart-item-info">
-          <div class="cart-item-name">${p.name}</div>
-          ${item.variation ? `
-            <div class="cart-item-variant">
-              Type: ${item.variation}
-            </div>
-          ` : ''}
-          ${item.color ? `
-            <div class="cart-item-variant">
-              ${colorHex ? `<span class="cart-item-variant-dot" style="background:${colorHex};${isLightColor(colorHex) ? 'border:1px solid #ddd;' : ''}"></span>` : ''}
-              Color: ${item.color}
-            </div>
-          ` : ''}
-          <div class="cart-item-price">${formatPrice(unitPrice)} × ${item.qty} = <strong>${formatPrice(lineTotal)}</strong></div>
-          ${wholesaleActive ? `<div class="cart-wholesale-badge">✓ Wholesale applied</div>` : ''}
-          ${remaining > 0 ? `<div class="cart-wholesale-hint">Add ${remaining} more for wholesale</div>` : ''}
-          <div class="cart-item-controls">
-            <button class="qty-btn" onclick="changeQty('${item.key}', -1)">−</button>
-            <span class="qty-num">${item.qty}</span>
-            <button class="qty-btn" onclick="changeQty('${item.key}', 1)">+</button>
-            <button class="cart-item-remove" onclick="removeFromCart('${item.key}')">Remove</button>
+      <div class="cart-group">
+        <div class="cart-group-header">
+          <div class="cart-group-img">
+            <img src="${p.img}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/60x60/FCE4EC/E91E63?text=PTK'">
           </div>
+          <div class="cart-group-info">
+            <div class="cart-group-name">${p.name}</div>
+            <div class="cart-group-total">${totalQty} pcs — ${formatPrice(pricing.total)}</div>
+            ${pricing.wholesaleActive ? `<div class="cart-wholesale-badge" style="margin-top:0.3rem;">✓ Wholesale applied</div>` : ''}
+            <button class="cart-group-remove" onclick="removeCartGroup(${p.id})">Remove all</button>
+          </div>
+        </div>
+        <div class="cart-group-variations">
+          ${group.items.map(item => {
+            const label = item.variation || item.color || 'Default';
+            let dotHTML = '';
+            if (item.color && p.colors) {
+              const c = p.colors.find(x => x.name === item.color);
+              if (c) {
+                const hex = getColorHex(c);
+                dotHTML = `<span class="cart-item-variant-dot" style="background:${hex};${isLightColor(hex) ? 'border:1px solid #ddd;' : ''}"></span>`;
+              }
+            }
+            return `
+              <div class="cart-variation-item">
+                ${dotHTML}
+                <span class="cart-variation-name">${label}</span>
+                <span class="cart-variation-qty">× ${item.qty}</span>
+                <button class="cart-variation-remove" onclick="removeVariationFromGroup(${p.id}, '${(item.variation||'').replace(/'/g, "\\'")}', '${(item.color||'').replace(/'/g, "\\'")}')">✕</button>
+              </div>
+            `;
+          }).join('')}
         </div>
       </div>
     `;
   }).join('');
 }
 
-// ============================================================
-// CART DRAWER
-// ============================================================
 function openCart() {
   document.getElementById('cartDrawer').classList.add('open');
   document.getElementById('cartOverlay').classList.add('open');
@@ -1339,9 +1404,6 @@ function closeCart() {
   document.body.style.overflow = '';
 }
 
-// ============================================================
-// DELIVERY FEE
-// ============================================================
 function updateDeliveryFee() {
   const zone = document.getElementById('deliveryZone').value;
   const estimate = document.getElementById('deliveryEstimate');
@@ -1362,9 +1424,6 @@ function updateDeliveryFee() {
   updateModalTotalOrder();
 }
 
-// ============================================================
-// ORDER MODAL
-// ============================================================
 function openOrderModal() {
   if (cart.length === 0) return;
   updateModalTotalOrder();
@@ -1388,9 +1447,6 @@ function updateModalTotalOrder() {
   }
 }
 
-// ============================================================
-// COPY
-// ============================================================
 function copyText(elementId, btn) {
   const text = document.getElementById(elementId).textContent;
   navigator.clipboard.writeText(text).then(() => {
@@ -1410,9 +1466,6 @@ function copyText(elementId, btn) {
   });
 }
 
-// ============================================================
-// SEND ORDER TO WHATSAPP
-// ============================================================
 function sendOrderToWhatsApp() {
   const name = document.getElementById('customerName').value.trim();
   const phone = document.getElementById('customerPhone').value.trim();
@@ -1435,24 +1488,21 @@ function sendOrderToWhatsApp() {
   if (note) msg += `*Note:* ${note}\n`;
   msg += `\n*━━━ ORDER ITEMS ━━━*\n\n`;
 
-  cart.forEach((item, index) => {
-    const p = PRODUCTS.find(prod => prod.id === item.id);
-    if (p) {
-      const unitPrice = getItemPrice(p, item.qty);
-      const lineTotal = unitPrice * item.qty;
-      const wholesaleActive = isWholesaleApplied(p, item.qty);
+  let itemIndex = 1;
+  cart.forEach(group => {
+    const p = PRODUCTS.find(prod => prod.id === group.id);
+    if (!p) return;
+    const pricing = computeGroupPricing(p, group.items);
 
-      msg += `${index + 1}. ${p.name}\n`;
-      if (item.variation) {
-        msg += `   Type: ${item.variation}\n`;
-      }
-      if (item.color) {
-        msg += `   Color: *${item.color}*\n`;
-      }
-      msg += `   Qty: ${item.qty} × ${formatPrice(unitPrice)} = *${formatPrice(lineTotal)}*`;
-      if (wholesaleActive) msg += ` _[Wholesale]_`;
-      msg += `\n\n`;
-    }
+    msg += `${itemIndex}. ${p.name}`;
+    if (pricing.wholesaleActive) msg += ` _[Wholesale]_`;
+    msg += `\n`;
+    group.items.forEach(item => {
+      const label = item.variation || item.color || 'Default';
+      msg += `   • ${label} × ${item.qty}\n`;
+    });
+    msg += `   Total: *${formatPrice(pricing.total)}*\n\n`;
+    itemIndex++;
   });
 
   msg += `*━━━ SUMMARY ━━━*\n`;
@@ -1474,9 +1524,6 @@ function sendOrderToWhatsApp() {
   showToast('WhatsApp opened — send order, then attach receipt');
 }
 
-// ============================================================
-// TOAST
-// ============================================================
 let toastTimer;
 function showToast(text) {
   const toast = document.getElementById('toast');
@@ -1486,9 +1533,6 @@ function showToast(text) {
   toastTimer = setTimeout(() => toast.classList.remove('show'), 2500);
 }
 
-// ============================================================
-// MOBILE ZOOM PREVENTION
-// ============================================================
 let lastTouchEnd = 0;
 document.addEventListener('touchend', function(event) {
     const now = Date.now();
@@ -1500,9 +1544,6 @@ document.addEventListener('gesturestart', function(e) {
     e.preventDefault();
 });
 
-// ============================================================
-// INIT
-// ============================================================
 loadProducts();
 
 document.getElementById('orderModal').addEventListener('click', (e) => {
