@@ -109,7 +109,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .wholesale-price-tag { background: #FFF8E1; color: #E65100; font-size: 0.7rem; font-weight: 800; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #FFE082; }
 .wholesale-min { background: #FCE4EC; color: var(--pink-deep); font-size: 0.68rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid #F8BBD0; }
 
-/* --- NEW STOCK INDICATOR STYLES --- */
+/* --- STOCK INDICATOR --- */
 .stock-indicator { font-size: 0.75rem; font-weight: 700; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.35rem; }
 .stock-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
 .stock-in { color: #2E7D32; }
@@ -179,7 +179,7 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .color-swatch.border-white { border: 2px solid var(--gray-300); }
 .color-swatch.border-white.selected { border-color: var(--pink-deep); border-width: 3px; }
 
-/* NEW STYLES FOR VARIATIONS */
+/* VARIATIONS */
 .variation-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .variation-btn { padding: 0.5rem 1rem; border-radius: 50px; background: var(--off-white); color: var(--text-body); font-size: 0.8rem; font-weight: 600; border: 2px solid var(--pink-pale); transition: all 0.2s; }
 .variation-btn:hover { background: var(--pink-pale); }
@@ -332,7 +332,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .whatsapp-instructions-note { background: #FFF8E1; border-left: 3px solid #FF9800; padding: 0.6rem 0.8rem; border-radius: 6px; font-size: 0.78rem; color: #663C00; line-height: 1.5; }
 .whatsapp-instructions-note strong { color: #E65100; }
 
-/* MOBILE ZOOM PREVENTION */
 * { -webkit-tap-highlight-color: transparent; }
 button, a, input, select, textarea, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .floating-cart, .wa-float, .search-clear, .cart-close, .search-bar input, .form-group input, .form-group select, .form-group textarea, .color-swatch, .qty-selector-btn, .product-modal-add-btn, .product-modal-close, .product-card, .variation-btn { touch-action: manipulation; -webkit-touch-callout: none; }
 button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .color-swatch, .qty-selector-btn, .variation-btn { -webkit-user-select: none; user-select: none; }
@@ -461,7 +460,6 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
         <span>Wholesale: <strong id="pmWholesalePrice">₦0</strong>/pc — Min <strong id="pmMinOrder">10</strong>pcs</span>
       </div>
 
-      <!-- NEW SECTION FOR VARIATIONS -->
       <div class="product-modal-section" id="pmVariationSection" style="display:none;">
         <div class="product-modal-section-title">
           <span>Choose Type</span>
@@ -775,7 +773,7 @@ let pmCurrentProduct = null;
 let pmSelectedVariation = null;
 let pmSelectedColor = null;
 let pmQty = 1;
-let pmStockLevel = 999; // Default to "unlimited" if no stock is set
+let pmStockLevel = 999;
 
 // ============================================================
 // HELPERS
@@ -858,7 +856,7 @@ function renderProducts() {
   }
   noResults.classList.remove('show');
 
-  grid.innerHTML = filtered.map(p => {
+  grid.innerHTML = filtered.map((p, index) => {
     const soldOut = !p.stock || (p.qty !== undefined && p.qty <= 0);
     const isWholesale = p.wholesale || p.cat === 'bundles';
     const hasWholesale = p.wholesalePrice && p.wholesalePrice > 0;
@@ -867,7 +865,6 @@ function renderProducts() {
     const availableColors = colors.filter(c => c.available);
     const hasVariations = p.variations && p.variations.length > 0;
 
-    // --- NEW STOCK LOGIC ---
     let stockHTML = '';
     if (soldOut) {
       stockHTML = `<div class="stock-indicator stock-out"><span class="stock-dot"></span> Out of Stock</div>`;
@@ -878,12 +875,11 @@ function renderProducts() {
     } else {
       stockHTML = `<div class="stock-indicator stock-in"><span class="stock-dot"></span> In Stock</div>`;
     }
-    // -----------------------
 
     return `
       <div class="product-card ${soldOut ? 'sold-out' : ''}" onclick="${soldOut ? '' : `openProductModal(${p.id})`}">
         <div class="product-image">
-          <img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/FCE4EC/E91E63?text=PrettyThings'">
+          <img src="${p.img}" alt="${p.name}" loading="lazy" decoding="async" fetchpriority="${index < 4 ? 'high' : 'low'}" onerror="this.src='https://via.placeholder.com/400x400/FCE4EC/E91E63?text=PrettyThings'">
           ${soldOut ? '<span class="product-badge sold-out-badge">Sold Out</span>' : (isWholesale ? '<span class="product-badge wholesale-badge">Wholesale</span>' : (p.oldPrice > p.price ? '<span class="product-badge">Sale</span>' : ''))}
           ${availableColors.length > 0 ? `
             <div class="color-count-badge">
@@ -909,9 +905,7 @@ function renderProducts() {
               <span class="wholesale-min">Min ${minQty}pcs</span>
             </div>
           ` : ''}
-          
-          ${stockHTML} <!-- STOCK INDICATOR INSERTED HERE -->
-
+          ${stockHTML}
           <button class="product-add" onclick="event.stopPropagation(); ${soldOut ? '' : `openProductModal(${p.id})`}" ${soldOut ? 'disabled' : ''}>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
             ${soldOut ? 'Out of Stock' : (availableColors.length > 0 || hasVariations ? 'Choose Options' : 'View & Add')}
@@ -933,26 +927,22 @@ function openProductModal(id) {
   pmQty = 1;
   pmSelectedVariation = null;
   pmSelectedColor = null;
-  pmStockLevel = 999; // Reset stock level
+  pmStockLevel = 999;
 
   const variations = product.variations || [];
   const colors = product.colors || [];
-  
+
   if (variations.length > 0) {
     pmSelectedVariation = variations[0].variantName;
-    // Check initial stock for the first variation
-    const stockLevels = product.stock_levels || [];
-    const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === pmSelectedVariation.toLowerCase().trim());
-    if (match && match.variation_qty !== undefined) pmStockLevel = parseInt(match.variation_qty);
+    const match = findStockLevel(product, pmSelectedVariation);
+    if (match !== null) pmStockLevel = match;
   }
-  
+
   const availableColors = colors.filter(c => c.available);
   if (availableColors.length > 0) {
     pmSelectedColor = availableColors[0].name;
-    // Check initial stock for the first color
-    const stockLevels = product.stock_levels || [];
-    const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === pmSelectedColor.toLowerCase().trim());
-    if (match && match.variation_qty !== undefined) pmStockLevel = parseInt(match.variation_qty);
+    const match = findStockLevel(product, pmSelectedColor);
+    if (match !== null) pmStockLevel = match;
   }
 
   document.getElementById('pmImage').src = product.img;
@@ -987,6 +977,18 @@ function openProductModal(id) {
   document.body.style.overflow = 'hidden';
 }
 
+// Helper to find stock level for a specific variation name (case-insensitive, trim whitespace)
+function findStockLevel(product, name) {
+  if (!product || !name) return null;
+  const stockLevels = product.stock_levels || [];
+  const normalized = name.toLowerCase().trim();
+  const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === normalized);
+  if (match && match.variation_qty !== undefined && match.variation_qty !== null) {
+    return parseInt(match.variation_qty);
+  }
+  return null;
+}
+
 // NEW FUNCTION FOR VARIATIONS
 function renderModalVariations(product) {
   const variationSection = document.getElementById('pmVariationSection');
@@ -1017,23 +1019,20 @@ function renderModalVariations(product) {
 function selectModalVariation(variantName) {
   const product = pmCurrentProduct;
   if (!product) return;
-  
+
   pmSelectedVariation = variantName;
-  
-  // --- NEW: Check stock for this specific variation ---
-  const stockLevels = product.stock_levels || [];
-  const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === variantName.toLowerCase().trim());
-  if (match && match.variation_qty !== undefined) {
-    pmStockLevel = parseInt(match.variation_qty);
-  } else {
-    pmStockLevel = 999; // If no specific stock is set, assume "in stock"
-  }
-  // ----------------------------------------------
-  
+
+  // Reset qty to 1 to avoid invalid stock on switch
+  pmQty = 1;
+  document.getElementById('pmQty').textContent = pmQty;
+
+  // Check stock for this specific variation
+  const match = findStockLevel(product, variantName);
+  pmStockLevel = (match !== null) ? match : 999;
+
   renderModalVariations(product);
   updateModalTotal();
-  
-  // If the variation has its own image, update the modal image
+
   const variation = (product.variations || []).find(v => v.variantName === variantName);
   if (variation && variation.variantImg) {
     document.getElementById('pmImage').src = variation.variantImg;
@@ -1079,23 +1078,30 @@ function selectModalColor(colorName) {
   if (!color || !color.available) return;
 
   pmSelectedColor = colorName;
-  
-  // --- NEW: Check stock for this specific color ---
-  const stockLevels = product.stock_levels || [];
-  const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === colorName.toLowerCase().trim());
-  if (match && match.variation_qty !== undefined) {
-    pmStockLevel = parseInt(match.variation_qty);
-  } else {
-    pmStockLevel = 999; // If no specific stock is set, assume "in stock"
-  }
-  // ----------------------------------------------
-  
+
+  // Reset qty to 1
+  pmQty = 1;
+  document.getElementById('pmQty').textContent = pmQty;
+
+  // Check stock for this specific color
+  const match = findStockLevel(product, colorName);
+  pmStockLevel = (match !== null) ? match : 999;
+
   renderModalColors(product);
   updateModalTotal();
 }
 
 function changeModalQty(delta) {
-  pmQty = Math.max(1, pmQty + delta);
+  const newQty = pmQty + delta;
+  if (newQty < 1) return;
+
+  // Check stock limit before increasing
+  if (delta > 0 && pmStockLevel !== 999 && newQty > pmStockLevel) {
+    showToast(`Only ${pmStockLevel} available for this variation`);
+    return;
+  }
+
+  pmQty = newQty;
   document.getElementById('pmQty').textContent = pmQty;
   updateModalTotal();
 }
@@ -1124,18 +1130,16 @@ function addFromModal() {
   const colors = product.colors || [];
   const availableColors = colors.filter(c => c.available);
 
-  // Check if a color needs to be selected
   if (availableColors.length > 0 && !pmSelectedColor) {
     alert('Please choose a color first.');
     return;
   }
 
-  // --- NEW: Check if there is enough stock for the selected variation ---
+  // Check stock for the specific variation
   if (pmStockLevel !== 999 && pmQty > pmStockLevel) {
     alert(`Sorry, we only have ${pmStockLevel} left in this specific variation.`);
-    return; // Stop the function
+    return;
   }
-  // ---------------------------------------------------------------------
 
   const variationName = pmSelectedVariation;
   const colorName = pmSelectedColor;
@@ -1143,14 +1147,19 @@ function addFromModal() {
 
   const existing = cart.find(item => item.key === key);
   if (existing) {
+    // Check combined qty against stock
+    if (pmStockLevel !== 999 && (existing.qty + pmQty) > pmStockLevel) {
+      alert(`Sorry, you already have ${existing.qty} in cart. Only ${pmStockLevel} total available.`);
+      return;
+    }
     existing.qty += pmQty;
   } else {
-    cart.push({ 
-      key, 
-      id: product.id, 
-      qty: pmQty, 
+    cart.push({
+      key,
+      id: product.id,
+      qty: pmQty,
       variation: variationName || null,
-      color: colorName || null 
+      color: colorName || null
     });
   }
 
@@ -1158,12 +1167,12 @@ function addFromModal() {
   updateCartUI();
   renderProducts();
   closeProductModal();
-  
+
   let toastMsg = `✓ ${product.name}`;
   if (variationName) toastMsg += ` (${variationName})`;
   if (colorName) toastMsg += ` (${colorName})`;
   toastMsg += ` added`;
-  
+
   showToast(toastMsg);
 }
 
@@ -1205,6 +1214,20 @@ function removeFromCart(key) {
 function changeQty(key, delta) {
   const item = cart.find(c => c.key === key);
   if (!item) return;
+
+  // Check stock before increasing cart quantity
+  if (delta > 0) {
+    const p = PRODUCTS.find(prod => prod.id === item.id);
+    if (p) {
+      const stockName = item.variation || item.color;
+      const match = findStockLevel(p, stockName);
+      if (match !== null && (item.qty + delta) > match) {
+        showToast(`Only ${match} available for this variation`);
+        return;
+      }
+    }
+  }
+
   item.qty += delta;
   if (item.qty <= 0) { removeFromCart(key); return; }
   saveCart();
@@ -1447,20 +1470,13 @@ function sendOrderToWhatsApp() {
       const lineTotal = unitPrice * item.qty;
       const wholesaleActive = isWholesaleApplied(p, item.qty);
 
-      // Line 1: Product Name
       msg += `${index + 1}. ${p.name}\n`;
-      
-      // Line 2: Variation (if any)
       if (item.variation) {
         msg += `   Type: ${item.variation}\n`;
       }
-      
-      // Line 3: Color (if any) - Made bold for clarity
       if (item.color) {
         msg += `   Color: *${item.color}*\n`;
       }
-      
-      // Line 4: Quantity and Price
       msg += `   Qty: ${item.qty} × ${formatPrice(unitPrice)} = *${formatPrice(lineTotal)}*`;
       if (wholesaleActive) msg += ` _[Wholesale]_`;
       msg += `\n\n`;
