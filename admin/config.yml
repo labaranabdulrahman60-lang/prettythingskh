@@ -59,5 +59,12 @@ collections:
                       - "Pink"
                       # ... etc ...
                   - { label: "Available?", name: "available", widget: "boolean", default: true }
-                  - { label: "📦 Quantity in Stock", name: "qty", widget: "number", required: true, default: 1 }
+                - label: "📦 Stock per Variation"
+  name: "stock_levels"
+  widget: "list"
+  required: false
+  summary: "{{fields.variation_name}} — {{fields.variation_qty}} pcs"
+  fields:
+    - { label: "Variation Name (e.g., Pink, iPhone 13)", name: "variation_name", widget: "string" }
+    - { label: "Quantity in Stock", name: "variation_qty", widget: "number", default: 10, min: 0 }
              
