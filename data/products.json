@@ -59,6 +59,16 @@
       "colors": [],
       "stock": true,
       "cat": "beauty",
+      "stock_levels": [
+        {
+          "variation_qty": 5,
+          "variation_name": "Coconut frost"
+        },
+        {
+          "variation_qty": 10,
+          "variation_name": "Cherry"
+        }
+      ],
       "id": 1,
       "minOrder": 5,
       "wholesale": true
