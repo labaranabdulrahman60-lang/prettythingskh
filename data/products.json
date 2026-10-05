@@ -1629,6 +1629,57 @@
       "id": 131,
       "minOrder": 12,
       "wholesale": true
+    },
+    {
+      "oldPrice": 10000,
+      "img": "/images/products/img_9066.jpeg",
+      "price": 8500,
+      "wholesalePrice": 4500,
+      "name": "Badazzled ribbon vase ",
+      "stock": true,
+      "cat": "cases",
+      "id": 135,
+      "minOrder": 10,
+      "wholesale": true
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true
+    },
+    {
+      "wholesale": true,
+      "minOrder": 10,
+      "stock": true,
+      "img": "/images/products/img_9064.jpeg",
+      "wholesalePrice": 1500,
+      "price": 2500,
+      "name": "Glass",
+      "id": 139
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Glossy "
+        },
+        {
+          "variantName": "Matte "
+        }
+      ],
+      "img": "/images/products/img_9065.jpeg",
+      "price": 3000,
+      "wholesalePrice": 2000,
+      "name": "Goass",
+      "stock": true,
+      "cat": "cases",
+      "id": 136,
+      "minOrder": 10,
+      "wholesale": true
     }
   ]
 }
