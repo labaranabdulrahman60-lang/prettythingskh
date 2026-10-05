@@ -34,8 +34,7 @@ collections:
                 options: ["beauty", "nails", "cases", "eyewear", "accessories", "bundles"]
               - { label: "In Stock?", name: "stock", widget: "boolean", default: true }
               - { label: "Product Image", name: "img", widget: "image", required: false }
-              
-              # --- NEW SECTION FOR SIMPLIFYING PRODUCTS ---
+
               - label: "🎨 Variations (Add colors or specific types here)"
                 name: "variations"
                 widget: "list"
@@ -45,7 +44,16 @@ collections:
                   - { label: "Variation Name (e.g., Rhode Lip Tint Peptides)", name: "variantName", widget: "string" }
                   - { label: "Variation Image", name: "variantImg", widget: "image", required: false }
                   - { label: "Variation Colors", name: "variantColors", widget: "list", required: false, field: { label: "Color", name: "color", widget: "string" } }
-              # -------------------------------------------
+
+              - label: "📦 Stock per Variation"
+                name: "stock_levels"
+                widget: "list"
+                required: false
+                summary: "{{fields.variation_name}} — {{fields.variation_qty}} pcs"
+                fields:
+                  - { label: "Variation Name (e.g., Pink, iPhone 13)", name: "variation_name", widget: "string" }
+                  - { label: "Quantity in Stock", name: "variation_qty", widget: "number", default: 10, min: 0 }
+
               - label: "🎨 Available Colors"
                 name: "colors"
                 widget: "list"
@@ -57,14 +65,37 @@ collections:
                     default: "Pink"
                     options:
                       - "Pink"
-                      # ... etc ...
+                      - "Light Pink"
+                      - "Dark Pink"
+                      - "Rose Gold"
+                      - "Rose"
+                      - "Peach"
+                      - "Coral"
+                      - "Raspberry"
+                      - "Berry"
+                      - "Cherry"
+                      - "Strawberry"
+                      - "Toast"
+                      - "Espresso"
+                      - "Red"
+                      - "Maroon"
+                      - "Black"
+                      - "White"
+                      - "Clear"
+                      - "Silver"
+                      - "Gold"
+                      - "Beige"
+                      - "Nude"
+                      - "Brown"
+                      - "Orange"
+                      - "Yellow"
+                      - "Green"
+                      - "Teal"
+                      - "Blue"
+                      - "Navy Blue"
+                      - "Purple"
+                      - "Lavender"
+                      - "Grey"
+                      - "Multicolor"
+                  - { label: "Custom HEX (optional)", name: "hex", widget: "string", required: false }
                   - { label: "Available?", name: "available", widget: "boolean", default: true }
-                - label: "📦 Stock per Variation"
-  name: "stock_levels"
-  widget: "list"
-  required: false
-  summary: "{{fields.variation_name}} — {{fields.variation_qty}} pcs"
-  fields:
-    - { label: "Variation Name (e.g., Pink, iPhone 13)", name: "variation_name", widget: "string" }
-    - { label: "Quantity in Stock", name: "variation_qty", widget: "number", default: 10, min: 0 }
-             
