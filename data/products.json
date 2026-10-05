@@ -1562,6 +1562,52 @@
       "id": 107,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "variations": [],
+      "img": "/images/products/img_9049.jpeg",
+      "price": 3500,
+      "wholesalePrice": 2500,
+      "name": "Cross body charm ",
+      "colors": [
+        {
+          "available": true,
+          "name": "Light Pink"
+        },
+        {
+          "available": true,
+          "name": "Dark Pink"
+        },
+        {
+          "available": true,
+          "name": "Rose Gold"
+        },
+        {
+          "available": true,
+          "name": "Maroon"
+        },
+        {
+          "available": true,
+          "name": "Black"
+        },
+        {
+          "available": true,
+          "name": "Silver"
+        },
+        {
+          "available": true,
+          "name": "Purple"
+        },
+        {
+          "available": true,
+          "name": "Brown"
+        }
+      ],
+      "stock": true,
+      "cat": "accessories",
+      "id": 129,
+      "minOrder": 10,
+      "wholesale": true
     }
   ]
 }
