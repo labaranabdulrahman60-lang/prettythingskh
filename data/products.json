@@ -1734,6 +1734,24 @@
       "price": 6000,
       "wholesalePrice": 3000,
       "name": "Serpent case",
+      "colors": [
+        {
+          "name": "Light Pink",
+          "available": true
+        },
+        {
+          "name": "Black",
+          "available": true
+        },
+        {
+          "name": "Silver",
+          "available": true
+        },
+        {
+          "name": "Orange",
+          "available": true
+        }
+      ],
       "stock": true,
       "cat": "cases",
       "id": 145,
