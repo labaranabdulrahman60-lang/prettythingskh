@@ -368,6 +368,18 @@
         },
         {
           "variantName": "Xs"
+        },
+        {
+          "variantName": "13mini"
+        },
+        {
+          "variantName": "12mini"
+        },
+        {
+          "variantName": "14plus"
+        },
+        {
+          "variantName": "15plus"
         }
       ],
       "oldPrice": "",
@@ -425,6 +437,18 @@
         },
         {
           "variantName": "iPhone 8plus "
+        },
+        {
+          "variantName": "13mini"
+        },
+        {
+          "variantName": "12mini"
+        },
+        {
+          "variantName": "14plus"
+        },
+        {
+          "variantName": "15plus"
         }
       ],
       "oldPrice": 2000,
@@ -461,10 +485,96 @@
       "wholesale": true
     },
     {
-      "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
+      "variations": [
+        {
+          "variantName": "18pro max"
+        },
+        {
+          "variantName": "18pro "
+        },
+        {
+          "variantName": "17pro max "
+        },
+        {
+          "variantName": "17pro "
+        },
+        {
+          "variantName": "17air "
+        },
+        {
+          "variantName": "17normal "
+        },
+        {
+          "variantName": "16normal "
+        },
+        {
+          "variantName": "16plus "
+        },
+        {
+          "variantName": "16pro max "
+        },
+        {
+          "variantName": "16pro "
+        },
+        {
+          "variantName": "15pro max "
+        },
+        {
+          "variantName": "15pro "
+        },
+        {
+          "variantName": "15normal"
+        },
+        {
+          "variantName": "15plus "
+        },
+        {
+          "variantName": "14pro max "
+        },
+        {
+          "variantName": "14pro "
+        },
+        {
+          "variantName": "14normal "
+        },
+        {
+          "variantName": "14plus"
+        },
+        {
+          "variantName": "13pm "
+        },
+        {
+          "variantName": "13pro "
+        },
+        {
+          "variantName": "13normal "
+        },
+        {
+          "variantName": "12pro max "
+        },
+        {
+          "variantName": "12pro "
+        },
+        {
+          "variantName": "12normal "
+        },
+        {
+          "variantName": "11pro max "
+        },
+        {
+          "variantName": "11pro "
+        },
+        {
+          "variantName": "11normal "
+        },
+        {
+          "variantName": "Xr"
+        }
+      ],
+      "oldPrice": "",
+      "img": "/images/products/img_9022.jpeg",
       "price": 5000,
-      "wholesalePrice": 0,
+      "wholesalePrice": 2500,
       "name": "Fire Flame Case",
       "colors": [
         {
@@ -474,91 +584,264 @@
         {
           "name": "Silver",
           "available": true
+        },
+        {
+          "available": true,
+          "name": "Black"
         }
       ],
       "stock": true,
       "cat": "cases",
       "id": 32,
       "minOrder": 10,
-      "wholesale": false
+      "wholesale": true
     },
     {
-      "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
-      "price": 5000,
-      "wholesalePrice": 0,
-      "name": "Hollow Fire Flame Case",
+      "oldPrice": 17000,
+      "img": "/images/products/img_9023.jpeg",
+      "price": 10000,
+      "wholesalePrice": 8000,
+      "name": "MagSafe Lip Case",
       "colors": [
         {
-          "name": "Orange",
-          "available": true
+          "available": true,
+          "name": "Pink"
         },
         {
-          "name": "Black",
-          "available": true
+          "available": true,
+          "name": "Dark Pink"
         },
         {
-          "name": "Silver",
-          "available": true
+          "available": true,
+          "name": "Raspberry"
+        },
+        {
+          "available": true,
+          "name": "Toast"
+        },
+        {
+          "available": true,
+          "name": "Espresso"
+        },
+        {
+          "available": true,
+          "name": "Black"
+        },
+        {
+          "available": true,
+          "name": "White"
         }
       ],
       "stock": true,
       "cat": "cases",
-      "id": 33,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 17000,
-      "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
-      "price": 10000,
-      "wholesalePrice": 0,
-      "name": "MagSafe Lip Case",
-      "colors": [],
-      "stock": true,
-      "cat": "cases",
       "id": 34,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
-      "oldPrice": 5000,
-      "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400",
-      "price": 3000,
-      "wholesalePrice": 0,
+      "variations": [
+        {
+          "variantName": "16pm "
+        },
+        {
+          "variantName": "16pro "
+        },
+        {
+          "variantName": "15plus "
+        },
+        {
+          "variantName": "14plus "
+        },
+        {
+          "variantName": "13mini "
+        },
+        {
+          "variantName": "12mini "
+        },
+        {
+          "variantName": "11pro max "
+        },
+        {
+          "variantName": "11pro"
+        },
+        {
+          "variantName": "13pro "
+        },
+        {
+          "variantName": "14pro "
+        },
+        {
+          "variantName": "15pro "
+        },
+        {
+          "variantName": "Xr "
+        },
+        {
+          "variantName": "Xs "
+        },
+        {
+          "variantName": "Xs max "
+        },
+        {
+          "variantName": "7plus "
+        }
+      ],
+      "oldPrice": "",
+      "img": "/images/products/img_9024.jpeg",
+      "price": 2000,
+      "wholesalePrice": 1500,
       "name": "Dollar Case",
       "colors": [],
       "stock": true,
       "cat": "cases",
       "id": 35,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
-      "oldPrice": 1000,
-      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
-      "price": 800,
-      "wholesalePrice": 0,
+      "oldPrice": "",
+      "img": "/images/products/img_9025.jpeg",
+      "price": 500,
+      "wholesalePrice": 300,
       "name": "Phone Suctions",
       "colors": [],
       "stock": true,
       "cat": "cases",
       "id": 36,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 12,
+      "wholesale": true
     },
     {
-      "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400",
+      "variations": [
+        {
+          "variantName": "iPhone 18pm "
+        },
+        {
+          "variantName": "18pro "
+        },
+        {
+          "variantName": "17pm "
+        },
+        {
+          "variantName": "17pro "
+        },
+        {
+          "variantName": "17normal "
+        },
+        {
+          "variantName": "17air "
+        },
+        {
+          "variantName": "16normal "
+        },
+        {
+          "variantName": "16plus "
+        },
+        {
+          "variantName": "16pro max "
+        },
+        {
+          "variantName": "16pro "
+        },
+        {
+          "variantName": "15pro max "
+        },
+        {
+          "variantName": "15pro "
+        },
+        {
+          "variantName": "15normal "
+        },
+        {
+          "variantName": "14pro max "
+        },
+        {
+          "variantName": "14pro "
+        },
+        {
+          "variantName": "14normal "
+        },
+        {
+          "variantName": "14plus "
+        },
+        {
+          "variantName": "15plus "
+        },
+        {
+          "variantName": "13pm "
+        },
+        {
+          "variantName": "13pro "
+        },
+        {
+          "variantName": "13normal "
+        },
+        {
+          "variantName": "12pro max "
+        },
+        {
+          "variantName": "12pro "
+        },
+        {
+          "variantName": "12normal "
+        },
+        {
+          "variantName": "11pro max "
+        },
+        {
+          "variantName": "11pro "
+        },
+        {
+          "variantName": "11normal "
+        },
+        {
+          "variantName": "Xr "
+        }
+      ],
+      "oldPrice": "",
+      "img": "/images/products/img_9026.jpeg",
       "price": 8500,
-      "wholesalePrice": 0,
+      "wholesalePrice": 6500,
       "name": "Rhode Case Regular Box",
-      "colors": [],
+      "colors": [
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Raspberry"
+        },
+        {
+          "available": true,
+          "name": "Toast"
+        },
+        {
+          "available": true,
+          "name": "Espresso"
+        },
+        {
+          "available": true,
+          "name": "Red"
+        },
+        {
+          "available": true,
+          "name": "Yellow"
+        },
+        {
+          "available": true,
+          "name": "Grey"
+        },
+        {
+          "available": true,
+          "name": "Peach"
+        }
+      ],
       "stock": true,
       "cat": "cases",
       "id": 37,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 32000,
