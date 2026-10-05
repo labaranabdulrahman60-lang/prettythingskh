@@ -775,6 +775,7 @@ let pmCurrentProduct = null;
 let pmSelectedVariation = null;
 let pmSelectedColor = null;
 let pmQty = 1;
+let pmStockLevel = 999; // Default to "unlimited" if no stock is set
 
 // ============================================================
 // HELPERS
@@ -872,6 +873,8 @@ function renderProducts() {
       stockHTML = `<div class="stock-indicator stock-out"><span class="stock-dot"></span> Out of Stock</div>`;
     } else if (p.qty !== undefined && p.qty <= 5) {
       stockHTML = `<div class="stock-indicator stock-low"><span class="stock-dot"></span> Only ${p.qty} left!</div>`;
+    } else if (p.qty !== undefined && p.qty > 5) {
+      stockHTML = `<div class="stock-indicator stock-in"><span class="stock-dot"></span> In Stock (${p.qty} available)</div>`;
     } else {
       stockHTML = `<div class="stock-indicator stock-in"><span class="stock-dot"></span> In Stock</div>`;
     }
@@ -930,17 +933,26 @@ function openProductModal(id) {
   pmQty = 1;
   pmSelectedVariation = null;
   pmSelectedColor = null;
+  pmStockLevel = 999; // Reset stock level
 
   const variations = product.variations || [];
   const colors = product.colors || [];
   
   if (variations.length > 0) {
     pmSelectedVariation = variations[0].variantName;
+    // Check initial stock for the first variation
+    const stockLevels = product.stock_levels || [];
+    const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === pmSelectedVariation.toLowerCase().trim());
+    if (match && match.variation_qty !== undefined) pmStockLevel = parseInt(match.variation_qty);
   }
   
   const availableColors = colors.filter(c => c.available);
   if (availableColors.length > 0) {
     pmSelectedColor = availableColors[0].name;
+    // Check initial stock for the first color
+    const stockLevels = product.stock_levels || [];
+    const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === pmSelectedColor.toLowerCase().trim());
+    if (match && match.variation_qty !== undefined) pmStockLevel = parseInt(match.variation_qty);
   }
 
   document.getElementById('pmImage').src = product.img;
@@ -1007,6 +1019,17 @@ function selectModalVariation(variantName) {
   if (!product) return;
   
   pmSelectedVariation = variantName;
+  
+  // --- NEW: Check stock for this specific variation ---
+  const stockLevels = product.stock_levels || [];
+  const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === variantName.toLowerCase().trim());
+  if (match && match.variation_qty !== undefined) {
+    pmStockLevel = parseInt(match.variation_qty);
+  } else {
+    pmStockLevel = 999; // If no specific stock is set, assume "in stock"
+  }
+  // ----------------------------------------------
+  
   renderModalVariations(product);
   updateModalTotal();
   
@@ -1056,6 +1079,17 @@ function selectModalColor(colorName) {
   if (!color || !color.available) return;
 
   pmSelectedColor = colorName;
+  
+  // --- NEW: Check stock for this specific color ---
+  const stockLevels = product.stock_levels || [];
+  const match = stockLevels.find(s => s.variation_name && s.variation_name.toLowerCase().trim() === colorName.toLowerCase().trim());
+  if (match && match.variation_qty !== undefined) {
+    pmStockLevel = parseInt(match.variation_qty);
+  } else {
+    pmStockLevel = 999; // If no specific stock is set, assume "in stock"
+  }
+  // ----------------------------------------------
+  
   renderModalColors(product);
   updateModalTotal();
 }
@@ -1080,6 +1114,7 @@ function closeProductModal() {
   pmSelectedVariation = null;
   pmSelectedColor = null;
   pmQty = 1;
+  pmStockLevel = 999;
 }
 
 function addFromModal() {
@@ -1094,6 +1129,13 @@ function addFromModal() {
     alert('Please choose a color first.');
     return;
   }
+
+  // --- NEW: Check if there is enough stock for the selected variation ---
+  if (pmStockLevel !== 999 && pmQty > pmStockLevel) {
+    alert(`Sorry, we only have ${pmStockLevel} left in this specific variation.`);
+    return; // Stop the function
+  }
+  // ---------------------------------------------------------------------
 
   const variationName = pmSelectedVariation;
   const colorName = pmSelectedColor;
@@ -1405,10 +1447,20 @@ function sendOrderToWhatsApp() {
       const lineTotal = unitPrice * item.qty;
       const wholesaleActive = isWholesaleApplied(p, item.qty);
 
-      msg += `${index + 1}. ${p.name}`;
-      if (item.variation) msg += ` — ${item.variation}`;
-      if (item.color) msg += ` (${item.color})`;
-      msg += `\n`;
+      // Line 1: Product Name
+      msg += `${index + 1}. ${p.name}\n`;
+      
+      // Line 2: Variation (if any)
+      if (item.variation) {
+        msg += `   Type: ${item.variation}\n`;
+      }
+      
+      // Line 3: Color (if any) - Made bold for clarity
+      if (item.color) {
+        msg += `   Color: *${item.color}*\n`;
+      }
+      
+      // Line 4: Quantity and Price
       msg += `   Qty: ${item.qty} × ${formatPrice(unitPrice)} = *${formatPrice(lineTotal)}*`;
       if (wholesaleActive) msg += ` _[Wholesale]_`;
       msg += `\n\n`;
