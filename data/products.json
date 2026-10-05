@@ -844,24 +844,16 @@
       "wholesale": true
     },
     {
-      "oldPrice": 32000,
-      "img": "https://images.unsplash.com/photo-1601593346740-925f1e8e4f5b?w=400",
-      "price": 8500,
-      "wholesalePrice": 0,
-      "name": "Rhode Case (Full Set)",
-      "colors": [],
-      "stock": true,
-      "cat": "cases",
-      "id": 38,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
+      "variations": [
+        {
+          "variantName": "Indicate phone model and color on the preference note at checkout "
+        }
+      ],
       "oldPrice": 60000,
-      "img": "https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400",
+      "img": "/images/products/img_9035.jpeg",
       "price": 16500,
       "wholesalePrice": 0,
-      "name": "Rhode Fully Packaged Case",
+      "name": "Rhode Fully Packaged set ",
       "colors": [],
       "stock": true,
       "cat": "cases",
@@ -871,9 +863,9 @@
     },
     {
       "oldPrice": 3500,
-      "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
+      "img": "/images/products/img_9034.jpeg",
       "price": 2500,
-      "wholesalePrice": 0,
+      "wholesalePrice": 1500,
       "name": "Gucci Glass",
       "colors": [
         {
@@ -888,12 +880,20 @@
       "stock": true,
       "cat": "eyewear",
       "id": 50,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Matte"
+        },
+        {
+          "variantName": "Glossy "
+        }
+      ],
       "oldPrice": 6000,
-      "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+      "img": "/images/products/img_9033.jpeg",
       "price": 5500,
       "wholesalePrice": 0,
       "name": "LV Glass",
@@ -906,42 +906,67 @@
     },
     {
       "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400",
+      "img": "/images/products/img_9032.jpeg",
       "price": 5600,
-      "wholesalePrice": 0,
+      "wholesalePrice": 3500,
       "name": "Prada Glass",
       "colors": [],
       "stock": true,
       "cat": "eyewear",
       "id": 52,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Clear white "
+        },
+        {
+          "variantName": "Purple "
+        },
+        {
+          "variantName": "Blue "
+        },
+        {
+          "variantName": "Navy  blue "
+        },
+        {
+          "variantName": "Brown "
+        }
+      ],
       "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400",
+      "img": "/images/products/img_9031.jpeg",
       "price": 5600,
-      "wholesalePrice": 0,
+      "wholesalePrice": 3500,
       "name": "Y2K Glass",
       "colors": [],
       "stock": true,
       "cat": "eyewear",
       "id": 53,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Matte black "
+        },
+        {
+          "variantName": "Glossy light "
+        }
+      ],
       "oldPrice": 6000,
-      "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400",
+      "img": "/images/products/img_7403.jpeg",
       "price": 3500,
-      "wholesalePrice": 0,
+      "wholesalePrice": 2500,
       "name": "Large Cat Eye",
       "colors": [],
       "stock": true,
       "cat": "eyewear",
       "id": 54,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 2500,
@@ -958,7 +983,7 @@
     },
     {
       "oldPrice": 5000,
-      "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+      "img": "/images/products/img_9019.jpeg",
       "price": 4500,
       "wholesalePrice": 0,
       "name": "Thick Influencer Glass",
@@ -980,10 +1005,10 @@
     },
     {
       "oldPrice": 5000,
-      "img": "https://images.unsplash.com/photo-1577803645773-f96470509666?w=400",
+      "img": "/images/products/img_9018.jpeg",
       "price": 4500,
-      "wholesalePrice": 0,
-      "name": "Clear Fashion Glass",
+      "wholesalePrice": 2000,
+      "name": "Clear with black frame  Glass",
       "colors": [
         {
           "name": "Clear",
@@ -993,40 +1018,14 @@
       "stock": true,
       "cat": "eyewear",
       "id": 57,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 3000,
-      "img": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400",
+      "img": "/images/products/img_9029.jpeg",
       "price": 2500,
-      "wholesalePrice": 0,
-      "name": "Fashion Glass (Assorted)",
-      "colors": [
-        {
-          "name": "Black",
-          "available": true
-        },
-        {
-          "name": "Brown",
-          "available": true
-        },
-        {
-          "name": "Blue",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "eyewear",
-      "id": 58,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 3000,
-      "img": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=400",
-      "price": 2500,
-      "wholesalePrice": 0,
+      "wholesalePrice": 1500,
       "name": "Black Fashion Glass",
       "colors": [
         {
@@ -1037,14 +1036,14 @@
       "stock": true,
       "cat": "eyewear",
       "id": 59,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 5000,
-      "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
-      "price": 3500,
-      "wholesalePrice": 0,
+      "img": "/images/products/img_9017.jpeg",
+      "price": 3000,
+      "wholesalePrice": 2000,
       "name": "Clear White Anti Blue Light Glass",
       "colors": [
         {
@@ -1055,12 +1054,12 @@
       "stock": true,
       "cat": "eyewear",
       "id": 60,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 5000,
-      "img": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=400",
+      "img": "/images/products/img_9028.jpeg",
       "price": 4000,
       "wholesalePrice": 0,
       "name": "Blue Light Myopia Glass",
@@ -1130,37 +1129,23 @@
       "wholesale": false
     },
     {
+      "variations": [
+        {
+          "variantName": "Gold "
+        },
+        {
+          "variantName": "Black"
+        },
+        {
+          "variantName": "White "
+        }
+      ],
       "oldPrice": 10000,
       "img": "/images/products/img_9004.jpeg",
       "price": 8500,
       "wholesalePrice": "",
       "name": "Van Cleef Necklace Set",
-      "colors": [
-        {
-          "available": true,
-          "name": "Pink"
-        },
-        {
-          "available": true,
-          "name": "Maroon"
-        },
-        {
-          "available": true,
-          "name": "White"
-        },
-        {
-          "available": true,
-          "name": "Black"
-        },
-        {
-          "available": true,
-          "name": "Silver"
-        },
-        {
-          "available": true,
-          "name": "Gold"
-        }
-      ],
+      "colors": [],
       "stock": true,
       "cat": "accessories",
       "id": 72,
@@ -1168,37 +1153,29 @@
       "wholesale": false
     },
     {
+      "variations": [
+        {
+          "variantName": "Gold "
+        },
+        {
+          "variantName": "Silver "
+        },
+        {
+          "variantName": "Maroon "
+        },
+        {
+          "variantName": "Black "
+        },
+        {
+          "variantName": "White "
+        }
+      ],
       "oldPrice": 3500,
       "img": "/images/products/img_9001.jpeg",
       "price": 3000,
       "wholesalePrice": 2000,
       "name": "Van Cleef Bracelet ",
-      "colors": [
-        {
-          "available": true,
-          "name": "Pink"
-        },
-        {
-          "available": true,
-          "name": "Maroon"
-        },
-        {
-          "available": true,
-          "name": "White"
-        },
-        {
-          "available": true,
-          "name": "Silver"
-        },
-        {
-          "available": true,
-          "name": "Gold"
-        },
-        {
-          "available": true,
-          "name": "Black"
-        }
-      ],
+      "colors": [],
       "stock": true,
       "cat": "accessories",
       "id": 75,
@@ -1206,6 +1183,14 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Power chain with rubber "
+        },
+        {
+          "variantName": "Normal braces "
+        }
+      ],
       "oldPrice": 10000,
       "img": "/images/products/img_8999.jpeg",
       "price": 8000,
@@ -1232,12 +1217,33 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Power chain "
+        },
+        {
+          "variantName": "Normal one "
+        }
+      ],
       "oldPrice": 25000,
       "img": "/images/products/img_8997.jpeg",
       "price": 16000,
       "wholesalePrice": 0,
       "name": "Fixing Braces Semi Permanent",
-      "colors": [],
+      "colors": [
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Black"
+        },
+        {
+          "available": true,
+          "name": "Silver"
+        }
+      ],
       "stock": true,
       "cat": "accessories",
       "id": 77,
@@ -1258,33 +1264,29 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Ribbon "
+        },
+        {
+          "variantName": "Raspberry "
+        },
+        {
+          "variantName": "Toast "
+        },
+        {
+          "variantName": "Unscented "
+        },
+        {
+          "variantName": "Shortcake "
+        }
+      ],
       "oldPrice": 11000,
       "img": "/images/products/img_8995.jpeg",
       "price": 10000,
       "wholesalePrice": 8000,
       "name": "Rhode Purse",
-      "colors": [
-        {
-          "name": "Pink",
-          "available": true
-        },
-        {
-          "available": true,
-          "name": "Dark Pink"
-        },
-        {
-          "available": true,
-          "name": "Grey"
-        },
-        {
-          "available": true,
-          "name": "Toast"
-        },
-        {
-          "available": true,
-          "name": "Raspberry"
-        }
-      ],
+      "colors": [],
       "stock": true,
       "cat": "accessories",
       "id": 81,
