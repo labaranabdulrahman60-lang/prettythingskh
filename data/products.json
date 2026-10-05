@@ -1645,12 +1645,100 @@
     {
       "wholesale": false,
       "minOrder": 10,
-      "stock": true
+      "stock": true,
+      "id": 150,
+      "name": "Stanley cup ",
+      "price": 12000,
+      "img": "/images/products/img_9067.jpeg"
     },
     {
-      "wholesale": false,
+      "variations": [
+        {
+          "variantName": "18pro max "
+        },
+        {
+          "variantName": "18pro "
+        },
+        {
+          "variantName": "17pro max "
+        },
+        {
+          "variantName": "17pro "
+        },
+        {
+          "variantName": "17air "
+        },
+        {
+          "variantName": "16plus "
+        },
+        {
+          "variantName": "16normal "
+        },
+        {
+          "variantName": "16pro max "
+        },
+        {
+          "variantName": "16pro ",
+          "variantImg": ""
+        },
+        {
+          "variantName": "15pro max "
+        },
+        {
+          "variantName": "15pro "
+        },
+        {
+          "variantName": "15normal "
+        },
+        {
+          "variantName": "14pro max "
+        },
+        {
+          "variantName": "14pro "
+        },
+        {
+          "variantName": "14normal "
+        },
+        {
+          "variantName": "13pro max"
+        },
+        {
+          "variantName": "13pro "
+        },
+        {
+          "variantName": "13normal "
+        },
+        {
+          "variantName": "12pro max "
+        },
+        {
+          "variantName": "12pro "
+        },
+        {
+          "variantName": "12normal "
+        },
+        {
+          "variantName": "11pro max "
+        },
+        {
+          "variantName": "11pro "
+        },
+        {
+          "variantName": "11normal "
+        },
+        {
+          "variantName": "Xr"
+        }
+      ],
+      "img": "/images/products/img_9068.jpeg",
+      "price": 6000,
+      "wholesalePrice": 3000,
+      "name": "Serpent case",
+      "stock": true,
+      "cat": "cases",
+      "id": 145,
       "minOrder": 10,
-      "stock": true
+      "wholesale": true
     },
     {
       "wholesale": true,
@@ -1674,7 +1762,7 @@
       "img": "/images/products/img_9065.jpeg",
       "price": 3000,
       "wholesalePrice": 2000,
-      "name": "Goass",
+      "name": "Glass ",
       "stock": true,
       "cat": "cases",
       "id": 136,
