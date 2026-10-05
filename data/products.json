@@ -59,12 +59,6 @@
       "colors": [],
       "stock": true,
       "cat": "beauty",
-      "stock_levels": [
-        {
-          "variation_qty": 8,
-          "variation_name": "Coconut frost"
-        }
-      ],
       "id": 1,
       "minOrder": 5,
       "wholesale": true
@@ -1613,6 +1607,17 @@
       "cat": "accessories",
       "id": 129,
       "minOrder": 10,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_9055.jpeg",
+      "price": 500,
+      "wholesalePrice": 300,
+      "name": "Pimples patches ",
+      "stock": true,
+      "cat": "accessories",
+      "id": 131,
+      "minOrder": 12,
       "wholesale": true
     }
   ]
