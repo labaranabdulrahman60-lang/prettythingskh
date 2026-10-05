@@ -4,30 +4,42 @@
       "variations": [
         {
           "variantName": "Stawberry ",
-          "variantColors": ["Red "]
+          "variantColors": [
+            "Red "
+          ]
         },
         {
           "variantName": "Raspberry ",
-          "variantColors": ["Red"]
+          "variantColors": [
+            "Red"
+          ]
         },
         {
           "variantName": "Honey infused ",
-          "variantColors": ["Light yellow "]
+          "variantColors": [
+            "Light yellow "
+          ]
         },
         {
           "variantName": "Vanilla glaze ",
-          "variantColors": ["Light pink "]
+          "variantColors": [
+            "Light pink "
+          ]
         },
         {
           "variantName": "Watermelon "
         },
         {
           "variantName": "Sticky toffee",
-          "variantColors": ["Dark brown"]
+          "variantColors": [
+            "Dark brown"
+          ]
         },
         {
           "variantName": "Milky mocha ",
-          "variantColors": ["Dark brown"]
+          "variantColors": [
+            "Dark brown"
+          ]
         },
         {
           "variantName": "Bee-li-chii"
@@ -55,59 +67,87 @@
       "variations": [
         {
           "variantName": "Raspberry ",
-          "variantColors": ["Maroon "]
+          "variantColors": [
+            "Maroon "
+          ]
         },
         {
           "variantName": "Toast ",
-          "variantColors": ["Brown "]
+          "variantColors": [
+            "Brown "
+          ]
         },
         {
           "variantName": "Pbj",
-          "variantColors": ["Dark brown "]
+          "variantColors": [
+            "Dark brown "
+          ]
         },
         {
           "variantName": "Espresso ",
-          "variantColors": ["Coffee brown "]
+          "variantColors": [
+            "Coffee brown "
+          ]
         },
         {
           "variantName": "Stawberry ",
-          "variantColors": ["Clear white "]
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
           "variantName": "Ribbon ",
-          "variantColors": ["Light pink "]
+          "variantColors": [
+            "Light pink "
+          ]
         },
         {
           "variantName": "Gauva spritz ",
-          "variantColors": ["Red "]
+          "variantColors": [
+            "Red "
+          ]
         },
         {
           "variantName": "Pepper mint ",
-          "variantColors": ["Clear white "]
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
           "variantName": "Sugarberry ",
-          "variantColors": ["Clear white "]
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
           "variantName": "Sugarcookie ",
-          "variantColors": ["Clear white "]
+          "variantColors": [
+            "Clear white "
+          ]
         },
         {
           "variantName": "Espresso ",
-          "variantColors": ["Coffee brown "]
+          "variantColors": [
+            "Coffee brown "
+          ]
         },
         {
           "variantName": "Watermelon slice ",
-          "variantColors": ["White "]
+          "variantColors": [
+            "White "
+          ]
         },
         {
           "variantName": "Salted caramel ",
-          "variantColors": ["White "]
+          "variantColors": [
+            "White "
+          ]
         },
         {
           "variantName": "Cinnamon roll ",
-          "variantColors": ["Dark brown "]
+          "variantColors": [
+            "Dark brown "
+          ]
         },
         {
           "variantName": "Unscented "
@@ -117,11 +157,15 @@
         },
         {
           "variantName": "Short cake ",
-          "variantColors": ["Dark pink "]
+          "variantColors": [
+            "Dark pink "
+          ]
         },
         {
           "variantName": "Lemontini ",
-          "variantColors": ["White with shimmering "]
+          "variantColors": [
+            "White with shimmering "
+          ]
         },
         {
           "variantName": "Passion fruit "
@@ -155,7 +199,9 @@
       "variations": [
         {
           "variantName": "Mo8 ",
-          "variantColors": ["Dark burgundy "]
+          "variantColors": [
+            "Dark burgundy "
+          ]
         }
       ],
       "oldPrice": 4000,
@@ -242,7 +288,7 @@
       "img": "/images/products/img_8980.png",
       "price": 2500,
       "wholesalePrice": 1500,
-      "name": "Press On Nails",
+      "name": "Press On Nails ()",
       "colors": [],
       "stock": true,
       "cat": "nails",
@@ -743,8 +789,13 @@
       "wholesale": false
     },
     {
+      "variations": [
+        {
+          "variantName": "Milk "
+        }
+      ],
       "oldPrice": 4000,
-      "img": "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400",
+      "img": "/images/products/img_9008.jpeg",
       "price": 3000,
       "wholesalePrice": 0,
       "name": "Visor Cap Sun Protection",
@@ -752,25 +803,17 @@
         {
           "name": "Black",
           "available": true
-        },
-        {
-          "name": "Pink",
-          "available": true
-        },
-        {
-          "name": "Beige",
-          "available": true
         }
       ],
       "stock": true,
-      "cat": "eyewear",
+      "cat": "beauty",
       "id": 62,
       "minOrder": 10,
       "wholesale": false
     },
     {
       "oldPrice": 2500,
-      "img": "https://images.unsplash.com/photo-1591561954557-26941169b49e?w=400",
+      "img": "/images/products/img_9006.jpeg",
       "price": 2000,
       "wholesalePrice": 0,
       "name": "Bag Charm (Cherry)",
@@ -783,7 +826,7 @@
     },
     {
       "oldPrice": 5500,
-      "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
+      "img": "/images/products/img_9005.jpeg",
       "price": 5000,
       "wholesalePrice": 0,
       "name": "Chic Bah",
@@ -805,11 +848,36 @@
     },
     {
       "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400",
+      "img": "/images/products/img_9004.jpeg",
       "price": 8500,
-      "wholesalePrice": 0,
+      "wholesalePrice": "",
       "name": "Van Cleef Necklace Set",
-      "colors": [],
+      "colors": [
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Maroon"
+        },
+        {
+          "available": true,
+          "name": "White"
+        },
+        {
+          "available": true,
+          "name": "Black"
+        },
+        {
+          "available": true,
+          "name": "Silver"
+        },
+        {
+          "available": true,
+          "name": "Gold"
+        }
+      ],
       "stock": true,
       "cat": "accessories",
       "id": 72,
@@ -817,72 +885,49 @@
       "wholesale": false
     },
     {
-      "oldPrice": 15000,
-      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
-      "price": 8000,
-      "wholesalePrice": 0,
-      "name": "Clip On Fashion Braces",
-      "colors": [
-        {
-          "name": "Silver",
-          "available": true
-        },
-        {
-          "name": "Gold",
-          "available": true
-        },
-        {
-          "name": "Pink",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "accessories",
-      "id": 73,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 15000,
-      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
-      "price": 8000,
-      "wholesalePrice": 0,
-      "name": "Power Chain Clip On Braces",
-      "colors": [
-        {
-          "name": "Silver",
-          "available": true
-        },
-        {
-          "name": "Gold",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "accessories",
-      "id": 74,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
       "oldPrice": 3500,
-      "img": "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400",
+      "img": "/images/products/img_9001.jpeg",
       "price": 3000,
-      "wholesalePrice": 0,
-      "name": "Van Cleef Braces",
-      "colors": [],
+      "wholesalePrice": 2000,
+      "name": "Van Cleef Bracelet ",
+      "colors": [
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Maroon"
+        },
+        {
+          "available": true,
+          "name": "White"
+        },
+        {
+          "available": true,
+          "name": "Silver"
+        },
+        {
+          "available": true,
+          "name": "Gold"
+        },
+        {
+          "available": true,
+          "name": "Black"
+        }
+      ],
       "stock": true,
       "cat": "accessories",
       "id": 75,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
       "oldPrice": 10000,
-      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
+      "img": "/images/products/img_8999.jpeg",
       "price": 8000,
-      "wholesalePrice": 0,
-      "name": "Normal Clip On Braces",
+      "wholesalePrice": 5000,
+      "name": "Fashion  Clip On Braces",
       "colors": [
         {
           "name": "Black",
@@ -901,11 +946,11 @@
       "cat": "accessories",
       "id": 76,
       "minOrder": 10,
-      "wholesale": false
+      "wholesale": true
     },
     {
       "oldPrice": 25000,
-      "img": "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400",
+      "img": "/images/products/img_8997.jpeg",
       "price": 16000,
       "wholesalePrice": 0,
       "name": "Fixing Braces Semi Permanent",
@@ -918,71 +963,65 @@
     },
     {
       "oldPrice": 1500,
-      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
-      "price": 500,
-      "wholesalePrice": 0,
-      "name": "Tattoo Sticker (50pcs)",
-      "colors": [],
-      "stock": true,
-      "cat": "accessories",
-      "id": 78,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 2000,
-      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
-      "price": 1500,
-      "wholesalePrice": 0,
-      "name": "Halal Tattoo Stickers (30pcs)",
-      "colors": [],
-      "stock": true,
-      "cat": "accessories",
-      "id": 79,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 1500,
-      "img": "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?w=400",
+      "img": "/images/products/img_8996.jpeg",
       "price": 1000,
-      "wholesalePrice": 0,
+      "wholesalePrice": 650,
       "name": "Rhode Sticker",
       "colors": [],
       "stock": true,
       "cat": "accessories",
       "id": 80,
       "minOrder": 10,
-      "wholesale": false
+      "wholesale": true
     },
     {
       "oldPrice": 11000,
-      "img": "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400",
+      "img": "/images/products/img_8995.jpeg",
       "price": 10000,
-      "wholesalePrice": 0,
+      "wholesalePrice": 8000,
       "name": "Rhode Purse",
       "colors": [
         {
           "name": "Pink",
           "available": true
+        },
+        {
+          "available": true,
+          "name": "Dark Pink"
+        },
+        {
+          "available": true,
+          "name": "Grey"
+        },
+        {
+          "available": true,
+          "name": "Toast"
+        },
+        {
+          "available": true,
+          "name": "Raspberry"
         }
       ],
       "stock": true,
       "cat": "accessories",
       "id": 81,
-      "minOrder": 10,
-      "wholesale": false
+      "minOrder": 5,
+      "wholesale": true
     },
     {
-      "oldPrice": 25000,
-      "img": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400",
-      "price": 18000,
+      "oldPrice": "",
+      "img": "/images/products/img_8994.jpeg",
+      "price": 10000,
       "wholesalePrice": 0,
       "name": "Pause Bag",
       "colors": [
         {
           "name": "Gold",
           "available": true
+        },
+        {
+          "available": true,
+          "name": "Silver"
         }
       ],
       "stock": true,
@@ -1051,7 +1090,7 @@
       "colors": [],
       "stock": true,
       "cat": "eyewear",
-      "id": 96,
+      "id": 95,
       "minOrder": 5,
       "wholesale": true
     },
@@ -1085,7 +1124,7 @@
       "name": "Press on nails ",
       "stock": true,
       "cat": "nails",
-      "id": 98,
+      "id": 101,
       "minOrder": 5,
       "wholesale": true
     },
@@ -1133,7 +1172,7 @@
       "name": "Press on nails ",
       "stock": true,
       "cat": "nails",
-      "id": 99,
+      "id": 104,
       "minOrder": 5,
       "wholesale": true
     },
@@ -1169,8 +1208,69 @@
       "name": "Pigmented Lip liner ",
       "stock": true,
       "cat": "beauty",
-      "id": 106,
+      "id": 105,
       "minOrder": 10,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_8992.jpeg",
+      "price": 5600,
+      "wholesalePrice": 5000,
+      "name": "Kiko Milano ",
+      "colors": [
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Light Pink"
+        },
+        {
+          "available": true,
+          "name": "Raspberry"
+        },
+        {
+          "available": true,
+          "name": "Cherry"
+        },
+        {
+          "available": true,
+          "name": "Red"
+        },
+        {
+          "available": true,
+          "name": "White"
+        },
+        {
+          "available": true,
+          "name": "Purple"
+        },
+        {
+          "available": true,
+          "name": "Dark Pink"
+        },
+        {
+          "available": true,
+          "name": "Brown"
+        },
+        {
+          "available": true,
+          "name": "Nude"
+        },
+        {
+          "available": true,
+          "name": "Strawberry"
+        },
+        {
+          "available": true,
+          "name": "Rose"
+        }
+      ],
+      "stock": true,
+      "cat": "beauty",
+      "id": 107,
+      "minOrder": 5,
       "wholesale": true
     }
   ]
