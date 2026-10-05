@@ -969,19 +969,6 @@
       "wholesale": true
     },
     {
-      "oldPrice": 2500,
-      "img": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400",
-      "price": 2000,
-      "wholesalePrice": 0,
-      "name": "Small Cat Eye",
-      "colors": [],
-      "stock": true,
-      "cat": "eyewear",
-      "id": 55,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
       "oldPrice": 5000,
       "img": "/images/products/img_9019.jpeg",
       "price": 4500,
@@ -1491,6 +1478,24 @@
       "price": 1500,
       "wholesalePrice": 1200,
       "name": "Pigmented Lip liner ",
+      "colors": [
+        {
+          "available": true,
+          "name": "Pink"
+        },
+        {
+          "available": true,
+          "name": "Red"
+        },
+        {
+          "available": true,
+          "name": "Maroon"
+        },
+        {
+          "available": true,
+          "name": "Brown"
+        }
+      ],
       "stock": true,
       "cat": "beauty",
       "id": 120,
