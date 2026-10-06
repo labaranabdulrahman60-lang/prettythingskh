@@ -1786,6 +1786,52 @@
       "id": 136,
       "minOrder": 10,
       "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Hot cocoa "
+        },
+        {
+          "variantName": "Cherry "
+        },
+        {
+          "variantName": "Vanilla biege "
+        },
+        {
+          "variantName": "Vanilla "
+        },
+        {
+          "variantName": "Iced coffee "
+        },
+        {
+          "variantName": "Pink sugar "
+        },
+        {
+          "variantName": "Pink guava "
+        },
+        {
+          "variantName": "Toasted marshmallows "
+        },
+        {
+          "variantName": "Brown sugar "
+        },
+        {
+          "variantName": "Poppy "
+        },
+        {
+          "variantName": "Birthday cake "
+        }
+      ],
+      "img": "/images/products/img_9075.jpeg",
+      "price": 3500,
+      "wholesalePrice": 3000,
+      "name": "Summer Fridays ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 145,
+      "minOrder": 10,
+      "wholesale": true
     }
   ]
 }
