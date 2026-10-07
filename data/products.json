@@ -1631,11 +1631,28 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "17pro max "
+        },
+        {
+          "variantName": "17pro"
+        },
+        {
+          "variantName": "17AIR"
+        },
+        {
+          "variantName": "16plus"
+        },
+        {
+          "variantName": "16normal "
+        }
+      ],
       "oldPrice": 10000,
       "img": "/images/products/img_9066.jpeg",
       "price": 8500,
       "wholesalePrice": 4500,
-      "name": "Badazzled ribbon vase ",
+      "name": "Badazzled ribbon case  ",
       "stock": true,
       "cat": "cases",
       "id": 135,
@@ -1832,6 +1849,153 @@
       "id": 190,
       "minOrder": 10,
       "wholesale": true
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true,
+      "img": "/images/products/img_9124.jpeg",
+      "price": 5000,
+      "id": 206,
+      "name": "Bag "
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true,
+      "cat": "beauty",
+      "img": "/images/products/img_9122.jpeg",
+      "name": "Bag ",
+      "id": 205,
+      "price": 8000
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true,
+      "img": "/images/products/img_9121.jpeg",
+      "price": 12000,
+      "name": "Bag ",
+      "id": 203,
+      "cat": "beauty"
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true,
+      "id": 201,
+      "name": "Mini purse ",
+      "price": 3500,
+      "img": "/images/products/img_9123.jpeg"
+    },
+    {
+      "variations": [
+        {
+          "variantName": "17pro max "
+        },
+        {
+          "variantName": "17pro"
+        },
+        {
+          "variantName": "17air"
+        },
+        {
+          "variantName": "16normal "
+        },
+        {
+          "variantName": "16plus"
+        },
+        {
+          "variantName": "16pro"
+        },
+        {
+          "variantName": "16pro max "
+        },
+        {
+          "variantColors": [
+            null
+          ],
+          "variantName": "15normal"
+        },
+        {
+          "variantName": "15pro"
+        },
+        {
+          "variantName": "15promax"
+        },
+        {
+          "variantName": "14normal"
+        },
+        {
+          "variantName": "14pro "
+        },
+        {
+          "variantName": "14promax"
+        },
+        {
+          "variantName": "13normal "
+        },
+        {
+          "variantName": "13pro"
+        },
+        {
+          "variantName": "13pro max "
+        },
+        {
+          "variantName": "12normal "
+        },
+        {
+          "variantName": "12pro"
+        },
+        {
+          "variantName": "12promax"
+        },
+        {
+          "variantName": "11normal "
+        },
+        {
+          "variantName": "11pro"
+        },
+        {
+          "variantName": "11pro max "
+        },
+        {
+          "variantName": "XR",
+          "variantColors": [
+            "Pink ",
+            "Black "
+          ]
+        }
+      ],
+      "img": "/images/products/img_9119.jpeg",
+      "price": 3000,
+      "wholesalePrice": 1800,
+      "name": "Bow case ",
+      "stock": true,
+      "cat": "cases",
+      "id": 200,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "wholesale": true,
+      "minOrder": 1,
+      "stock": true,
+      "id": 199,
+      "name": "Medium Packaging naylon ",
+      "wholesalePrice": 200,
+      "cat": "bundles",
+      "img": "/images/products/img_6786.jpeg"
+    },
+    {
+      "wholesale": true,
+      "minOrder": 1,
+      "stock": true,
+      "id": 195,
+      "name": "Small size Packaging naylon ",
+      "wholesalePrice": 130,
+      "cat": "bundles",
+      "img": "/images/products/img_6786.jpeg"
     }
   ]
 }
