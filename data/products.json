@@ -1996,6 +1996,108 @@
       "wholesalePrice": 130,
       "cat": "bundles",
       "img": "/images/products/img_6786.jpeg"
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Autumn flower ",
+          "variantImg": "/images/products/img_9139.jpeg"
+        },
+        {
+          "variantName": "Flower ",
+          "variantImg": "/images/products/img_9140.jpeg"
+        },
+        {
+          "variantName": "Daisy ",
+          "variantImg": "/images/products/img_9143.jpeg"
+        },
+        {
+          "variantName": "Summer ",
+          "variantImg": "/images/products/img_9141.jpeg"
+        }
+      ],
+      "img": "/images/products/img_9138.jpeg",
+      "price": 1500,
+      "wholesalePrice": 850,
+      "name": "Phone sticker ",
+      "stock": true,
+      "cat": "accessories",
+      "id": 210,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "18pm "
+        },
+        {
+          "variantName": "17pm"
+        },
+        {
+          "variantName": "18pro "
+        },
+        {
+          "variantName": "17pro"
+        },
+        {
+          "variantName": "17air "
+        },
+        {
+          "variantName": "17normal "
+        },
+        {
+          "variantName": "16pro max "
+        },
+        {
+          "variantName": "16normal "
+        },
+        {
+          "variantName": "16plus "
+        },
+        {
+          "variantName": "16pro max "
+        },
+        {
+          "variantName": "15pro max "
+        },
+        {
+          "variantName": "15pro"
+        },
+        {
+          "variantName": "15normal "
+        },
+        {
+          "variantName": "14pro max "
+        },
+        {
+          "variantName": "14pro "
+        },
+        {
+          "variantName": "14normal "
+        },
+        {
+          "variantName": "13pro max "
+        },
+        {
+          "variantName": "13pro "
+        },
+        {
+          "variantName": "13normal "
+        },
+        {
+          "variantName": "12pro max "
+        }
+      ],
+      "img": "/images/products/img_9136.jpeg",
+      "price": 8500,
+      "wholesalePrice": 4500,
+      "name": "Badazzled hello kitty ",
+      "stock": true,
+      "cat": "cases",
+      "id": 220,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
