@@ -2158,6 +2158,38 @@
       "id": 300,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "img": "/images/products/img_9253.jpeg",
+      "price": 3500,
+      "wholesalePrice": 2500,
+      "name": "Jelly case ",
+      "stock": true,
+      "cat": "cases",
+      "id": 302,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Brown ",
+          "variantImg": "/images/products/img_7413.jpeg"
+        },
+        {
+          "variantName": "Black ",
+          "variantImg": "/images/products/img_7412.jpeg"
+        }
+      ],
+      "img": "/images/products/img_7412.jpeg",
+      "price": 2500,
+      "wholesalePrice": 1500,
+      "name": "Star glass ",
+      "stock": true,
+      "cat": "cases",
+      "id": 301,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
