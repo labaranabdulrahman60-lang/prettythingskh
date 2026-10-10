@@ -1666,7 +1666,8 @@
       "id": 150,
       "name": "Stanley cup ",
       "price": 12000,
-      "img": "/images/products/img_9067.jpeg"
+      "img": "/images/products/img_9067.jpeg",
+      "cat": "accessories"
     },
     {
       "variations": [
@@ -1776,14 +1777,15 @@
       "wholesale": true
     },
     {
-      "wholesale": true,
-      "minOrder": 10,
-      "stock": true,
       "img": "/images/products/img_9064.jpeg",
-      "wholesalePrice": 1500,
       "price": 2500,
+      "wholesalePrice": 1500,
       "name": "Glass",
-      "id": 139
+      "stock": true,
+      "cat": "eyewear",
+      "id": 139,
+      "minOrder": 10,
+      "wholesale": true
     },
     {
       "variations": [
@@ -1857,7 +1859,8 @@
       "img": "/images/products/img_9124.jpeg",
       "price": 5000,
       "id": 206,
-      "name": "Bag "
+      "name": "Bag ",
+      "cat": "accessories"
     },
     {
       "wholesale": false,
@@ -1886,7 +1889,8 @@
       "id": 201,
       "name": "Mini purse ",
       "price": 3500,
-      "img": "/images/products/img_9123.jpeg"
+      "img": "/images/products/img_9123.jpeg",
+      "cat": "accessories"
     },
     {
       "variations": [
@@ -1912,9 +1916,7 @@
           "variantName": "16pro max "
         },
         {
-          "variantColors": [
-            null
-          ],
+          "variantColors": [],
           "variantName": "15normal"
         },
         {
@@ -1978,24 +1980,26 @@
       "wholesale": true
     },
     {
-      "wholesale": true,
-      "minOrder": 1,
-      "stock": true,
-      "id": 199,
-      "name": "Medium Packaging naylon ",
+      "img": "/images/products/img_6786.jpeg",
+      "price": 7500,
       "wholesalePrice": 200,
+      "name": "Medium Packaging naylon ",
+      "stock": true,
       "cat": "bundles",
-      "img": "/images/products/img_6786.jpeg"
+      "id": 199,
+      "minOrder": 1,
+      "wholesale": true
     },
     {
-      "wholesale": true,
-      "minOrder": 1,
-      "stock": true,
-      "id": 195,
-      "name": "Small size Packaging naylon ",
+      "img": "/images/products/img_6786.jpeg",
+      "price": 130,
       "wholesalePrice": 130,
+      "name": "Small size Packaging naylon ",
+      "stock": true,
       "cat": "bundles",
-      "img": "/images/products/img_6786.jpeg"
+      "id": 195,
+      "minOrder": 1,
+      "wholesale": true
     },
     {
       "variations": [
@@ -2096,6 +2100,62 @@
       "stock": true,
       "cat": "cases",
       "id": 220,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Blue",
+          "variantImg": "/images/products/img_9207.jpeg"
+        },
+        {
+          "variantName": "Green ",
+          "variantImg": "/images/products/img_9210.jpeg"
+        },
+        {
+          "variantName": "Pink ",
+          "variantImg": "/images/products/img_9209.jpeg"
+        },
+        {
+          "variantName": "White ",
+          "variantImg": "/images/products/img_9218.jpeg"
+        },
+        {
+          "variantName": "Yellow ",
+          "variantImg": "/images/products/img_9221.jpeg"
+        }
+      ],
+      "img": "/images/products/img_9196.jpeg",
+      "price": 500,
+      "wholesalePrice": 300,
+      "name": "Flower clip ",
+      "stock": true,
+      "cat": "accessories",
+      "id": 240,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "oldPrice": "",
+      "img": "/images/products/img_9190.jpeg",
+      "price": 20,
+      "wholesalePrice": 20,
+      "name": "Bow sticker ",
+      "stock": true,
+      "cat": "bundles",
+      "id": 250,
+      "minOrder": 10,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_9192.jpeg",
+      "price": 1000,
+      "wholesalePrice": 650,
+      "name": "Piercing sticker ",
+      "stock": true,
+      "cat": "bundles",
+      "id": 300,
       "minOrder": 5,
       "wholesale": true
     }
