@@ -1981,7 +1981,7 @@
     },
     {
       "img": "/images/products/img_6786.jpeg",
-      "price": 7500,
+      "price": 200,
       "wholesalePrice": 200,
       "name": "Medium Packaging naylon ",
       "stock": true,
@@ -2186,8 +2186,8 @@
       "wholesalePrice": 1500,
       "name": "Star glass ",
       "stock": true,
-      "cat": "cases",
-      "id": 301,
+      "cat": "eyewear",
+      "id": 399,
       "minOrder": 5,
       "wholesale": true
     }
