@@ -186,7 +186,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .product-modal-add-btn:disabled { background: var(--gray-300); box-shadow: none; cursor: not-allowed; }
 .product-modal-add-btn svg { width: 20px; height: 20px; }
 
-/* NEW: Selection list inside the modal */
 .selection-list { background: var(--off-white); border-radius: 10px; padding: 0.6rem 0.75rem; margin-bottom: 1rem; }
 .selection-list-empty { font-size: 0.8rem; color: var(--text-light); text-align: center; padding: 0.5rem; }
 .selection-item { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0; border-bottom: 1px dashed var(--pink-pale); font-size: 0.82rem; }
@@ -224,7 +223,6 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .cart-empty h3 { font-size: 1.05rem; color: var(--text-heading); margin-bottom: 0.4rem; }
 .cart-empty p { font-size: 0.85rem; }
 
-/* NEW: Cart group (product) with multiple variations inside */
 .cart-group { background: white; border: 1px solid var(--pink-pale); border-radius: 12px; padding: 0.85rem; margin-bottom: 0.85rem; }
 .cart-group-header { display: flex; gap: 0.75rem; align-items: flex-start; }
 .cart-group-img { width: 60px; height: 60px; border-radius: 8px; background: var(--off-white); overflow: hidden; flex-shrink: 0; }
@@ -561,6 +559,9 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
       <label for="deliveryZone">Delivery Location *</label>
       <select id="deliveryZone" onchange="updateDeliveryFee()">
         <option value="">Select your delivery zone</option>
+        <optgroup label="Free Pickup">
+          <option value="Pickup (Come to Shop)">Pickup from Shop (Free)</option>
+        </optgroup>
         <optgroup label="Kaduna State (Same Day)">
           <option value="Kaduna South">Kaduna South</option>
           <option value="Kaduna North">Kaduna North</option>
@@ -754,9 +755,10 @@ function getColorHex(colorObj) {
 }
 
 const DELIVERY_FEES = {
+  "Pickup (Come to Shop)": 0,
   "Kaduna South": 2500, "Kaduna North": 1500, "Kaduna Other": 2000,
-  "Kano": 2000, "Katsina": 2000, "Jigawa": 2500, "Kebbi": 2500, "Sokoto": 2500, "Zamfara": 2500,
-  "Borno (Maiduguri)": 2500, "Yobe": 2500, "Bauchi": 2500, "Gombe": 2500, "Adamawa": 2500, "Taraba": 2500,
+  "Kano": 1500, "Katsina": 2000, "Jigawa": 2500, "Kebbi": 2500, "Sokoto": 2500, "Zamfara": 2500,
+  "Borno (Maiduguri)": 2500, "Yobe": 2000, "Bauchi": 2000, "Gombe": 2500, "Adamawa": 2500, "Taraba": 2500,
   "Abuja (FCT)": 2000, "Benue": 2500, "Kogi": 2500, "Kwara": 2500, "Nasarawa": 2500, "Niger": 2500, "Plateau": 2500,
   "Lagos": 3000, "Ogun": 3000, "Oyo": 3000, "Osun": 3000, "Ondo": 3000, "Ekiti": 3000,
   "Abia": 3500, "Imo": 3500, "Anambra": 3500, "Enugu": 3500, "Ebonyi": 3500,
@@ -767,20 +769,18 @@ let currentDeliveryFee = 0;
 let currentDeliveryZone = "";
 
 let PRODUCTS = [];
-let cart = []; // Each item: { id, items: [{variation, color, qty}] }
+let cart = [];
 try { cart = JSON.parse(localStorage.getItem('ptk_cart') || '[]'); } catch(e) { cart = []; }
-// Migration: if old cart format (with .key), rebuild as new format
 if (cart.length > 0 && cart[0].key !== undefined) { cart = []; }
 let activeCategory = 'all';
 let searchQuery = '';
 
-// Product modal state
 let pmCurrentProduct = null;
 let pmSelectedVariation = null;
 let pmSelectedColor = null;
 let pmQty = 1;
 let pmStockLevel = 999;
-let pmSelection = []; // [{variation, color, qty}]
+let pmSelection = [];
 
 function formatPrice(n) {
   if (typeof n !== 'number' || isNaN(n)) return '₦0';
@@ -809,9 +809,7 @@ function findStockLevel(product, name) {
   return null;
 }
 
-// Compute pricing for a group of variations of the same product
 function computeGroupPricing(product, selections) {
-  // selections: [{ variation, color, qty }]
   const totalQty = selections.reduce((s, x) => s + x.qty, 0);
   const hasWholesale = product.wholesalePrice && product.wholesalePrice > 0;
   const minQty = product.minOrder || 10;
@@ -1094,7 +1092,6 @@ function updateQtyButtons() {
   plusBtn.disabled = (pmStockLevel !== 999 && pmQty >= pmStockLevel);
 }
 
-// Add currently-selected variation to the "Your Selection" list (staying in modal)
 function addToSelection() {
   const product = pmCurrentProduct;
   if (!product) return;
@@ -1102,10 +1099,8 @@ function addToSelection() {
   const variationName = pmSelectedVariation;
   const colorName = pmSelectedColor;
 
-  // Calculate already-in-selection qty for this exact variation
   const existingIndex = pmSelection.findIndex(x => x.variation === variationName && x.color === colorName);
 
-  // Check per-variation stock limit (if defined)
   if (pmStockLevel !== 999) {
     const alreadyIn = existingIndex >= 0 ? pmSelection[existingIndex].qty : 0;
     if (alreadyIn + pmQty > pmStockLevel) {
@@ -1120,7 +1115,6 @@ function addToSelection() {
     pmSelection.push({ variation: variationName, color: colorName, qty: pmQty });
   }
 
-  // Reset qty for next selection
   pmQty = 1;
   document.getElementById('pmQty').textContent = pmQty;
   updateQtyButtons();
@@ -1159,8 +1153,6 @@ function renderSelectionList() {
   const product = pmCurrentProduct;
   listEl.innerHTML = pmSelection.map((item, idx) => {
     const label = item.variation || item.color || 'Default';
-    const lineTotal = product ? (product.wholesalePrice && product.wholesalePrice > 0 ? 0 : 0) : 0;
-    // We don't show per-line price here; the total is shown at the bottom.
     return `
       <div class="selection-item">
         <span class="selection-item-name">${label}</span>
@@ -1218,14 +1210,12 @@ function addSelectionToCart() {
   if (!product) return;
   if (pmSelection.length === 0) return;
 
-  // Find or create a cart group for this product
   let group = cart.find(g => g.id === product.id);
   if (!group) {
     group = { id: product.id, items: [] };
     cart.push(group);
   }
 
-  // Merge each selection item into the group
   pmSelection.forEach(sel => {
     const existing = group.items.find(x => x.variation === sel.variation && x.color === sel.color);
     if (existing) {
@@ -1343,6 +1333,10 @@ function updateCartUI() {
     deliveryRow.style.display = 'flex';
     document.getElementById('deliveryZoneLabel').textContent = currentDeliveryZone;
     document.getElementById('cartDelivery').textContent = formatPrice(currentDeliveryFee);
+  } else if (currentDeliveryZone === 'Pickup (Come to Shop)') {
+    deliveryRow.style.display = 'flex';
+    document.getElementById('deliveryZoneLabel').textContent = currentDeliveryZone;
+    document.getElementById('cartDelivery').textContent = 'FREE';
   } else {
     deliveryRow.style.display = 'none';
   }
@@ -1409,10 +1403,10 @@ function updateDeliveryFee() {
   const estimate = document.getElementById('deliveryEstimate');
   const feeDisplay = document.getElementById('deliveryFeeDisplay');
 
-  if (zone && DELIVERY_FEES[zone]) {
+  if (zone && DELIVERY_FEES[zone] !== undefined) {
     currentDeliveryZone = zone;
     currentDeliveryFee = DELIVERY_FEES[zone];
-    feeDisplay.textContent = formatPrice(currentDeliveryFee);
+    feeDisplay.textContent = currentDeliveryFee === 0 ? 'FREE' : formatPrice(currentDeliveryFee);
     estimate.classList.add('show');
   } else {
     currentDeliveryZone = "";
@@ -1442,6 +1436,8 @@ function updateModalTotalOrder() {
   const breakdown = document.getElementById('modalTotalBreakdown');
   if (currentDeliveryFee > 0) {
     breakdown.textContent = `${formatPrice(subtotal)} products + ${formatPrice(currentDeliveryFee)} delivery`;
+  } else if (currentDeliveryZone === 'Pickup (Come to Shop)') {
+    breakdown.textContent = `${formatPrice(subtotal)} products — FREE pickup`;
   } else {
     breakdown.textContent = 'Select delivery location to add fee';
   }
@@ -1507,7 +1503,11 @@ function sendOrderToWhatsApp() {
 
   msg += `*━━━ SUMMARY ━━━*\n`;
   msg += `Subtotal: ${formatPrice(subtotal)}\n`;
-  msg += `Delivery (${zone}): ${formatPrice(currentDeliveryFee)}\n`;
+  if (currentDeliveryFee === 0) {
+    msg += `Delivery: FREE PICKUP\n`;
+  } else {
+    msg += `Delivery (${zone}): ${formatPrice(currentDeliveryFee)}\n`;
+  }
   msg += `*TOTAL: ${formatPrice(total)}*\n\n`;
   msg += `💳 *Paid to:* ${BANK_NAME}\n`;
   msg += `👤 *Account Name:* ${ACCOUNT_NAME}\n`;
