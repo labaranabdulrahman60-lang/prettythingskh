@@ -82,12 +82,6 @@
           ]
         },
         {
-          "variantName": "Toast ",
-          "variantColors": [
-            "Brown "
-          ]
-        },
-        {
           "variantName": "Pbj",
           "variantColors": [
             "Dark brown "
@@ -103,12 +97,6 @@
           "variantName": "Stawberry ",
           "variantColors": [
             "Clear white "
-          ]
-        },
-        {
-          "variantName": "Ribbon ",
-          "variantColors": [
-            "Light pink "
           ]
         },
         {
@@ -133,12 +121,6 @@
           "variantName": "Sugarcookie ",
           "variantColors": [
             "Clear white "
-          ]
-        },
-        {
-          "variantName": "Espresso ",
-          "variantColors": [
-            "Coffee brown "
           ]
         },
         {
@@ -176,12 +158,6 @@
           "variantColors": [
             "White with shimmering "
           ]
-        },
-        {
-          "variantName": "Passion fruit "
-        },
-        {
-          "variantName": "Caramalized banana "
         },
         {
           "variantName": "Vanilla cake "
@@ -225,24 +201,6 @@
       "id": 6,
       "minOrder": 10,
       "wholesale": false
-    },
-    {
-      "oldPrice": 2000,
-      "img": "/images/products/img_8955.jpeg",
-      "price": 1500,
-      "wholesalePrice": 750,
-      "name": "Black Lip Liner",
-      "colors": [
-        {
-          "name": "Black",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "beauty",
-      "id": 7,
-      "minOrder": 10,
-      "wholesale": true
     },
     {
       "oldPrice": 9000,
@@ -1091,19 +1049,6 @@
       "wholesale": false
     },
     {
-      "oldPrice": 2500,
-      "img": "/images/products/img_9006.jpeg",
-      "price": 2000,
-      "wholesalePrice": 0,
-      "name": "Bag Charm (Cherry)",
-      "colors": [],
-      "stock": true,
-      "cat": "accessories",
-      "id": 70,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
       "oldPrice": 5500,
       "img": "/images/products/img_9005.jpeg",
       "price": 5000,
@@ -1364,19 +1309,6 @@
       "wholesale": true
     },
     {
-      "oldPrice": "",
-      "img": "/images/products/img_8991.jpeg",
-      "price": 2000,
-      "wholesalePrice": 1100,
-      "name": "Mini cat eye ",
-      "colors": [],
-      "stock": true,
-      "cat": "eyewear",
-      "id": 95,
-      "minOrder": 5,
-      "wholesale": true
-    },
-    {
       "img": "/images/products/img_8965.png",
       "price": 2500,
       "wholesalePrice": 1500,
@@ -1620,6 +1552,11 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "White color only "
+        }
+      ],
       "img": "/images/products/img_9055.jpeg",
       "price": 500,
       "wholesalePrice": 300,
@@ -1628,35 +1565,6 @@
       "cat": "accessories",
       "id": 131,
       "minOrder": 12,
-      "wholesale": true
-    },
-    {
-      "variations": [
-        {
-          "variantName": "17pro max "
-        },
-        {
-          "variantName": "17pro"
-        },
-        {
-          "variantName": "17AIR"
-        },
-        {
-          "variantName": "16plus"
-        },
-        {
-          "variantName": "16normal "
-        }
-      ],
-      "oldPrice": 10000,
-      "img": "/images/products/img_9066.jpeg",
-      "price": 8500,
-      "wholesalePrice": 4500,
-      "name": "Badazzled ribbon case  ",
-      "stock": true,
-      "cat": "cases",
-      "id": 135,
-      "minOrder": 10,
       "wholesale": true
     },
     {
