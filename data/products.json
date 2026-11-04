@@ -348,11 +348,14 @@
         },
         {
           "variantName": "15plus"
+        },
+        {
+          "variantName": "16"
         }
       ],
       "oldPrice": "",
       "img": "/images/products/img_8987.jpeg",
-      "price": 1500,
+      "price": 1000,
       "wholesalePrice": 1000,
       "name": "MagSafe Case",
       "colors": [],
@@ -417,11 +420,17 @@
         },
         {
           "variantName": "15plus"
+        },
+        {
+          "variantName": "15pro"
+        },
+        {
+          "variantName": "14pro"
         }
       ],
       "oldPrice": 2000,
       "img": "/images/products/img_8988.jpeg",
-      "price": 1500,
+      "price": 1000,
       "wholesalePrice": 1000,
       "name": "Silicone Cases (iPhone)",
       "colors": [
