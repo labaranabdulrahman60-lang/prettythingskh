@@ -1566,7 +1566,7 @@
           "name": "Brown"
         }
       ],
-      "stock": true,
+      "stock": false,
       "cat": "accessories",
       "id": 129,
       "minOrder": 10,
@@ -1833,9 +1833,6 @@
           "variantName": "17air"
         },
         {
-          "variantName": "16normal "
-        },
-        {
           "variantName": "16plus"
         },
         {
@@ -1845,32 +1842,7 @@
           "variantName": "16pro max "
         },
         {
-          "variantColors": [],
-          "variantName": "15normal"
-        },
-        {
           "variantName": "15pro"
-        },
-        {
-          "variantName": "15promax"
-        },
-        {
-          "variantName": "14normal"
-        },
-        {
-          "variantName": "14pro "
-        },
-        {
-          "variantName": "14promax"
-        },
-        {
-          "variantName": "13normal "
-        },
-        {
-          "variantName": "13pro"
-        },
-        {
-          "variantName": "13pro max "
         },
         {
           "variantName": "12normal "
@@ -1879,23 +1851,10 @@
           "variantName": "12pro"
         },
         {
-          "variantName": "12promax"
-        },
-        {
-          "variantName": "11normal "
-        },
-        {
           "variantName": "11pro"
         },
         {
           "variantName": "11pro max "
-        },
-        {
-          "variantName": "XR",
-          "variantColors": [
-            "Pink ",
-            "Black "
-          ]
         }
       ],
       "img": "/images/products/img_9119.jpeg",
