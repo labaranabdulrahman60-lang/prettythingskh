@@ -357,6 +357,9 @@
         },
         {
           "variantName": "12pro max "
+        },
+        {
+          "variantName": "11pro max "
         }
       ],
       "oldPrice": "",
@@ -2076,6 +2079,49 @@
       "stock": true,
       "cat": "eyewear",
       "id": 399,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Watermelon pink "
+        },
+        {
+          "variantName": "Rose pink "
+        }
+      ],
+      "img": "/images/products/img_0722.jpeg",
+      "price": 1500,
+      "wholesalePrice": 1000,
+      "name": "Lip tint tear ",
+      "stock": true,
+      "id": 330,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_0731.jpeg",
+      "price": 4000,
+      "wholesalePrice": 3500,
+      "name": "Charger case ",
+      "colors": [
+        {
+          "name": "Pink",
+          "available": true
+        },
+        {
+          "name": "Purple",
+          "available": true
+        },
+        {
+          "name": "Black",
+          "available": true
+        }
+      ],
+      "stock": true,
+      "stock_levels": [],
+      "id": 300,
       "minOrder": 5,
       "wholesale": true
     }
