@@ -2134,7 +2134,7 @@
       "name": "Lip linear ",
       "stock": true,
       "cat": "beauty",
-      "id": 74,
+      "id": 408,
       "minOrder": 5,
       "wholesale": true
     },
@@ -2145,7 +2145,7 @@
       "name": "Case",
       "stock": true,
       "cat": "cases",
-      "id": 75,
+      "id": 407,
       "minOrder": 5,
       "wholesale": true
     },
@@ -2157,7 +2157,7 @@
       "name": "Matte 2in1 protective case ",
       "stock": true,
       "cat": "cases",
-      "id": 76,
+      "id": 406,
       "minOrder": 5,
       "wholesale": true
     },
@@ -2169,7 +2169,7 @@
       "name": "Case",
       "stock": true,
       "cat": "cases",
-      "id": 77,
+      "id": 404,
       "minOrder": 5,
       "wholesale": true
     },
@@ -2181,7 +2181,7 @@
       "name": "Case",
       "stock": true,
       "cat": "cases",
-      "id": 78,
+      "id": 403,
       "minOrder": 5,
       "wholesale": true
     },
@@ -2192,7 +2192,7 @@
       "name": "Butterfly Case",
       "stock": true,
       "cat": "cases",
-      "id": 79,
+      "id": 402,
       "minOrder": 5,
       "wholesale": true
     },
@@ -2214,7 +2214,7 @@
       "name": "Carbon fiber case  ",
       "stock": true,
       "cat": "cases",
-      "id": 80,
+      "id": 401,
       "minOrder": 5,
       "wholesale": true
     }
