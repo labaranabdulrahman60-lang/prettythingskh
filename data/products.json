@@ -2137,6 +2137,16 @@
       "id": 74,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "wholesale": true,
+      "minOrder": 5,
+      "stock": true,
+      "id": 75,
+      "name": "Case",
+      "price": 4000,
+      "wholesalePrice": 2500,
+      "cat": "accessories"
     }
   ]
 }
