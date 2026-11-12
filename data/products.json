@@ -2172,6 +2172,51 @@
       "id": 77,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "oldPrice": 6000,
+      "img": "/images/products/img_3537.png",
+      "price": 5500,
+      "wholesalePrice": 3000,
+      "name": "Case",
+      "stock": true,
+      "cat": "cases",
+      "id": 78,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_3539.png",
+      "price": 5000,
+      "wholesalePrice": 3500,
+      "name": "Butterfly Case",
+      "stock": true,
+      "cat": "cases",
+      "id": 79,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Carbon fiber case",
+          "variantColors": [
+            "Black",
+            "Red",
+            "Deep glacier "
+          ],
+          "variantImg": "/images/products/img_3542.png"
+        }
+      ],
+      "img": "/images/products/img_3540.png",
+      "price": 8000,
+      "wholesalePrice": 5800,
+      "name": "Carbon fiber case  ",
+      "stock": true,
+      "cat": "cases",
+      "id": 80,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
