@@ -2096,6 +2096,7 @@
       "wholesalePrice": 1000,
       "name": "Lip tint tear ",
       "stock": true,
+      "cat": "beauty",
       "id": 330,
       "minOrder": 5,
       "wholesale": true
@@ -2120,8 +2121,20 @@
         }
       ],
       "stock": true,
+      "cat": "accessories",
       "stock_levels": [],
       "id": 300,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/77e443d0-f66d-4fb3-aab6-fe8ddaadc56b.jpeg",
+      "price": 1500,
+      "wholesalePrice": 1000,
+      "name": "Lip linear ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 74,
       "minOrder": 5,
       "wholesale": true
     }
