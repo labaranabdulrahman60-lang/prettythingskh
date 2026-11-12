@@ -2139,14 +2139,39 @@
       "wholesale": true
     },
     {
-      "wholesale": true,
-      "minOrder": 5,
-      "stock": true,
-      "id": 75,
-      "name": "Case",
+      "img": "/images/products/img_3532.png",
       "price": 4000,
       "wholesalePrice": 2500,
-      "cat": "accessories"
+      "name": "Case",
+      "stock": true,
+      "cat": "cases",
+      "id": 75,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 5000,
+      "img": "/images/products/img_3534.png",
+      "price": 4500,
+      "wholesalePrice": 3000,
+      "name": "Matte 2in1 protective case ",
+      "stock": true,
+      "cat": "cases",
+      "id": 76,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "oldPrice": 7000,
+      "img": "/images/products/img_3535.png",
+      "price": 6500,
+      "wholesalePrice": 4500,
+      "name": "Case",
+      "stock": true,
+      "cat": "cases",
+      "id": 77,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
