@@ -2139,6 +2139,15 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "Case",
+          "variantColors": [
+            "iPhone Xr",
+            "iPhone 11"
+          ]
+        }
+      ],
       "img": "/images/products/img_3532.png",
       "price": 4000,
       "wholesalePrice": 2500,
