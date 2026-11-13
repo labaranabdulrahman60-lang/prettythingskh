@@ -1569,7 +1569,7 @@
           "name": "Brown"
         }
       ],
-      "stock": false,
+      "stock": true,
       "cat": "accessories",
       "id": 129,
       "minOrder": 10,
