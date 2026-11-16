@@ -2226,6 +2226,28 @@
       "id": 401,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "img": "/images/products/img_3622.png",
+      "price": 8000,
+      "wholesalePrice": 5800,
+      "name": "Cabon fiber case ",
+      "stock": true,
+      "cat": "cases",
+      "id": 600,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_3623.png",
+      "price": 8000,
+      "wholesalePrice": 5800,
+      "name": "Carbon fiber case",
+      "stock": true,
+      "cat": "cases",
+      "id": 420,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
