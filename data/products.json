@@ -2343,6 +2343,17 @@
       "id": 510,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1152.jpeg",
+      "price": 3000,
+      "wholesalePrice": 2500,
+      "name": "Sunset lamp ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 515,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
