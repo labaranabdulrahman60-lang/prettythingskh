@@ -2354,6 +2354,23 @@
       "id": 515,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Milk ",
+          "variantImg": "/images/products/img_1126.jpeg"
+        }
+      ],
+      "img": "/images/products/img_1130.jpeg",
+      "price": 3000,
+      "wholesalePrice": 2500,
+      "name": "Hat visor sun protection cap",
+      "stock": true,
+      "cat": "beauty",
+      "id": 516,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
