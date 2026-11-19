@@ -2233,6 +2233,116 @@
       "id": 420,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1299.jpeg",
+      "price": 350,
+      "wholesalePrice": 166,
+      "name": "Face mask ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 501,
+      "minOrder": 12,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_6862.jpeg",
+      "price": 350,
+      "wholesalePrice": 150,
+      "name": "Lip mask ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 502,
+      "minOrder": 12,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1171.jpeg",
+      "price": 350,
+      "wholesalePrice": 150,
+      "name": "Eye mask ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 503,
+      "minOrder": 12,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1186.jpeg",
+      "price": 450,
+      "wholesalePrice": 250,
+      "name": "Lip brush ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 504,
+      "minOrder": 12,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1223.jpeg",
+      "price": 800,
+      "wholesalePrice": 500,
+      "name": "Claw clips 6cm",
+      "stock": true,
+      "cat": "beauty",
+      "id": 505,
+      "minOrder": 12,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1198.jpeg",
+      "price": 450,
+      "wholesalePrice": 250,
+      "name": "Hand cream ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 506,
+      "minOrder": 12,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1283.jpeg",
+      "price": 500,
+      "wholesalePrice": 500,
+      "name": "Handsleeve ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 507,
+      "minOrder": 10,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_6676.jpeg",
+      "price": 2000,
+      "wholesalePrice": 1800,
+      "name": "LED light ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 508,
+      "minOrder": 10,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_1163.jpeg",
+      "price": 5000,
+      "wholesalePrice": 3500,
+      "name": "Ribbon bag ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 509,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_0117.jpeg",
+      "price": 1000,
+      "wholesalePrice": 759,
+      "name": "Can mini wipes ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 510,
+      "minOrder": 5,
+      "wholesale": true
     }
   ]
 }
