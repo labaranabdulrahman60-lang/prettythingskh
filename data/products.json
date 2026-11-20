@@ -2341,6 +2341,9 @@
         {
           "variantName": "Milk ",
           "variantImg": "/images/products/img_1126.jpeg"
+        },
+        {
+          "variantName": "Black "
         }
       ],
       "img": "/images/products/img_1130.jpeg",
@@ -2350,6 +2353,81 @@
       "stock": true,
       "cat": "beauty",
       "id": 516,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true,
+      "id": 521,
+      "name": "Fur rug ",
+      "price": 7500,
+      "img": "/images/products/img_1067.jpeg",
+      "variations": [
+        {
+          "variantName": "White "
+        },
+        {
+          "variantName": "Pink "
+        },
+        {
+          "variantName": "Light pink"
+        }
+      ]
+    },
+    {
+      "img": "/images/products/img_1071.jpeg",
+      "price": 2000,
+      "wholesalePrice": 100,
+      "name": "Fruity Mouth wash ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 524,
+      "minOrder": 20,
+      "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Black "
+        },
+        {
+          "variantName": "White "
+        }
+      ],
+      "img": "/images/products/img_1110.jpeg",
+      "price": 2000,
+      "wholesalePrice": 1500,
+      "name": "Phone stand ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 523,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "variations": [
+        {
+          "variantName": "Black "
+        },
+        {
+          "variantName": "White "
+        },
+        {
+          "variantName": "Pink "
+        },
+        {
+          "variantName": "Light blue "
+        }
+      ],
+      "img": "/images/products/img_1114.jpeg",
+      "price": 2000,
+      "wholesalePrice": 1500,
+      "name": "Bunny stand ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 522,
       "minOrder": 5,
       "wholesale": true
     }
