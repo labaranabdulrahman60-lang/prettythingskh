@@ -3,31 +3,10 @@
     {
       "variations": [
         {
-          "variantName": "Stawberry ",
-          "variantColors": [
-            "Red "
-          ]
-        },
-        {
-          "variantName": "Raspberry ",
-          "variantColors": [
-            "Red"
-          ]
-        },
-        {
           "variantName": "Honey infused ",
           "variantColors": [
             "Light yellow "
           ]
-        },
-        {
-          "variantName": "Vanilla glaze ",
-          "variantColors": [
-            "Light pink "
-          ]
-        },
-        {
-          "variantName": "Watermelon "
         },
         {
           "variantName": "Sticky toffee",
@@ -40,12 +19,6 @@
           "variantColors": [
             "Dark brown"
           ]
-        },
-        {
-          "variantName": "Bee-li-chii"
-        },
-        {
-          "variantName": "Cherry "
         },
         {
           "variantName": "Coconut frost "
@@ -63,10 +36,6 @@
         {
           "variation_qty": 5,
           "variation_name": "Coconut frost"
-        },
-        {
-          "variation_qty": 10,
-          "variation_name": "Cherry"
         }
       ],
       "id": 1,
@@ -143,9 +112,6 @@
         },
         {
           "variantName": "Vanilla cake "
-        },
-        {
-          "variantName": "Peach pit "
         },
         {
           "variantName": "Vanilla rhode "
@@ -1451,60 +1417,81 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantImg": "/images/products/img_0980.jpeg",
+          "variantName": "03 shade "
+        },
+        {
+          "variantImg": "/images/products/img_1012.jpeg",
+          "variantName": "51"
+        },
+        {
+          "variantImg": "/images/products/img_0984.jpeg",
+          "variantName": "12"
+        },
+        {
+          "variantImg": "/images/products/img_0976.jpeg",
+          "variantName": "01 light pink "
+        },
+        {
+          "variantName": "01 clear white ",
+          "variantImg": "/images/products/img_0973.jpeg"
+        },
+        {
+          "variantImg": "/images/products/img_0985.jpeg",
+          "variantName": "20"
+        },
+        {
+          "variantImg": "/images/products/img_0981.jpeg",
+          "variantName": "10"
+        },
+        {
+          "variantImg": "/images/products/img_0993.jpeg",
+          "variantName": "31"
+        },
+        {
+          "variantImg": "/images/products/img_0982.jpeg",
+          "variantName": "04"
+        },
+        {
+          "variantImg": "/images/products/img_1002.jpeg",
+          "variantName": "44"
+        },
+        {
+          "variantImg": "/images/products/img_1003.jpeg",
+          "variantName": "47"
+        },
+        {
+          "variantImg": "/images/products/img_0989.jpeg",
+          "variantName": "22"
+        },
+        {
+          "variantImg": "/images/products/img_1001.jpeg",
+          "variantName": "48 shade "
+        },
+        {
+          "variantName": "17 shade ",
+          "variantImg": "/images/products/img_0986.jpeg"
+        },
+        {
+          "variantImg": "/images/products/img_1010.jpeg",
+          "variantName": "05 "
+        },
+        {
+          "variantImg": "/images/products/img_0996.jpeg",
+          "variantName": "33"
+        },
+        {
+          "variantImg": "/images/products/img_0983.jpeg",
+          "variantName": "06"
+        }
+      ],
       "img": "/images/products/img_8992.jpeg",
       "price": 5600,
       "wholesalePrice": 5000,
       "name": "Kiko Milano ",
-      "colors": [
-        {
-          "available": true,
-          "name": "Pink"
-        },
-        {
-          "available": true,
-          "name": "Light Pink"
-        },
-        {
-          "available": true,
-          "name": "Raspberry"
-        },
-        {
-          "available": true,
-          "name": "Cherry"
-        },
-        {
-          "available": true,
-          "name": "Red"
-        },
-        {
-          "available": true,
-          "name": "White"
-        },
-        {
-          "available": true,
-          "name": "Purple"
-        },
-        {
-          "available": true,
-          "name": "Dark Pink"
-        },
-        {
-          "available": true,
-          "name": "Brown"
-        },
-        {
-          "available": true,
-          "name": "Nude"
-        },
-        {
-          "available": true,
-          "name": "Strawberry"
-        },
-        {
-          "available": true,
-          "name": "Rose"
-        }
-      ],
+      "colors": [],
       "stock": true,
       "cat": "beauty",
       "id": 107,
@@ -1738,9 +1725,6 @@
           "variantName": "Iced coffee "
         },
         {
-          "variantName": "Pink sugar "
-        },
-        {
           "variantName": "Pink guava "
         },
         {
@@ -1751,9 +1735,6 @@
         },
         {
           "variantName": "Poppy "
-        },
-        {
-          "variantName": "Birthday cake "
         },
         {
           "variantName": "Stawberry "
