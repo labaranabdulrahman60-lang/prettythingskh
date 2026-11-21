@@ -2357,13 +2357,6 @@
       "wholesale": true
     },
     {
-      "wholesale": false,
-      "minOrder": 10,
-      "stock": true,
-      "id": 521,
-      "name": "Fur rug ",
-      "price": 7500,
-      "img": "/images/products/img_1067.jpeg",
       "variations": [
         {
           "variantName": "White "
@@ -2374,7 +2367,15 @@
         {
           "variantName": "Light pink"
         }
-      ]
+      ],
+      "img": "/images/products/img_1067.jpeg",
+      "price": 7500,
+      "name": "Fur rug ",
+      "stock": true,
+      "cat": "beauty",
+      "id": 521,
+      "minOrder": 10,
+      "wholesale": false
     },
     {
       "img": "/images/products/img_1071.jpeg",
@@ -2428,6 +2429,17 @@
       "stock": true,
       "cat": "beauty",
       "id": 522,
+      "minOrder": 5,
+      "wholesale": true
+    },
+    {
+      "img": "/images/products/img_8152.jpeg",
+      "price": 1000,
+      "wholesalePrice": 850,
+      "name": "Lip oil",
+      "stock": true,
+      "cat": "beauty",
+      "id": 530,
       "minOrder": 5,
       "wholesale": true
     }
