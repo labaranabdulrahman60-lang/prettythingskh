@@ -1545,11 +1545,7 @@
       "wholesale": true
     },
     {
-      "variations": [
-        {
-          "variantName": "White color only "
-        }
-      ],
+      "variations": [],
       "img": "/images/products/img_9055.jpeg",
       "price": 500,
       "wholesalePrice": 300,
