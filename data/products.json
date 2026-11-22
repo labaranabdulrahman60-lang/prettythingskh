@@ -1850,7 +1850,7 @@
       "name": "Small size Packaging naylon ",
       "stock": true,
       "cat": "bundles",
-      "id": 195,
+      "id": 541,
       "minOrder": 1,
       "wholesale": true
     },
@@ -2438,6 +2438,36 @@
       "id": 530,
       "minOrder": 5,
       "wholesale": true
+    },
+    {
+      "wholesale": true,
+      "minOrder": 10,
+      "stock": true,
+      "id": 542,
+      "name": "Giftbox 13cm ",
+      "price": 350,
+      "img": "/images/products/img_1485.jpeg",
+      "cat": "bundles"
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true,
+      "id": 543,
+      "name": "Gift box 15cm ",
+      "price": 450,
+      "img": "/images/products/img_1487.jpeg",
+      "cat": "bundles"
+    },
+    {
+      "wholesale": false,
+      "minOrder": 10,
+      "stock": true,
+      "id": 544,
+      "name": "Thank you card 50pcs ",
+      "price": 1500,
+      "img": "/images/products/img_0055.jpeg",
+      "cat": "bundles"
     }
   ]
 }
