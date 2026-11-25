@@ -2017,7 +2017,7 @@
       "price": 4500,
       "wholesalePrice": 2500,
       "name": "Jelly case 2in1 case ",
-      "stock": true,
+      "stock": false,
       "cat": "cases",
       "id": 302,
       "minOrder": 5,
@@ -2082,7 +2082,7 @@
           "available": true
         }
       ],
-      "stock": true,
+      "stock": false,
       "cat": "accessories",
       "stock_levels": [],
       "id": 399,
@@ -2114,25 +2114,33 @@
       "price": 4000,
       "wholesalePrice": 2500,
       "name": "Case",
-      "stock": true,
+      "stock": false,
       "cat": "cases",
       "id": 407,
       "minOrder": 5,
       "wholesale": true
     },
     {
-      "oldPrice": 5000,
-      "img": "/images/products/img_3534.png",
-      "price": 4500,
-      "wholesalePrice": 3000,
-      "name": "Matte 2in1 protective case ",
-      "stock": true,
-      "cat": "cases",
-      "id": 406,
-      "minOrder": 5,
-      "wholesale": true
-    },
-    {
+      "variations": [
+        {
+          "variantName": "18pro max "
+        },
+        {
+          "variantName": "18pro"
+        },
+        {
+          "variantName": "17proMax "
+        },
+        {
+          "variantName": "17pro "
+        },
+        {
+          "variantName": "17air "
+        },
+        {
+          "variantName": "16"
+        }
+      ],
       "oldPrice": 7000,
       "img": "/images/products/img_3535.png",
       "price": 6500,
