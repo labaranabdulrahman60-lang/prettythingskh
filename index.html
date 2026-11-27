@@ -175,9 +175,13 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .variation-btn:hover { background: var(--pink-pale); }
 .variation-btn.selected { background: var(--pink-gradient); color: white; border-color: transparent; box-shadow: 0 4px 12px rgba(236,106,156,0.25); }
 
-/* NEW QTY SELECTOR STYLES */
-.qty-selector { display: flex; align-items: center; gap: 1rem; background: var(--off-white); border-radius: 10px; padding: 0.5rem 0.75rem; width: fit-content; }
-.qty-selector-input { width: 80px; padding: 0.5rem; border: 2px solid var(--pink-pale); border-radius: 8px; font-size: 1.1rem; font-weight: 800; text-align: center; color: var(--text-heading); background: white; outline: none; transition: border-color 0.2s; font-family: inherit; }
+/* UPDATED QTY SELECTOR STYLES (Combined Buttons + Input) */
+.qty-selector { display: flex; align-items: center; gap: 0.5rem; background: var(--off-white); border-radius: 10px; padding: 0.5rem 0.75rem; width: fit-content; }
+.qty-selector-btn { width: 36px; height: 36px; border-radius: 50%; background: white; color: var(--pink-dark); font-size: 1.2rem; font-weight: 700; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.2s; }
+.qty-selector-btn:hover:not(:disabled) { background: var(--pink-pale); }
+.qty-selector-btn:disabled { opacity: 0.35; cursor: not-allowed; }
+.qty-selector-input { width: 60px; padding: 0.4rem; border: 2px solid var(--pink-pale); border-radius: 8px; font-size: 1.1rem; font-weight: 800; text-align: center; color: var(--text-heading); background: white; outline: none; transition: border-color 0.2s; font-family: inherit; -moz-appearance: textfield; }
+.qty-selector-input::-webkit-outer-spin-button, .qty-selector-input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
 .qty-selector-input:focus { border-color: var(--pink); }
 
 .product-modal-add-btn { width: 100%; background: var(--pink-gradient); color: white; padding: 1rem; border-radius: 12px; font-size: 1rem; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 0.5rem; box-shadow: 0 6px 20px rgba(236,106,156,0.35); transition: all 0.2s; }
@@ -339,8 +343,8 @@ button { cursor: pointer; border: none; font-family: inherit; }
 .whatsapp-instructions-note strong { color: #E65100; }
 
 * { -webkit-tap-highlight-color: transparent; }
-button, a, input, select, textarea, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .floating-cart, .wa-float, .search-clear, .cart-close, .search-bar input, .form-group input, .form-group select, .form-group textarea, .color-swatch, .qty-selector-input, .product-modal-add-btn, .product-modal-close, .product-card, .variation-btn, .add-selection-btn { touch-action: manipulation; -webkit-touch-callout: none; }
-button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .color-swatch, .qty-selector-input, .variation-btn, .add-selection-btn { -webkit-user-select: none; user-select: none; }
+button, a, input, select, textarea, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .floating-cart, .wa-float, .search-clear, .cart-close, .search-bar input, .form-group input, .form-group select, .form-group textarea, .color-swatch, .qty-selector-input, .qty-selector-btn, .product-modal-add-btn, .product-modal-close, .product-card, .variation-btn, .add-selection-btn { touch-action: manipulation; -webkit-touch-callout: none; }
+button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, .copy-btn, .icon-btn, .color-swatch, .qty-selector-input, .qty-selector-btn, .variation-btn, .add-selection-btn { -webkit-user-select: none; user-select: none; }
 .form-group input, .form-group select, .form-group textarea, .search-bar input, .qty-selector-input { font-size: 16px !important; }
 </style>
 </head>
@@ -478,7 +482,9 @@ button, .btn, .qty-btn, .product-add, .cat-btn, .cart-checkout-btn, .modal-btn, 
       <div class="product-modal-section">
         <div class="product-modal-section-title"><span>Quantity</span></div>
         <div class="qty-selector">
+          <button class="qty-selector-btn" id="pmQtyMinus" onclick="changeModalQty(-1)">−</button>
           <input type="number" id="pmQtyInput" class="qty-selector-input" value="1" min="1" oninput="handleQtyInput(this.value)" onblur="validateQtyBlur()">
+          <button class="qty-selector-btn" id="pmQtyPlus" onclick="changeModalQty(1)">+</button>
         </div>
         <button class="add-selection-btn" id="pmAddSelectionBtn" onclick="addToSelection()">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M12 5v14M5 12h14"/></svg>
@@ -962,6 +968,7 @@ function openProductModal(id) {
   renderModalVariations(product);
   renderModalColors(product);
   document.getElementById('pmQtyInput').value = pmQty;
+  updateQtyButtons();
   renderSelectionList();
   updateModalTotal();
 
@@ -1001,6 +1008,7 @@ function selectModalVariation(variantName) {
   pmSelectedVariation = variantName;
   pmQty = 1;
   document.getElementById('pmQtyInput').value = pmQty;
+  updateQtyButtons();
 
   const match = findStockLevel(product, variantName);
   pmStockLevel = (match !== null) ? match : 999;
@@ -1055,11 +1063,27 @@ function selectModalColor(colorName) {
   pmSelectedColor = colorName;
   pmQty = 1;
   document.getElementById('pmQtyInput').value = pmQty;
+  updateQtyButtons();
 
   const match = findStockLevel(product, colorName);
   pmStockLevel = (match !== null) ? match : 999;
 
   renderModalColors(product);
+  updateModalTotal();
+}
+
+function changeModalQty(delta) {
+  const newQty = pmQty + delta;
+  if (newQty < 1) return;
+
+  if (delta > 0 && pmStockLevel !== 999 && newQty > pmStockLevel) {
+    showToast(`Only ${pmStockLevel} available for this variation`);
+    return;
+  }
+
+  pmQty = newQty;
+  document.getElementById('pmQtyInput').value = pmQty;
+  updateQtyButtons();
   updateModalTotal();
 }
 
@@ -1074,6 +1098,7 @@ function handleQtyInput(val) {
   }
   
   pmQty = num;
+  updateQtyButtons();
   updateModalTotal();
 }
 
@@ -1085,6 +1110,14 @@ function validateQtyBlur() {
     pmQty = 1;
     updateModalTotal();
   }
+}
+
+function updateQtyButtons() {
+  const minusBtn = document.getElementById('pmQtyMinus');
+  const plusBtn = document.getElementById('pmQtyPlus');
+  if (!minusBtn || !plusBtn) return;
+  minusBtn.disabled = pmQty <= 1;
+  plusBtn.disabled = (pmStockLevel !== 999 && pmQty >= pmStockLevel);
 }
 
 function addToSelection() {
@@ -1112,6 +1145,7 @@ function addToSelection() {
 
   pmQty = 1;
   document.getElementById('pmQtyInput').value = pmQty;
+  updateQtyButtons();
 
   renderSelectionList();
   updateModalTotal();
