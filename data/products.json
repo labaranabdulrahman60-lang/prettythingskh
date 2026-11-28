@@ -115,6 +115,9 @@
         },
         {
           "variantName": "Vanilla rhode "
+        },
+        {
+          "variantName": "Peach pit "
         }
       ],
       "oldPrice": 8000,
@@ -158,10 +161,6 @@
       "name": "Peel Off Lip Liner",
       "colors": [
         {
-          "name": "Pink",
-          "available": true
-        },
-        {
           "name": "Brown",
           "available": true
         }
@@ -193,7 +192,7 @@
       "wholesalePrice": 1500,
       "name": "Press On Nails",
       "colors": [],
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 20,
       "minOrder": 5,
@@ -206,7 +205,7 @@
       "wholesalePrice": 1500,
       "name": "Press On Nails ()",
       "colors": [],
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 21,
       "minOrder": 5,
@@ -219,7 +218,7 @@
       "wholesalePrice": 1500,
       "name": "Press On Nails",
       "colors": [],
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 23,
       "minOrder": 5,
@@ -232,7 +231,7 @@
       "wholesalePrice": 1500,
       "name": "Press On Nails",
       "colors": [],
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 24,
       "minOrder": 5,
@@ -240,9 +239,6 @@
     },
     {
       "variations": [
-        {
-          "variantName": "16pro max "
-        },
         {
           "variantName": "16pro "
         },
@@ -256,13 +252,7 @@
           "variantName": "14pro "
         },
         {
-          "variantName": "11pro "
-        },
-        {
           "variantName": "15pro max "
-        },
-        {
-          "variantName": "14pro max "
         },
         {
           "variantName": "Xs max "
@@ -301,12 +291,6 @@
           "variantName": "16"
         },
         {
-          "variantName": "13pro max "
-        },
-        {
-          "variantName": "12pro max "
-        },
-        {
           "variantName": "11pro max "
         }
       ],
@@ -326,9 +310,6 @@
       "variations": [
         {
           "variantName": "16"
-        },
-        {
-          "variantName": "16pro max "
         },
         {
           "variantName": "16pro"
@@ -380,15 +361,6 @@
         },
         {
           "variantName": "15pro"
-        },
-        {
-          "variantName": "14pro"
-        },
-        {
-          "variantName": "13pro max "
-        },
-        {
-          "variantName": "12proMax "
         }
       ],
       "oldPrice": 2000,
@@ -430,16 +402,7 @@
           "variantName": "18pro max"
         },
         {
-          "variantName": "18pro "
-        },
-        {
           "variantName": "17pro max "
-        },
-        {
-          "variantName": "17pro "
-        },
-        {
-          "variantName": "17air "
         },
         {
           "variantName": "17normal "
@@ -565,11 +528,7 @@
         },
         {
           "available": true,
-          "name": "Black"
-        },
-        {
-          "available": true,
-          "name": "White"
+          "name": "Grey"
         }
       ],
       "stock": true,
@@ -985,19 +944,6 @@
       "wholesale": true
     },
     {
-      "oldPrice": 5000,
-      "img": "/images/products/img_9028.jpeg",
-      "price": 4000,
-      "wholesalePrice": 0,
-      "name": "Blue Light Myopia Glass",
-      "colors": [],
-      "stock": true,
-      "cat": "eyewear",
-      "id": 61,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
       "variations": [
         {
           "variantName": "Milk "
@@ -1017,28 +963,6 @@
       "stock": true,
       "cat": "beauty",
       "id": 62,
-      "minOrder": 10,
-      "wholesale": false
-    },
-    {
-      "oldPrice": 5500,
-      "img": "/images/products/img_9005.jpeg",
-      "price": 5000,
-      "wholesalePrice": 0,
-      "name": "Chic Bah",
-      "colors": [
-        {
-          "name": "Pink",
-          "available": true
-        },
-        {
-          "name": "Black",
-          "available": true
-        }
-      ],
-      "stock": true,
-      "cat": "accessories",
-      "id": 71,
       "minOrder": 10,
       "wholesale": false
     },
@@ -1068,18 +992,6 @@
     },
     {
       "variations": [
-        {
-          "variantName": "Gold "
-        },
-        {
-          "variantName": "Silver "
-        },
-        {
-          "variantName": "Maroon "
-        },
-        {
-          "variantName": "Black "
-        },
         {
           "variantName": "White "
         }
@@ -1261,7 +1173,7 @@
       "wholesalePrice": 5000,
       "name": "Tattoo Stickers Wholesale (30pc)",
       "colors": [],
-      "stock": true,
+      "stock": false,
       "cat": "bundles",
       "id": 91,
       "minOrder": 30,
@@ -1274,7 +1186,7 @@
       "wholesalePrice": 1500,
       "name": "Press On Nails",
       "colors": [],
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 95,
       "minOrder": 5,
@@ -1285,7 +1197,7 @@
       "price": 2500,
       "wholesalePrice": 1500,
       "name": "Press on nails ",
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 100,
       "minOrder": 5,
@@ -1297,7 +1209,7 @@
       "price": 2500,
       "wholesalePrice": 1500,
       "name": "Press on nails ",
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 101,
       "minOrder": 5,
@@ -1308,7 +1220,7 @@
       "price": 2500,
       "wholesalePrice": 1500,
       "name": "Press on nails ",
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 101,
       "minOrder": 5,
@@ -1320,7 +1232,7 @@
       "price": 2500,
       "wholesalePrice": 1500,
       "name": "Press on nails ",
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 102,
       "minOrder": 5,
@@ -1332,7 +1244,7 @@
       "price": 2500,
       "wholesalePrice": 1500,
       "name": "Press on nails ",
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 103,
       "minOrder": 5,
@@ -1356,7 +1268,7 @@
       "price": 2500,
       "wholesalePrice": 1500,
       "name": "Press on nails ",
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 104,
       "minOrder": 5,
@@ -1380,7 +1292,7 @@
       "price": 2500,
       "wholesalePrice": 1500,
       "name": "Black press on nails ",
-      "stock": true,
+      "stock": false,
       "cat": "nails",
       "id": 105,
       "minOrder": 5,
@@ -1410,7 +1322,7 @@
           "name": "Brown"
         }
       ],
-      "stock": true,
+      "stock": false,
       "cat": "beauty",
       "id": 120,
       "minOrder": 10,
@@ -1569,25 +1481,10 @@
     {
       "variations": [
         {
-          "variantName": "18pro max "
-        },
-        {
           "variantName": "18pro "
         },
         {
-          "variantName": "17pro max "
-        },
-        {
           "variantName": "17pro "
-        },
-        {
-          "variantName": "17air "
-        },
-        {
-          "variantName": "16plus "
-        },
-        {
-          "variantName": "16normal "
         },
         {
           "variantName": "16pro max "
@@ -1604,9 +1501,6 @@
         },
         {
           "variantName": "15normal "
-        },
-        {
-          "variantName": "14pro max "
         },
         {
           "variantName": "14pro "
@@ -1674,17 +1568,6 @@
       "wholesale": true
     },
     {
-      "img": "/images/products/img_9064.jpeg",
-      "price": 2500,
-      "wholesalePrice": 1500,
-      "name": "Glass",
-      "stock": true,
-      "cat": "eyewear",
-      "id": 139,
-      "minOrder": 10,
-      "wholesale": true
-    },
-    {
       "variations": [
         {
           "variantName": "Glossy "
@@ -1709,31 +1592,16 @@
           "variantName": "Hot cocoa "
         },
         {
-          "variantName": "Cherry "
-        },
-        {
           "variantName": "Vanilla biege "
         },
         {
-          "variantName": "Vanilla "
-        },
-        {
           "variantName": "Iced coffee "
-        },
-        {
-          "variantName": "Pink guava "
-        },
-        {
-          "variantName": "Toasted marshmallows "
         },
         {
           "variantName": "Brown sugar "
         },
         {
           "variantName": "Poppy "
-        },
-        {
-          "variantName": "Stawberry "
         }
       ],
       "img": "/images/products/img_9075.jpeg",
@@ -1745,16 +1613,6 @@
       "id": 190,
       "minOrder": 10,
       "wholesale": true
-    },
-    {
-      "wholesale": false,
-      "minOrder": 10,
-      "stock": true,
-      "img": "/images/products/img_9124.jpeg",
-      "price": 5000,
-      "id": 206,
-      "name": "Bag ",
-      "cat": "accessories"
     },
     {
       "wholesale": false,
@@ -1788,27 +1646,6 @@
     },
     {
       "variations": [
-        {
-          "variantName": "17pro max "
-        },
-        {
-          "variantName": "17pro"
-        },
-        {
-          "variantName": "17air"
-        },
-        {
-          "variantName": "16plus"
-        },
-        {
-          "variantName": "16pro"
-        },
-        {
-          "variantName": "16pro max "
-        },
-        {
-          "variantName": "15pro"
-        },
         {
           "variantName": "12normal "
         },
@@ -1886,31 +1723,7 @@
     {
       "variations": [
         {
-          "variantName": "18pm "
-        },
-        {
-          "variantName": "17pm"
-        },
-        {
-          "variantName": "18pro "
-        },
-        {
-          "variantName": "17pro"
-        },
-        {
-          "variantName": "17air "
-        },
-        {
-          "variantName": "17normal "
-        },
-        {
           "variantName": "16pro max "
-        },
-        {
-          "variantName": "16normal "
-        },
-        {
-          "variantName": "16plus "
         },
         {
           "variantName": "16pro max "
@@ -1983,7 +1796,7 @@
       "price": 500,
       "wholesalePrice": 350,
       "name": "Flower clip ",
-      "stock": true,
+      "stock": false,
       "cat": "accessories",
       "id": 240,
       "minOrder": 5,
@@ -2013,6 +1826,14 @@
       "wholesale": true
     },
     {
+      "variations": [
+        {
+          "variantName": "17pro max "
+        },
+        {
+          "variantName": "18pro max "
+        }
+      ],
       "img": "/images/products/img_9253.jpeg",
       "price": 4500,
       "wholesalePrice": 2500,
@@ -2028,10 +1849,6 @@
         {
           "variantName": "Brown ",
           "variantImg": "/images/products/img_7413.jpeg"
-        },
-        {
-          "variantName": "Black ",
-          "variantImg": "/images/products/img_7412.jpeg"
         }
       ],
       "img": "/images/products/img_7412.jpeg",
